@@ -802,8 +802,6 @@ i.fa {
 }
 
 .table-row {
-    margin: 80px;
-    padding: 80px;
     border: 1px solid #e4e9ea;
     background-color: var(--blanco-afp);
 }
@@ -852,10 +850,6 @@ i.fa {
 .table-row__icon img {
     margin-left: 35px;
     margin-top: 5px;
-}
-
-.table-row__icon img:hover{
-
 }
 
 .table-row__td.context-menu {
