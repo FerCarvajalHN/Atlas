@@ -1,0 +1,885 @@
+/* Tabla de Contenidos */ 
+/* 0. - Colores y Fuentes
+   1. Background
+   2. Header
+   3. Layout
+   4. Contenido de Sidenavs + Contenido de idanel de Logeo, Busqueda de Clientes + Contenido de CarouselMedio e Información de Usuario
+    4a.-Content / Sidenav - Index
+    4b.-Content / Sidenav - Home
+    4c.-Content / Sidenav - InfoClients+Resumen+Gestiones+Para Ventas
+    4d.-Content / Middle-StartCarousel
+    4e.-Content / RightLoginPanel
+    4f.-Content / RightSearchClient
+    4g.-Formularios
+   5. Contenido despues de Logeo exitoso, de todas las pestañas InfoClients+Resumen+Gestiones+Para Ventas
+    5a.-Info-Cliente 
+   x. Footer 
+*/
+
+
+
+/* COMIENZO DE CODIGO FINAL */
+
+/* =========================================================================================== */
+/*                                                                                             */
+/*                                    0.Colores y Fuentes                                      */
+/*                                                                                             */
+/* =========================================================================================== */
+
+:root {
+    --rojo-afp: #D7282F;
+    --blanco-afp: #ffffff;
+    --gris-afp: #606060;
+    --rojob-afp : #B2292E;
+    --grisb-afp: #76777A;
+  }
+
+@font-face {
+    font-family: 'NeoSans-Medium';
+    src: url('NeoSans-Medium.woff2') format('woff2'),
+        url('NeoSans-Medium.woff') format('woff');
+    font-weight: 500;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'NeoSans-Black';
+    src: url('NeoSans-Black.woff2') format('woff2'),
+        url('NeoSans-Black.woff') format('woff');
+    font-weight: 900;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'Neo Sans';
+    src: url('NeoSans.woff2') format('woff2'),
+        url('NeoSans.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'NeoSans-Bold';
+    src: url('NeoSans-Bold.woff2') format('woff2'),
+        url('NeoSans-Bold.woff') format('woff');
+    font-weight: bold;
+    font-style: normal;
+}
+
+.neo-400 {
+    font-family: 'Neo Sans' sans-serif;
+    font-weight: normal;
+    font-style: normal;
+}
+
+
+.neo-500 {
+    font-family: 'NeoSans-Medium' sans-serif;
+    font-weight: 500;
+    font-style: normal;
+}
+
+.neo-700 {
+    font-family: 'NeoSans-Bold' sans-serif;
+    font-weight: bold;
+    font-style: normal;
+}
+
+.neo-900 {
+    font-family: 'NeoSans-Black' sans-serif;
+    font-weight: 900;
+    font-style: normal;
+}
+
+
+/* 
+.header {
+    border:1px solid black;
+}
+
+
+.footer {
+    border:1px solid black;
+}
+
+*/
+
+
+/* =========================================================================================== */
+/*                                                                                             */
+/*                                    1.-BACKGROUND                                            */
+/*                                                                                             */
+/* =========================================================================================== */
+
+.wrapper::before {
+    background-image: url(/images/bgbody.jpg);
+    background-size: cover;
+    content: "";
+    display: block;
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    z-index: -2;
+    opacity: 1;
+}
+    
+.wrapper::after {
+    background-color: var(--gris-afp);
+    content: "";
+    display: block;
+    position: absolute;
+    top: 0px;
+    left: 0px;
+    width: 100%;
+    height: 100%;
+    z-index: -1;
+    opacity: 0.5;
+}
+
+.side-nav,
+.info-2 {
+    background-color: var(--blanco-afp);
+    border-radius: 19px;
+}
+
+.side-nav {
+    border-top-right-radius: 0px;
+    border-bottom-right-radius: 0px;
+}
+
+.info-2 {
+    border-top-left-radius: 0px;
+    border-bottom-left-radius: 0px;
+}
+
+.info-1 {
+    background-color: var(--rojo-afp);
+    border-radius: 19px;
+}
+
+.info-3 {
+     background-color: var(--blanco-afp);
+     border-radius: 19px;
+}
+
+.info-4 {
+    background-color: var(--blanco-afp);
+    border-radius: 19px;
+}
+
+.side-navb {
+     background-color: var(--rojo-afp);
+     border-radius: 19px;
+     border-top-left-radius: 0px;
+     border-bottom-left-radius: 0px;
+    
+}
+
+/* =========================================================================================== */
+/*                                                                                             */
+/*                                     2.-HEADER                                               */
+/*                                                                                             */
+/* =========================================================================================== */
+
+
+
+
+/* =========================================================================================== */
+/*                                                                                             */
+/*                                     3.-LAYOUT                                               */
+/*                                                                                             */
+/* =========================================================================================== */
+
+
+.wrapper {
+    height: 984px;
+    
+}
+
+.header,
+.footer {
+    height: 75px;
+}
+
+.main-content {
+    height: 834px;
+}
+
+.side-nav,
+.info-2 {
+    height: 600px;
+}
+
+.info-1 {
+    height: 700px;
+    padding: 50px;
+}
+
+.info-2 {
+    padding: 50px;
+}
+
+.info-3 {
+    height: 650px;
+}
+
+.info-4 {
+    height: 750px;
+    margin-left: -40px;
+}
+
+.side-navb {
+     height: 850px;
+}
+
+input.form-control {
+    border-radius: 19px;
+}
+
+.form-control,
+.form-control-2,
+.form-control-3,
+.form-control-4,
+.form-control-5 {
+    font-family: 'Neo-Sans' sans-serif;
+    font-weight: normal;
+}
+
+.headerb,
+.footerb {
+    height: 64px;
+}
+
+
+
+
+/* =========================================================================================== */
+/*                                                                                             */
+/*                               4a.-Content / Sidenav - Index                                 */
+/*                                                                                             */
+/* =========================================================================================== */
+
+.side-nav--logo img{
+    margin:10px 0px 0px 30px;
+    padding: 0;
+}
+
+
+.navbar {
+    margin: 0;
+    padding: 0;
+}
+
+.side-nav--list li{
+    font-size: 22px;
+    list-style:none;
+    padding: 5px 0px;
+   
+}
+
+.side-nav--list a {
+    text-decoration: none; 
+    color: var(--gris-afp);
+}
+
+.side-nav--list a:hover {
+    text-decoration: underline var(--rojo-afp);
+    font-weight: bold;
+}
+
+
+  /* =========================================================================================== */
+  /*                                                                                             */
+  /*                                4b.-Content / Sidenav - Home                                 */
+  /*                                                                                             */
+  /* =========================================================================================== */
+
+  .side-nav--logo {
+      margin: 50px 0px 10px 35px;
+      padding: 0;
+  }
+
+  .side-nav--logo2 {
+      margin: 50px 0px 10px 65px;
+      padding: 0;
+  }
+
+
+
+  .navbar {
+      margin: 0;
+      padding: 0;
+  }
+
+  .side-nav--list2 li {
+      font-size: 22px;
+      list-style: none;
+      padding: 5px 0px;
+
+  }
+
+  .side-nav--list2 a {
+      text-decoration: none;
+      color: var(--gris-afp);
+  }
+
+  .side-nav--list2 a:hover {
+      text-decoration: underline var(--rojo-afp);
+      font-weight: bold;
+  }
+
+  .nav-link.out {
+      color: var(--rojob-afp);
+  }
+
+  .exchange-text {
+    color: var(--gris-afp);
+  }
+
+  .exchange-text p {
+      margin-left: 10px;
+      margin-bottom: 0px;
+  }
+
+  .form-control-3 {
+      margin-left: 15px;
+      height: 20px;
+      border: none;
+      font-size: 14px;
+      font-weight: bold;
+      color: var(--rojo-afp);
+  }
+
+
+/* =========================================================================================== */
+/*                                                                                             */
+/*           4c.-Content / Sidenav - InfoClients + Resumen+ Gestiones + Para Ventas            */
+/*                                                                                             */
+/* =========================================================================================== */
+
+.side-navb {
+    padding: 40px;
+}
+
+.side-navb--logo {
+    margin: 10px 0px 0px 100px;
+    padding: 10px;
+    width: 45%;
+}
+
+
+.navbar {
+    margin: 0;
+    padding: 0;
+}
+
+.side-navb--list li {
+    font-size: 22px;
+    list-style: none;
+    padding: 15px 0px;
+    text-align: center;
+
+}
+
+.side-navb--list a {
+    text-decoration: none;
+    color: var(--blanco-afp);
+}
+
+.side-navb--list a:hover {
+    -webkit-transform: scale(1.1);
+    -ms-transform: scale(1.1);
+    transform: scale(1.1);
+}
+
+.exchangeb-text {
+    color: var(--blanco-afp);
+}
+
+.exchangeb-text p {
+    margin-left: 10px;
+    margin-bottom: 0px;
+}
+
+
+.form-control-5 {
+    margin-left: 15px;
+    height: 20px;
+    border: none;
+    font-size: 14px;
+    font-weight: bold;
+    color: var(--blanco-afp);
+    background-color:var(--rojo-afp);
+}
+
+/* =========================================================================================== */
+/*                                                                                             */
+/*                            4b.-Content / Middle-StartCarousel                               */
+/*                                                                                             */
+/* =========================================================================================== */
+
+.carousel-indicators li {
+    width: 10px;
+    height: 10px;
+    border-radius: 100%;
+}
+
+.carousel-item {
+    height: 350px;
+}
+
+.carousel-indicators li {
+    width: 10px;
+    height: 10px;
+    border-radius: 100%;
+  }
+
+
+  .carousel-indicators {
+    bottom: -50px;
+}
+
+div.carousel-inner {
+    border-radius: 19px;
+}
+
+p.h2 {
+    margin: auto;
+    font-weight: bold;
+}
+
+.p-box0 {
+    font-size: 36px;
+    color: var(--blanco-afp);
+    margin: 40px 0px;
+    
+
+}
+
+/* =========================================================================================== */
+/*                                                                                             */
+/*                            4d.-Content / MiddleUserInfo                                     */
+/*                                                                                             */
+/* =========================================================================================== */
+
+.input-userdata {
+    padding: 80px;
+}
+
+.input-group {
+    margin-top: 15px;
+}
+
+.input-userinfo {
+    background-color: var(--rojob-afp);
+    border: 1px solid var(--rojob-afp);
+    color: var(--blanco-afp);
+}
+
+.input-userinfo2 {
+    background-color: var(--rojoa-afp);
+    border: 1px solid var(--rojoa-afp);
+    color: var(--blanco-afp);
+    font-size: 22px;
+}
+
+.form-control-4 {
+    width: 305px;
+    border-radius: 19px;
+    border-top-right-radius: 0;
+    border-bottom-right-radius: 0;
+    padding: 0.375rem 0.75rem;
+}
+
+
+.form-control-2 {
+    width: 225px;
+    padding: 0.375rem 0px;
+}
+
+.side-nav--logo2 img {
+    margin-left: 50px;
+}
+
+
+.input-userinfo-icon {
+    background-color: var(--rojob-afp);
+    border: 1px solid var(--rojob-afp);
+}
+
+.p-box3 {
+    margin: 60px 10px;
+    color: var(--blanco-afp);
+    font-size: 22px;
+
+}
+
+div.input-userinfo-icon {
+    border-radius: 19px;
+}
+
+.usergroup {
+    margin: 0px 5px; 
+}
+
+/* =========================================================================================== */
+/*                                                                                             */
+/*                            4e.-Content / RightLoginPanel                                    */
+/*                                                                                             */
+/* =========================================================================================== */
+
+.btn-circle.btn-xl {
+    width: 50px;
+    height: 50px;
+    padding: 10px 16px;
+    border-radius: 35px;
+    font-size: 18px;
+    line-height: 1.33;
+    margin-left: 340px;
+    background-color: var(--gris-afp);
+    border-color: var(--gris-afp);
+}
+
+.btn-circle.btn-xl:hover {
+    width: 50px;
+    height: 50px;
+    padding: 10px 16px;
+    border-radius: 35px;
+    font-size: 18px;
+    line-height: 1.33;
+    background-color: var(--rojo-afp);
+    border-color: var(--rojo-afp);
+}
+
+.p-box {
+    padding-top: 80px;
+    padding-left: 10px;
+    font-size: 14px;
+    margin: 10px 20px;
+    color:var(--gris-afp)
+
+}
+
+.p-box1 {
+    color:var(--rojo-afp);
+}
+
+.p-box2{
+    margin: 20px auto;
+    color: var(--gris-afp);
+}
+
+.btn-consulta {
+    margin: 0px 140px;
+    background-color:var(--rojo-afp);
+    border: var(--rojo-afp);
+
+}
+
+.btn-consulta:hover {
+    margin-left: 140px;
+    background-color: var(--gris-afp);
+    border: var(--gris-afp);
+}
+
+#basic-addon1 {
+    background-color: var(--rojo-afp);
+       border-radius: 19px;
+       border-top-right-radius: 0px;
+       border-bottom-right-radius: 0px;
+ 
+}
+
+i.fa {
+    color: #fff;
+}
+
+.consulta {
+    margin-top: -50px; 
+}
+
+
+/* =========================================================================================== */
+/*                                                                                             */
+/*                            4f.-Content / RightSearchClient                                  */
+/*                                                                                             */
+/* =========================================================================================== */
+.idbox {
+    margin: 20px 0px 30px 0px;
+}
+
+.idbox-p {
+    color: var(--gris-afp);
+}
+
+.idsearch {
+    margin-top: 12px;
+    margin-right: 10px; 
+}
+
+
+.p-box4 {
+    color: var(--rojo-afp);
+    margin:110px 0px 30px 0px;;
+}
+
+
+/* =========================================================================================== */
+/*                                                                                             */
+/*                                   4g.-Formularios                                           */
+/*                                                                                             */
+/* =========================================================================================== */
+
+
+.collap-title {
+   border: 1px solid black;
+   height: 200px;
+   border-radius: 19px;
+   border-bottom-left-radius: 0px;
+   border-bottom-right-radius: 0px;
+   padding:45px;
+}
+.collap-title p {
+    text-align: center;
+}
+
+.forms-container {
+    background-color: green;
+    border-radius:19px;
+    border-top-left-radius: 0px;
+    border-top-right-radius: 0px;
+}
+
+.sidenav-forms {
+    padding-left: 40px;
+    padding-right: 0px;
+  /*  background-color: yellow; */
+    border-radius:19px;
+    border-top-left-radius: 0px;
+    border-top-right-radius: 0px;
+}
+
+.forms-menu {
+    background-color: var(--rojo-afp);
+    height:250px;
+    border-radius: 19px;
+    border-top-right-radius: 0px;
+    border-bottom-right-radius: 0px;
+    padding: 10px;
+    margin: 100px 0;
+}
+.forms-menu p {
+    color: var(--blanco-afp);
+    font-weight: bold;
+    font-size: 14px;
+    margin: 10px;
+}
+
+.forms-menu img {
+    margin: 5px 5px 30px 15px;
+}
+
+.forms-menu img:hover {
+    width: 80%;
+}
+
+/* =========================================================================================== */
+/*                                                                                             */
+/*                                   5a.-Info-Cliente                                          */
+/*                                                                                             */
+/* =========================================================================================== */
+
+.infoclient-container {
+    border-radius: 19px;
+    /* border: 1px solid black; */
+}
+
+.infoclient-input{
+   padding: 20px 50px 20px 0px;
+   margin: 0px 0px;
+}
+
+.client-box {
+    padding: 0px 80px;
+}
+
+.client-box2 {
+    margin-left: 80px;
+}
+
+.client-box3 {
+    margin-right: 35px;
+}
+
+.client-box4 {
+    padding: 0px 260px;
+}
+
+
+
+.sidenav-client {
+    padding-left: 0px;
+    padding-right: 0px;
+    /*  background-color: yellow; */
+    border-radius: 19px;
+    border-top-left-radius: 0px;
+    border-top-right-radius: 0px;
+}
+
+.clients-menu {
+    background-color: var(--rojo-afp);
+    height: 390px;
+    border-radius: 19px;
+    border-top-right-radius: 0px;
+    border-bottom-right-radius: 0px;
+    padding: 0px;
+    margin: 180px 0;
+}
+
+.clients-menu p {
+    color: var(--blanco-afp);
+    font-size: 14px;
+    margin: 10px 0px;;
+    margin-top: -25px;
+    text-align: center;
+}
+
+
+.clients-menu img {
+    width: 55%;
+    margin: 20px 0px 30px 25px;
+}
+
+.clients-menu img:hover {
+    -webkit-transform: scale(1.1);
+    -ms-transform: scale(1.1);
+    transform: scale(1.1);
+}
+
+.p-box5 {
+    color: var(--rojo-afp);
+    margin: 20px 0px 10px 0px;
+    font-size: 30px;
+}
+
+.iconset-reduser {
+    margin-top: 16px;
+    margin-right: 10px;
+}
+
+.form-control-6 {
+   width: 100%;
+   height: calc(1.5em + 0.75rem + 2px);
+   padding: 0.375rem 1.75rem;
+   font-size: 1rem;
+   border-radius: 19px;
+   color: var(--rojo-afp);
+   border: 2px solid var(--rojo-afp);
+}
+
+.form-control-7 {
+    width: 90%;
+    height: calc(1.5em + 0.75rem + 2px);
+    padding: 0.375rem 1.75rem;
+    font-size: 1rem;
+    border-radius: 19px;
+    color: var(--gris-afp);
+    border: 1px solid var(--gris-afp);
+}
+
+
+/* =========================================================================================== */
+/*                                                                                             */
+/*                                   5b.-Resumen-Cliente                                       */
+/*                                                                                             */
+/* =========================================================================================== */
+
+
+.table-container {
+    padding: 20px 80px;
+}
+
+.table-row {
+    margin: 80px;
+    padding: 80px;
+    border: 1px solid #e4e9ea;
+    background-color: var(--blanco-afp);
+}
+
+.table-row__td {
+    margin: 98px;
+}
+
+
+.table__thead th {
+    color: var(--grisb-afp);
+    font-family: 'NeoSans-Bold'sans-serif;
+    font-weight: 600;
+    font-style: normal;
+    padding-bottom: 25px;
+}
+
+
+.vl {
+    border-left: 2px dashed var(--rojo-afp);
+    height: 35px;
+}
+
+.vl-2 {
+    border-left: 1px solid var(--rojo-afp);
+    height: 35px;
+    position: absolute;
+    left: 12.5%;
+    margin-left: -3px;
+    top: 158px;
+}
+
+.table-row__Numero{
+    margin-left: 20px;
+    color: var(--rojo-afp);
+    font-size: 22px;
+}
+
+.table-row__name {
+    margin-top: 5px;
+    color: var(--gris-afp);
+    font-size: 18px;
+}
+
+
+.table-row__icon img {
+    margin-left: 35px;
+    margin-top: 5px;
+}
+
+.table-row__icon img:hover{
+
+}
+
+.table-row__td.context-menu {
+    padding-top: 20px;
+    padding-right: 30px;
+    color: var(--gris-afp);
+}
+
+.p-box6 {
+    color: var(--rojo-afp);
+    margin: 40px 0px 15px 0px;
+    font-size: 30px;
+}
+
+
+
+/* =========================================================================================== */
+/*                                                                                             */
+/*                                        x.-FOOTER                                            */
+/*                                                                                             */
+/* =========================================================================================== */
+
+.footer-text {
+    color: #fff;
+    font-size: 24px;
+    margin: 0px 0px;
+}

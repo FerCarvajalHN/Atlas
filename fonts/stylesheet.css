@@ -1,0 +1,40 @@
+@font-face {
+    font-family: 'Neo Sans';
+    src: url('NeoSans-Medium.woff2') format('woff2'),
+        url('NeoSans-Medium.woff') format('woff');
+    font-weight: 500;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'Neo Sans';
+    src: url('NeoSans-Black.woff2') format('woff2'),
+        url('NeoSans-Black.woff') format('woff');
+    font-weight: 900;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'Neo Sans';
+    src: url('NeoSans.woff2') format('woff2'),
+        url('NeoSans.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'Neo Sans';
+    src: url('NeoSans-Bold.woff2') format('woff2'),
+        url('NeoSans-Bold.woff') format('woff');
+    font-weight: bold;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'Neo Sans';
+    src: url('NeoSans-Ultra.woff2') format('woff2'),
+        url('NeoSans-Ultra.woff') format('woff');
+    font-weight: 900;
+    font-style: normal;
+}
+
