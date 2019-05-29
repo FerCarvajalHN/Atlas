@@ -112,7 +112,7 @@
 /* =========================================================================================== */
 
 .wrapper::before {
-    background-image: url(/images/bgbody.jpg);
+    background-image: url(../images/bgbody.jpg);
     background-size: cover;
     content: "";
     display: block;

@@ -7,309 +7,335 @@
     <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
     <meta http-equiv="x-ua-compatible" content="ie-edge" <!-- Bootstrap CSS -->
     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css"
-        integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
-    <link rel="stylesheet" href="/css/main.css">
+          integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+    <link rel="stylesheet" href="css/main.css">
 
-    <script src="https://code.jquery.com/jquery-1.12.4.min.js"
-        integrity="sha384-nvAa0+6Qg9clwYCGGPpDQLVpLNn0fRaROjHqs13t4Ggj3Ez50XnGQqc/r8MhnRDZ" crossorigin="anonymous">
-        </script>
-    <script src="/plugins/context-menu.js"></script>
-    <link href="/plugins/context-menu.css" rel="stylesheet">
+    <!-- <script src="https://code.jquery.com/jquery-1.12.4.min.js"
+         integrity="sha384-nvAa0+6Qg9clwYCGGPpDQLVpLNn0fRaROjHqs13t4Ggj3Ez50XnGQqc/r8MhnRDZ" crossorigin="anonymous">
+         </script>-->
+
+    <link href="plugins/context-menu.css" rel="stylesheet">
 
     <!-- FontAwesome -->
     <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.8.2/css/all.css"
-        integrity="sha384-oS3vJWv+0UjzBfQzYUhtDYW+Pj2yciDJxpsK1OYPAYjqT085Qq/1cq5FLXAZQ7Ay" crossorigin="anonymous">
+          integrity="sha384-oS3vJWv+0UjzBfQzYUhtDYW+Pj2yciDJxpsK1OYPAYjqT085Qq/1cq5FLXAZQ7Ay" crossorigin="anonymous">
 
-
-        
 
     <title>Test</title>
+
+    <style>
+
+        .dropdown-toggle::after {
+            display: none;
+        }
+
+        table {
+            border-collapse: separate;
+            border-spacing: 0 1em;
+        }
+
+        .table-row {
+            box-shadow: 1px 1px 4px 0px rgba(0,0,0,0.45);
+        }
+
+
+    </style>
 </head>
 
 <body>
-    <!-- ************** EMPIEZA EL CONTENIDO ************** -->
+<!-- ************** EMPIEZA EL CONTENIDO ************** -->
 
-    <div class="container-fluid wrapper">
+<div class="container-fluid wrapper">
 
 
-        <!--HEADER-->
-        <div class="row justify-content-center headerb">
-            <img src="/images/logo.png" alt="logo-afp">
+    <!--HEADER-->
+    <div class="row justify-content-center headerb">
+        <img src="images/logo.png" alt="logo-afp">
+    </div>
+
+    <!--CONTENIDO-->
+    <div class="row  align-items-center main-content">
+
+        <!--Sidenav-->
+        <div class="col-3 side-navb">
+
+            <div class="">
+                <img src="images/atlaslogo-white.png" alt="logo-atlas" class="side-navb--logo">
+            </div>
+            <nav class="navbar side-navb--list neo-400">
+                <ul>
+                    <li class="nav-item"><a class="nav-link" href="info-cliente.html">Información del Cliente</a></li>
+                    <li class="nav-item"><a class="nav-link" href="#">Resumen</a></li>
+                    <li class="nav-item"><a class="nav-link" href="#">Gestiones</a></li>
+                    <li class="nav-item"><a class="nav-link" href="#">Formularios</a></li>
+                    <li class="nav-item"><a class="nav-link" href="#">Para Ventas</a></li>
+                    <li class="nav-item"><a class="nav-link" href="#">Salir</a></li>
+                </ul>
+            </nav>
+
+            <div class="d-flex">
+                <div class="exchangeb">
+                    <img src="images/icons-cliente/exchangeb.png" alt="">
+                </div>
+
+                <div class="exchangeb-text neo-700">
+                    <p>Venta:<input class="form-control-5 w-25 d-inline " type="text" placeholder="test 24$"></p>
+                    <p>Compra:<input class="form-control-5 w-25 d-inline" type="text" placeholder="test"></p>
+                </div>
+            </div>
+
         </div>
 
-        <!--CONTENIDO-->
-        <div class="row  align-items-center main-content">
+        <!--Panel #1: Medio-->
+        <div id="Middle-ClientInfo" class="col-8 info-4">
 
-            <!--Sidenav-->
-            <div class="col-3 side-navb">
+            <div class="row" style="height: 750px; border-radius: 19px;">
 
-                <div class="">
-                    <img src="/images/atlaslogo-white.png" alt="logo-atlas" class="side-navb--logo">
-                </div>
-                <nav class="navbar side-navb--list neo-400">
-                    <ul>
-                        <li class="nav-item"><a class="nav-link" href="#">Información del Cliente</a></li>
-                        <li class="nav-item"><a class="nav-link" href="#">Resumen</a></li>
-                        <li class="nav-item"><a class="nav-link" href="#">Gestiones</a></li>
-                        <li class="nav-item"><a class="nav-link" href="#">Formularios</a></li>
-                        <li class="nav-item"><a class="nav-link" href="#">Para Ventas</a></li>
-                        <li class="nav-item"><a class="nav-link" href="#">Salir</a></li>
-                    </ul>
-                </nav>
+                <!--INICIO CONTENEDOR INFORMACION DEL CLIENTE-->
+                <div class="col-12 infoclient-container">
+                    <!--INICIO TITULO-->
+                    <p class="text-center p-box6 neo-700">Resumen de Productos y Servicios</p>
+                    <!--FIN TITULO-->
 
-                <div class="d-flex">
-                    <div class="exchangeb">
-                        <img src="images/icons-cliente/exchangeb.png" alt="">
+                    <div class="table-container">
+                        <table class="table table-wrapper table-borderless">
+                            <thead class="table__thead">
+                            <tr>
+                                <th></th>
+                                <th>Cuenta</th>
+                                <th>Producto</th>
+                                <th>Saldo</th>
+                                <th>Cta. Colectiva</th>
+                                <th>Medio</th>
+                                <th>Estado de Cta.</th>
+                                <th>Constancia</th>
+                                <th>Expendiente</th>
+                                <th></th>
+                            </tr>
+                            </thead>
+
+                            <tbody class="table__tbody">
+
+                            <tr class="table-row neo-700">
+
+                                <td class="table-row__td ">
+                                    <div class="table-row__Numero">
+                                        <p class="">1</p>
+                                    </div>
+                                </td>
+
+                                <td class="table-row__td ">
+                                    <div class="table-row__name neo-500">
+                                        <p class="">Lorem</p>
+                                    </div>
+                                </td>
+
+                                <td class="table-row__td ">
+                                    <div class="table-row__name neo-500">
+                                        <p class="">Lorem</p>
+                                    </div>
+                                </td>
+
+                                <td class="table-row__td ">
+                                    <div class="table-row__name neo-500">
+                                        <p class="">Lorem</p>
+
+                                    </div>
+                                </td>
+
+                                <td class="table-row__td ">
+                                    <div class="table-row__name neo-500">
+                                        <p class="">Lorem</p>
+                                    </div>
+                                </td>
+
+                                <td class="table-row__td ">
+                                    <div class="table-row__name neo-500">
+                                        <p class="">Lorem</p>
+                                    </div>
+                                </td>
+
+                                <td class="table-row__td ">
+                                    <div class="table-row__icon neo-500">
+                                        <img src="images/estado-cuenta.png" alt="">
+                                    </div>
+                                </td>
+
+                                <td class="table-row__td ">
+                                    <div class="table-row__icon neo-500">
+                                        <img src="images/constancia.png" alt="">
+                                    </div>
+                                </td>
+
+                                <td class="table-row__td ">
+                                    <div class="table-row__icon neo-500">
+                                        <img src="images/expediente.png" alt="">
+                                    </div>
+                                </td>
+
+                                <td class="table-row__td context-menu" data-container-id="context-menu-items"
+                                    data-row-id="1"
+                                ">
+                                <div class="context-menu-container" id="context-menu-items">
+                                    <ul>
+                                        <li>Menu Item 1</li>
+                                        <li>Menu Item 2</li>
+                                        <li>Menu Item 3</li>
+                                        ...
+                                    </ul>
+                                </div>
+
+                                </td>
+
+
+                            </tr>
+
+
+                            <tr class="table-row neo-700">
+
+                                <td class="table-row__td">
+                                    <div class="table-row__Numero">
+                                        <p class="">2</p>
+                                    </div>
+                                </td>
+
+                                <td class="table-row__td ">
+                                    <div class="table-row__name neo-500">
+                                        <p class="">Lorem</p>
+                                    </div>
+                                </td>
+
+                                <td class="table-row__td ">
+                                    <div class="table-row__name neo-500">
+                                        <p class="">Lorem</p>
+                                    </div>
+                                </td>
+
+                                <td class="table-row__td ">
+                                    <div class="table-row__name neo-500">
+                                        <p class="">Lorem</p>
+
+                                    </div>
+                                </td>
+
+                                <td class="table-row__td ">
+                                    <div class="table-row__name neo-500">
+                                        <p class="">Lorem</p>
+                                    </div>
+                                </td>
+
+                                <td class="table-row__td ">
+                                    <div class="table-row__name neo-500">
+                                        <p class="">Lorem</p>
+                                    </div>
+                                </td>
+
+                                <td class="table-row__td ">
+                                    <div class="table-row__icon neo-500">
+                                        <img src="images/estado-cuenta.png" alt="">
+                                    </div>
+                                </td>
+
+                                <td class="table-row__td ">
+                                    <div class="table-row__icon neo-500">
+                                        <img src="images/constancia.png" alt="">
+                                    </div>
+                                </td>
+
+                                <td class="table-row__td ">
+                                    <div class="table-row__icon neo-500">
+                                        <img src="images/expediente.png" alt="">
+                                    </div>
+                                </td>
+
+                                <!--DROPDOWB-->
+                                <td class="table-row__Numero">
+                                    <!-- Example single danger button -->
+                                    <div class="btn-group">
+                                        <a class="dropdown-toggle" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                                            <i class="fa fa-ellipsis-v" style="color: darkgrey;"></i>
+                                        </a>
+                                        <div class="dropdown-menu">
+                                            <a class="dropdown-item" href="#">Action</a>
+                                            <a class="dropdown-item" href="#">Another action</a>
+                                            <a class="dropdown-item" href="#">Something else here</a>
+                                            <div class="dropdown-divider"></div>
+                                            <a class="dropdown-item" href="#">Separated link</a>
+                                        </div>
+                                    </div>
+                                </td>
+
+                             <!--   <td class="table-row__td context-menu" data-container-id="context-menu-items"
+                                    data-row-id="1">
+                                    <div class=" context-menu-container" id="context-menu-items">
+                                        <ul>
+                                            <li>Menu Item 1</li>
+                                            <li>Menu Item 2</li>
+                                            <li>Menu Item 3</li>
+                                            ...
+                                        </ul>
+                                    </div>
+                                </td>-->
+
+
+                            </tr>
+
+
+                            </tbody>
+
+
+                        </table>
                     </div>
 
-                    <div class="exchangeb-text neo-700">
-                        <p>Venta:<input class="form-control-5 w-25 d-inline " type="text" placeholder="test 24$"></p>
-                        <p>Compra:<input class="form-control-5 w-25 d-inline" type="text" placeholder="test"></p>
-                    </div>
+
                 </div>
+                <!--FIN CONTENEDOR INFORMACION DEL CLIENTE-->
+
 
             </div>
 
-            <!--Panel #1: Medio-->
-            <div id="Middle-ClientInfo" class="col-8 info-4">
-
-                <div class="row" style="height: 750px; border-radius: 19px;">
-
-                    <!--INICIO CONTENEDOR INFORMACION DEL CLIENTE-->
-                    <div class="col-12 infoclient-container">
-                        <!--INICIO TITULO-->
-                        <p class="text-center p-box6 neo-700">Resumen de Productos y Servicios</p>
-                        <!--FIN TITULO-->
-
-                        <div class="table-container">
-                            <table class="table table-wrapper table-borderless">
-                                <thead class="table__thead"> 
-                                    <tr>
-                                        <th></th>
-                                        <th>Cuenta</th>
-                                        <th>Producto</th>
-                                        <th>Saldo</th>
-                                        <th>Cta. Colectiva</th>
-                                        <th>Medio</th>
-                                        <th>Estado de Cta.</th>
-                                        <th>Constancia</th>
-                                        <th>Expendiente</th>
-                                        <th></th>
-                                    </tr>
-                                </thead>
-
-                                <tbody class="table__tbody">
-
-                                    <tr class="table-row neo-700"> 
-
-                                        <td class="table-row__td ">
-                                            <div class="table-row__Numero">
-                                                <p class="">1</p>
-                                            </div>
-                                        </td>
-
-                                        <td class="table-row__td ">
-                                            <div class="table-row__name neo-500">
-                                                <p class="">Lorem</p>
-                                            </div>
-                                        </td>
-
-                                        <td class="table-row__td ">
-                                            <div class="table-row__name neo-500">
-                                                <p class="">Lorem</p>
-                                            </div>
-                                        </td>
-
-                                        <td class="table-row__td ">
-                                            <div class="table-row__name neo-500">
-                                                <p class="">Lorem</p>
-
-                                            </div>
-                                        </td>
-
-                                        <td class="table-row__td ">
-                                            <div class="table-row__name neo-500">
-                                                <p class="">Lorem</p>
-                                            </div>
-                                        </td>
-
-                                        <td class="table-row__td ">
-                                            <div class="table-row__name neo-500">
-                                                <p class="">Lorem</p>
-                                            </div>
-                                        </td>
-
-                                         <td class="table-row__td ">
-                                             <div class="table-row__icon neo-500">
-                                                 <img src="images/estado-cuenta.png" alt="">
-                                             </div>
-                                         </td>
-
-                                          <td class="table-row__td ">
-                                              <div class="table-row__icon neo-500">
-                                                  <img src="images/constancia.png" alt="">
-                                              </div>
-                                          </td>
-
-                                           <td class="table-row__td ">
-                                               <div class="table-row__icon neo-500">
-                                                   <img src="images/expediente.png" alt="">
-                                               </div>
-                                           </td>
-
-                                           <td class="table-row__td context-menu" data-container-id="context-menu-items" data-row-id="1"">
-                                            <div class="context-menu-container" id="context-menu-items">
-                                                <ul>
-                                                    <li>Menu Item 1</li>
-                                                    <li>Menu Item 2</li>
-                                                    <li>Menu Item 3</li>
-                                                    ...
-                                                </ul>
-                                            </div>
-                                             
-                                           </td>
-                                        
-                                        
-
-                                    </tr>
-
-
-                                    <tr class="table-row neo-700">
-
-                                        <td class="table-row__td ">
-                                            <div class="table-row__Numero">
-                                                <p class="">2</p>
-                                            </div>
-                                        </td>
-
-                                        <td class="table-row__td ">
-                                            <div class="table-row__name neo-500">
-                                                <p class="">Lorem</p>
-                                            </div>
-                                        </td>
-
-                                        <td class="table-row__td ">
-                                            <div class="table-row__name neo-500">
-                                                <p class="">Lorem</p>
-                                            </div>
-                                        </td>
-
-                                        <td class="table-row__td ">
-                                            <div class="table-row__name neo-500">
-                                                <p class="">Lorem</p>
-
-                                            </div>
-                                        </td>
-
-                                        <td class="table-row__td ">
-                                            <div class="table-row__name neo-500">
-                                                <p class="">Lorem</p>
-                                            </div>
-                                        </td>
-
-                                        <td class="table-row__td ">
-                                            <div class="table-row__name neo-500">
-                                                <p class="">Lorem</p>
-                                            </div>
-                                        </td>
-
-                                        <td class="table-row__td ">
-                                            <div class="table-row__icon neo-500">
-                                                <img src="images/estado-cuenta.png" alt="">
-                                            </div>
-                                        </td>
-
-                                        <td class="table-row__td ">
-                                            <div class="table-row__icon neo-500">
-                                                <img src="images/constancia.png" alt="">
-                                            </div>
-                                        </td>
-
-                                        <td class="table-row__td ">
-                                            <div class="table-row__icon neo-500">
-                                                <img src="images/expediente.png" alt="">
-                                            </div>
-                                        </td>
-
-                                        <td class="table-row__td context-menu" data-container-id="context-menu-items"
-                                            data-row-id="1"">
-                                            <div class=" context-menu-container" id="context-menu-items">
-                                            <ul>
-                                                <li>Menu Item 1</li>
-                                                <li>Menu Item 2</li>
-                                                <li>Menu Item 3</li>
-                                                ...
-                                            </ul>
-                                            </div>
-
-                                        </td>
-
-
-
-                                    </tr>
-
-                                    
-                                    
-                                </tbody>
-
-
-
-
-
-                            </table>
-                        </div>
-
-
-                    </div>
-                    <!--FIN CONTENEDOR INFORMACION DEL CLIENTE-->
-
-
-                </div>
-
-
-            </div>
-
-
 
         </div>
 
-        <!--FOOTER-->
-        <div class="row justify-content-center footerb">
-            <span class="footer-text">
-                <p>“Primero el cliente y siempre el cliente”</p>
-            </span>
-        </div>
 
     </div>
 
-    <!-- ************** TERMINA EL CONTENIDO ************** -->
+    <!--FOOTER-->
+    <div class="row justify-content-center footerb">
+            <span class="footer-text">
+                <p>“Primero el cliente y siempre el cliente”</p>
+            </span>
+    </div>
 
+</div>
 
-    <!-- Optional JavaScript -->
+<!-- ************** TERMINA EL CONTENIDO ************** -->
 
-    <script>    
-    
-       $(document).ready(function () {
-            var tableContextMenu = new ContextMenu("context-menu-items", menuItemClickListener);
-        });
-
-        function menuItemClickListener(menu_item, parent) {
-            alert("Menu Item Clicked: " + menu_item.text() + "\nRecord ID: " + parent.attr("data-row-id"));
-        }
-
-    
-    </script>
-
-    <!-- jQuery first, then Popper.js, then Bootstrap JS -->
-    <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js"
-        integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous">
-    </script>
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js"
+<!-- jQuery first, then Popper.js, then Bootstrap JS -->
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js"
         integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1" crossorigin="anonymous">
-    </script>
-    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js"
+</script>
+<script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js"
         integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM" crossorigin="anonymous">
-    </script>
+</script>
+
+<script src="plugins/context-menu.js"></script>
+
+<!-- Optional JavaScript -->
+
+<script>
+
+    $(document).ready(function () {
+        var tableContextMenu = new ContextMenu("context-menu-items", menuItemClickListener);
+    });
+
+    function menuItemClickListener(menu_item, parent) {
+        alert("Menu Item Clicked: " + menu_item.text() + "\nRecord ID: " + parent.attr("data-row-id"));
+    }
+
+
+</script>
 </body>
 
 </html>
