@@ -66,7 +66,8 @@
             </div>
             <nav class="navbar side-navb--list neo-400">
                 <ul>
-                    <li class="nav-item"><a class="nav-link fragment-link" href="views/info-clientes.html">Información del Cliente</a></li>
+                    <li class="nav-item"><a class="nav-link fragment-link"
+                            href="views/info-clientes.html">Información del Cliente</a></li>
                     <li class="nav-item"><a class="nav-link fragment-link" href="views/resumen.html">Resumen</a></li>
                     <li class="nav-item"><a class="nav-link" href="#">Gestiones</a></li>
                     <li class="nav-item"><a class="nav-link" href="#">Formularios</a></li>
@@ -111,6 +112,7 @@
 
 <script src="../plugins/jquery-fragment/fragments.js"></script>
 <script src="../plugins/jquery-fragment/fragment-libs-script-admin.js"></script>
+<script src="../plugins/validate.js"></script>
 
 <script>
 
@@ -118,7 +120,17 @@
         $('.spinner-container').hide();
     });
 
+     $('.navbar-nav .nav-item').click(function(){
+     $('.navbar-nav .nav-item.active').removeClass('active');
+     $(this).addClass('active');
+     })
 </script>
+
+<script>
+
+</script>
+
+
 
 </body>
 </html>

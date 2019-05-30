@@ -65,7 +65,7 @@
         </div>
           <nav class="navbar side-nav--list  neo-400">
             <ul>
-              <li class="nav-item"><a class="nav-link" href="#">Login</a></li>
+              <li class="nav-item"><a class="nav-link active" href="#">Login</a></li>
               <li class="nav-item"><a class="nav-link" href="#">Formularios</a></li>
               <li class="nav-item"><a class="nav-link" href="#">Para Ventas</a></li>
               <li class="nav-item"><a class="nav-link" href="#">Nuevo Cliente</a></li>
@@ -130,17 +130,14 @@
               <div class="input-group-prepend">
                 <span class="input-group-text" id="basic-addon1"><img src="images/user.png" alt="icono-usuario"></span>
               </div>
-              <input type="email" class="form-control" name="email" placeholder="Correo Electrónico" aria-label="Email"
-                aria-describedby="basic-addon1">
+              <input type="email" class="form-control" name="email" placeholder="Correo Electrónico" aria-label="Email" aria-describedby="basic-addon1">
             </div>
 
             <div class="input-group mb-3">
               <div class="input-group-prepend">
-                <span class="input-group-text" id="basic-addon1"><img src="images/lock.png"
-                    alt="icono-password"></i></span>
+                <span class="input-group-text" id="basic-addon1"><img src="images/lock.png" alt="icono-password"></i></span>
               </div>
-              <input type="password" class="form-control" name="password" placeholder="Contraseña" aria-label="Password"
-                aria-describedby="basic-addon1">
+              <input type="password" class="form-control" name="password" placeholder="Contraseña" aria-label="Password" aria-describedby="basic-addon1">
             </div>
 
             <div>
@@ -181,6 +178,12 @@
     $(document).ready(function (e) {
       $('.spinner-container').hide();
     });
+
+
+    $('.navbar .nav-item').click(function(){
+    $('.navbar .nav-item.active').removeClass('active');
+    $(this).addClass('active');
+    })
 
   </script>
 
