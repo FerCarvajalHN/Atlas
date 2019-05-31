@@ -3,7 +3,7 @@
    1. Background
    2. Header
    3. Layout
-   4. Contenido de Sidenavs + Contenido de idanel de Logeo, Busqueda de Clientes + Contenido de CarouselMedio e Información de Usuario
+   4. Contenido de Sidenavs + Contenido de panel de Logeo, Busqueda de Clientes + Contenido de CarouselMedio e Información de Usuario
     4a.-Content / Sidenav - Index
     4b.-Content / Sidenav - Home
     4c.-Content / Sidenav - InfoClients+Resumen+Gestiones+Para Ventas
@@ -11,7 +11,7 @@
     4e.-Content / RightLoginPanel
     4f.-Content / RightSearchClient
     4g.-Formularios
-   5. Contenido despues de Logeo exitoso, de todas las pestañas InfoClients+Resumen+Gestiones+Para Ventas
+   5. Contenido despues de Logeo exitoso, de todas las pestañas InfoClients + Resumen + Gestiones + Para Ventas
     5a.-Info-Cliente 
    x. Footer 
 */
@@ -34,59 +34,62 @@
     --grisb-afp: #76777A;
   }
 
+
 @font-face {
-    font-family: 'NeoSans-Medium';
-    src: url('NeoSans-Medium.woff2') format('woff2'),
-        url('NeoSans-Medium.woff') format('woff');
+      font-family: 'neo-sans';
+      src: url('/fonts/NeoSans.woff2') format('woff2'),
+          url('/fonts/NeoSans.woff') format('woff');
+      font-weight: normal;
+      font-style: normal;
+}
+
+@font-face {
+    font-family: 'neo-sans-bold';
+    src: url('/fonts/NeoSans-Bold.woff2') format('woff2'),
+        url('/fonts/NeoSans-Bold.woff') format('woff'),
+        url('/fonts/NeoSanBol.ttf') format('truetype');
+    font-weight: bold;
+    font-style: normal;
+}
+
+
+@font-face {
+    font-family: 'neo-sans-medium';
+    src: url('/fonts/NeoSans-Medium.woff2') format('woff2'),
+        url('/fonts/NeoSans-Medium.woff') format('woff');
     font-weight: 500;
     font-style: normal;
 }
 
 @font-face {
-    font-family: 'NeoSans-Black';
-    src: url('NeoSans-Black.woff2') format('woff2'),
-        url('NeoSans-Black.woff') format('woff');
+    font-family: 'neo-sans-black';
+    src: url('/fonts/NeoSans-Black.woff2') format('woff2'),
+        url('/fonts/NeoSans-Black.woff') format('woff');
     font-weight: 900;
     font-style: normal;
 }
 
-@font-face {
-    font-family: 'Neo Sans';
-    src: url('NeoSans.woff2') format('woff2'),
-        url('NeoSans.woff') format('woff');
-    font-weight: normal;
-    font-style: normal;
-}
-
-@font-face {
-    font-family: 'NeoSans-Bold';
-    src: url('NeoSans-Bold.woff2') format('woff2'),
-        url('NeoSans-Bold.woff') format('woff');
-    font-weight: bold;
-    font-style: normal;
-}
-
 .neo-400 {
-    font-family: 'Neo Sans' sans-serif;
+    font-family: 'neo-sans' sans-serif;
     font-weight: normal;
     font-style: normal;
 }
 
 
 .neo-500 {
-    font-family: 'NeoSans-Medium' sans-serif;
+    font-family: 'neo-sans-medium' sans-serif;
     font-weight: 500;
     font-style: normal;
 }
 
 .neo-700 {
-    font-family: 'NeoSans-Bold' sans-serif;
-    font-weight: bold;
+    font-family: 'neo_sansbold' sans-serif;
+    font-weight: 700;
     font-style: normal;
 }
 
 .neo-900 {
-    font-family: 'NeoSans-Black' sans-serif;
+    font-family: 'neo-sans-black' sans-serif;
     font-weight: 900;
     font-style: normal;
 }
@@ -523,6 +526,8 @@ div.input-userinfo-icon {
     border-radius: 19px;
 }
 
+
+
 .usergroup {
     margin: 0px 5px; 
 }
@@ -772,7 +777,6 @@ i.fa {
 
 .form-control-6 {
    width: 100%;
-   height: calc(1.5em + 0.75rem + 2px);
    padding: 0.375rem 1.75rem;
    font-size: 1rem;
    border-radius: 19px;
@@ -891,6 +895,59 @@ li.page-item a:hover {
 .active-1 {
     background-color:white;
     color: red;
+}
+
+.scrolld-1 {
+    height: 475px;
+    overflow-y: scroll;
+}
+
+.canales-act {  
+    padding: 0px 100px;
+}
+
+
+.input-userinfo-icon2 {
+    background-color: var(--gris-afp);
+    border: 1px solid var(--gris-afp);
+    height: 20px;
+}
+
+
+.form-control-8 {
+    width: 85%;
+    height: calc(.65rem + 0.5rem + 2px);
+    padding: 0.375rem 1.75rem;
+    font-size: 1rem;
+    color: var(--blanco-afp);
+    background-color: var(--gris-afp);
+    border: 1px solid var(--gris-afp);
+}
+
+.p-box7{
+    color: var(--rojo-afp);
+    font-size: 16px;
+    margin-top: 50px;
+    margin-right: 10px;
+}
+
+.iconset-reduser2 {
+    margin-top: 26px;
+    margin-left:10px; 
+    margin-right: 10px;
+}
+
+.canales__ovp,
+.canales__sms {
+    margin: 30px 0;
+}
+
+.input-group2 {
+    margin-top: 5px;
+}
+
+.canales__sms {
+    width: 380px;
 }
 
 
