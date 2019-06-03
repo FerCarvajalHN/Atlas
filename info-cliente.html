@@ -70,10 +70,10 @@
                     <ul>
                         <li class="nav-item"><a class="nav-link" href="#">Información del Cliente</a></li>
                         <li class="nav-item"><a class="nav-link" href="resumen.html">Resumen</a></li>
-                        <li class="nav-item"><a class="nav-link" href="#">Gestiones</a></li>
+                        <li class="nav-item"><a class="nav-link" href="gestiones.html">Gestiones</a></li>
                         <li class="nav-item"><a class="nav-link" href="#">Formularios</a></li>
                         <li class="nav-item"><a class="nav-link" href="#">Para Ventas</a></li>
-                        <li class="nav-item"><a class="nav-link" href="#">Salir</a></li>
+                        <li class="nav-item"><a class="nav-link" href="home.html">Salir</a></li>
                     </ul>
                 </nav>
 
@@ -98,7 +98,7 @@
                     <!--INICIO CONTENEDOR INFORMACION DEL CLIENTE-->
                     <div class="col-11 infoclient-container">
                         <!--INICIO TITULO-->
-                        <p class="text-center p-box5 neo-700">Información del CLiente</p>
+                        <p class="text-center p-box5 neo-700">Información del Cliente</p>
                         <!--FIN TITULO-->
 
                         <!--INICIO  NOMBRE DE CLIENTE-->
@@ -333,11 +333,44 @@
                         <div class="clients-menu neo-700">
                            <!-- <p>Formularios</p> -->
                             <a href="#"><img src="images/Encuesta.png" alt=""><p class="clients-menu-text">Encuesta</p></a>
-                            <a href="#"><img src="images/Datos.png" alt=""><p class="clients-menu-text">Datos Actualizados</p></a>
+                            <a href="#"><img src="images/Datos.png" alt="" data-toggle="modal" data-target="#ACTUALIZARDATOS">
+                                <p class="clients-menu-text">Datos Actualizados</p>
+                            </a>
                             <a href="#"><img src="images/print.png" alt=""><p class="clients-menu-text">Imprimir</p></a>
                         </div>
                     </div>
                     <!--FIN sidenav-cliente-->
+
+                    <!-- INICIO MODAL DE SIDENAV-->
+
+                    <!--Inicio modal 5: Actualizar Datos-->
+                    <div class="modal fade" id="ACTUALIZARDATOS" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel"
+                        aria-hidden="true">
+                        <div class="modal-dialog" role="document">
+                            <div class="modal-content modal-content__custom1">
+
+                                <div class="modal-header modal-header__custom2">
+                                    <h5 class="modal-title neo-700" id="exampleModalLabel">Alerta
+                                    </h5>
+                                </div>
+
+                                <div class="modal-body modal-body__custom1">
+                                       <p class="p-box9">¡Tienes una solicitud de actualización de datos!</p>
+                                </div>
+
+                             
+                                <div class="modal-footer modal-footer__custom1">
+                                    <button type="button" class="btn btn-modal-close"
+                                        data-dismiss="modal">Cerrar</button>
+                                    <button type="button" class="btn btn-modal-1">Actualizar Datos</button>
+                                </div>
+
+                            </div>
+                        </div>
+                    </div>
+                    <!--Fin modal 5: Actualizar Datos-->
+
+                    <!-- FIN MODAL DE SIDENAV-->
                     
                 </div>
 

@@ -370,7 +370,7 @@ input.form-control {
 }
 
 .side-navb--logo {
-    margin: 10px 0px 0px 100px;
+    margin: 10px 0px 0px 85px;
     padding: 10px;
     width: 45%;
 }
@@ -701,7 +701,7 @@ i.fa {
 
 .infoclient-container {
     border-radius: 19px;
-    padding: 0px 0px 0px 50px;
+    padding: 0px 50px 0px 50px;
     /* border: 1px solid black; */
 }
 
@@ -731,13 +731,12 @@ i.fa {
     border-radius: 19px;
     border-top-left-radius: 0px;
     border-top-right-radius: 0px;
-    padding: px;
 }
 
 .clients-menu {
     background-color: var(--rojo-afp);
     height: 320px;
-    width: 77px;
+    width: 88px;
     border-radius: 19px;
     border-top-right-radius: 0px;
     border-bottom-right-radius: 0px;
@@ -853,7 +852,7 @@ i.fa {
 
 
 .table-row__icon img {
-    margin-left: 35px;
+    margin-left: 30px;
     margin-top: 5px;
 }
 
@@ -865,7 +864,8 @@ i.fa {
 
 .p-box6 {
     color: var(--rojo-afp);
-    margin: 40px 0px 15px 0px;
+    margin: 40px 0px 0px 0px;
+    padding-right: 70px;
     font-size: 30px;
 }
 
@@ -879,7 +879,7 @@ i.fa {
  }
 
  .table-row {
-     box-shadow: 1px 1px 4px 0px rgba(0, 0, 0, 0.45);
+     box-shadow: 1px 1px 4px 0px rgba(0, 0, 0, 0.25);
  }
 
 li.page-item a{
@@ -904,6 +904,7 @@ li.page-item a:hover {
 
 .canales-act {  
     padding: 0px 100px;
+    margin: 0px 60px;
 }
 
 
@@ -951,6 +952,101 @@ li.page-item a:hover {
 }
 
 
+/* MODALES */
+
+div.modal {
+    margin:250px 0px; 
+}
+
+.p-box8 {
+    color: var(--rojo-afp);
+    font-weight: 700;
+    margin-top: 15px;
+    margin-right: 15px;
+}
+
+
+.p-box9 {
+    color: var(--gris-afp);
+    font-weight: 500;
+}
+
+.modal-content__custom1 {
+    border-radius: 19px;
+}
+
+.modal-header__custom1 {
+    justify-content: center;
+    background-color: var(--rojo-afp);
+    border: 1px solid var(--rojo-afp);
+    border-radius: 19px;
+    color: var(--blanco-afp);
+    text-align: center;
+}
+
+.modal-header__custom2 {
+    justify-content: center;
+    background-color: var(--rojo-afp);
+    border: 1px solid var(--rojo-afp);
+    border-radius: 19px;
+    color: var(--blanco-afp);
+    text-align: center;
+}
+
+.modal-footer__custom1 {
+    justify-content: center;
+}
+
+.btn-modal-close {
+    background-color: var(--gris-afp);
+    color: var(--blanco-afp);
+    font-weight: 500;
+}
+
+.modal-body__custom1 {
+    display: flex;
+    flex-direction: column;
+    padding: 75px;
+}
+
+
+.btn-modal-1 {
+    background-color: var(--rojo-afp);
+    color: var(--blanco-afp);
+    font-weight: 700;
+}
+
+.btn-modal-2 {
+    background-color: var(--rojo-afp);
+    color: var(--blanco-afp);
+    font-weight: 700;
+    margin: 10px 0px;
+    border-radius: 19px;
+}
+
+
+/* =========================================================================================== */
+/*                                                                                             */
+/*                                     5c. Gestiones                                           */
+/*                                                                                             */
+/* =========================================================================================== */
+
+.form-control-9 {
+    width: 80%;
+    padding: 0.375rem 1.75rem;
+    font-size: 1rem;
+    border-radius: 19px;
+    color: var(--gris-afp);
+    border: 2px solid var(--rojo-afp);
+}
+
+.gestiones-container {
+    border-radius: 19px;
+    padding: 20px;
+    border: 1px solid black; 
+}
+
+
 /* =========================================================================================== */
 /*                                                                                             */
 /*                                        x.-FOOTER                                            */
@@ -962,3 +1058,7 @@ li.page-item a:hover {
     font-size: 24px;
     margin: 0px 0px;
 }
+
+
+
+
