@@ -332,7 +332,6 @@ input.form-control {
   }
 
   .side-nav--list2 a:hover {
-      text-decoration: underline var(--rojo-afp);
       font-weight: bold;
   }
 
