@@ -525,6 +525,13 @@ div.input-userinfo-icon {
     border-radius: 19px;
 }
 
+div.input-userinfo-icon3 {
+    border-radius: 19px;
+    border-top-left-radius: 0px;
+    border-bottom-left-radius: 0px;
+}
+
+
 
 
 .usergroup {
@@ -1054,7 +1061,8 @@ div.modal {
 
 .gestiones-container {
     border-radius: 19px;
-    padding: 20px;
+    border-bottom-right-radius: 0px;
+    border-bottom-left-radius: 0px;
     border: 1px solid black;
 }
 
@@ -1062,6 +1070,17 @@ div.modal {
     padding: 0px 100px;
 }
 
+
+.input-userinfo-icon3 {
+    background-color: var(--rojob-afp);
+    border: 1px solid var(--rojob-afp);
+}
+
+.tab-gestiones {
+    border-radius: 19px;
+    border: 1px solid black;
+    height: 520px;
+}
 
 /* =========================================================================================== */
 /*                                                                                             */
