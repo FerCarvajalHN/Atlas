@@ -10,41 +10,34 @@
         integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
     <link href="https://unpkg.com/gijgo@1.9.13/css/gijgo.min.css" rel="stylesheet" type="text/css">
 
-
     <link rel="stylesheet" href="css/main.css">
 
     <!-- FontAwesome -->
-    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.8.2/css/all.css"
-        integrity="sha384-oS3vJWv+0UjzBfQzYUhtDYW+Pj2yciDJxpsK1OYPAYjqT085Qq/1cq5FLXAZQ7Ay" crossorigin="anonymous">
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.8.2/css/all.css" 
+    integrity="sha384-oS3vJWv+0UjzBfQzYUhtDYW+Pj2yciDJxpsK1OYPAYjqT085Qq/1cq5FLXAZQ7Ay" crossorigin="anonymous">
 
     <title>Atlas - Gestiones</title>
-
 </head>
 
 <body>
     <!-- ************** EMPIEZA EL CONTENIDO ************** -->
-
     <div class="container-fluid wrapper">
-
-
         <!--HEADER-->
         <div class="row justify-content-center headerb">
             <img src="images/logo.png" alt="logo-afp">
         </div>
+        <!--FIN DE HEADER-->
 
         <!--CONTENIDO-->
-        <div class="row  align-items-center main-content">
-
-            <!--Sidenav-->
+        <div class="row align-items-center main-content">
+            <!--Inicio de Sidenav-->
             <div class="col-3 side-navb">
-
                 <div class="">
                     <img src="images/atlaslogo-white.png" alt="logo-atlas" class="side-navb--logo">
                 </div>
                 <nav class="navbar side-navb--list neo-400">
                     <ul>
-                        <li class="nav-item"><a class="nav-link" href="info-cliente.html">Información del Cliente</a>
-                        </li>
+                        <li class="nav-item"><a class="nav-link" href="info-cliente.html">Información del Cliente</a></li>
                         <li class="nav-item"><a class="nav-link" href="resumen.html">Resumen</a></li>
                         <li class="nav-item"><a class="nav-link" href="#">Gestiones</a></li>
                         <li class="nav-item"><a class="nav-link" href="#">Formularios</a></li>
@@ -52,7 +45,7 @@
                         <li class="nav-item"><a class="nav-link" href="home.html">Salir</a></li>
                     </ul>
                 </nav>
-
+                <!--INICIO MONEY EXCHANGE-->
                 <div class="d-flex">
                     <div class="exchangeb">
                         <img src="images/icons-cliente/exchangeb.png" alt="">
@@ -63,8 +56,9 @@
                         <p>Compra:<input class="form-control-5 w-25 d-inline" type="text" placeholder="test"></p>
                     </div>
                 </div>
-
+                <!--FIN MONEY EXCHANGE-->
             </div>
+            <!--Fin de Sidenav-->
 
             <!--Inicio Panel #1: Medio-->
             <div id="Middle-ClientInfo" class="col-8 info-4">
@@ -80,7 +74,7 @@
 
                         <!--INICIO  NOMBRE DE CLIENTE-->
                         <div class="input-group justify-content-center">
-                            <input class="form-control-9 py-2" type="text" placeholder="Nombre del Asesor">
+                            <input class="form-control-9 py-2" type="text" placeholder="Nombre del Cliente">
                             <span class="input-group-append">
                                 <div class="input-group-text input-userinfo-icon">
                                     <img src="images/user.png" alt="icono-usuario">
@@ -93,22 +87,22 @@
                         <!--INICIO DE ACCIONES GESTIONES CLIENTE-->
                         <div class="row gestiones-row">
                             <!--INICIO COLUMNA NUEVA GESTION-->
-                            <div class="col-6 infoclient-input d-flex" style="border: 1px solid black">
-                                <input class="form-control-10 py-2" type="text" placeholder="Nombre del Asesor">
+                            <div class="col-6 d-flex gestion-button">
+                                <input class="form-control-10 py-2" type="text" placeholder="Nueva Gestión">
                                 <span class="input-group-append">
                                     <div class="input-group-text input-userinfo-icon3">
-                                        <img src="images/user.png" alt="icono-usuario">
+                                        <img src="images/new .png" alt="icono-usuario">
                                     </div>
                                 </span>
                             </div>
                             <!--FIN COLUMNA NUEVA GESTION--->
 
                             <!--INICIO COLUMNA BUSCAR GESTIONES-->
-                            <div class="col-6 infoclient-input d-flex" style="border: 1px solid black">
-                                <input class="form-control-10 py-2" type="text" placeholder="Nombre del Asesor">
+                            <div class="col-6 d-flex gestion-button">
+                                <input class="form-control-10 py-2" type="text" placeholder="Buscar Gestiones">
                                 <span class="input-group-append">
                                     <div class="input-group-text input-userinfo-icon3">
-                                        <img src="images/user.png" alt="icono-usuario">
+                                        <img src="images/search.png" alt="icono-usuario">
                                     </div>
                                 </span>
                             </div>
@@ -118,17 +112,82 @@
                     </div>
                     <!--FIN BUSCADORES-->
 
+                    <!--Inicio de Tabla de Gestiones-->
                     <div class="col-12">
                          <div class="row tab-gestiones">
-                             <div class="card w-100 h-25">
-                                 <div class="card-body">
-                                     This is some text within a card body.
-                                 </div>
+                            
+                             <div class="table-container-gestiones scrolld-1">
+                                 <table class="table table-wrapper table-borderless table-gestiones">
+
+                                    <tbody class="table__tbody">
+
+                                        <!--INICIO DE CARD DE GESTION INDIVIDUAL-->
+                                        <tr class="table-row neo-700 ">
+                                            <td class="table-row__td col-1">
+                                                <div class="table-row__Numero">
+                                                    <p class="outer">1</p>
+                                                </div>
+                                            </td>
+
+                                            <td class="table-row__td col-10 ">
+                                                <div class="table-row__name neo-500 ">
+                                                    <input class="form-control-11 neo-700" type="text" placeholder="Tipo de Gestión">
+                                                    •<input class="form-control-12" type="text" placeholder="Fecha">
+                                                    •<input class="form-control-12" type="text" placeholder="Usuario">
+                                                    •<input class="form-control-12" type="text" placeholder="Canal">
+                                                </div>
+                                            </td>
+                                            
+                                            <!--INICIO BOTON DE EXPANDIR GESTIONES-->
+                                            <td class="table-row__Numero col-1">
+                                                <!-- Example single danger button -->
+                                                <div class="btn-group">
+                                                    <a class="dropdown-toggle" data-toggle="dropdown"
+                                                        aria-haspopup="true" aria-expanded="false" href="#">
+                                                        <i class="fa fa-caret-right " style="color: darkgrey;"></i>
+                                                    </a>
+                                                </div>
+                                            </td>
+                                            <!--FIN BOTON DE EXPANDIR GESTIONES-->
+                                        </tr>
+                                       <!--FIN DE CARD DE GESTION INDIVIDUAL-->
+                                       
+                                       <!--INICIO DE CARD DE GESTION INDIVIDUAL-->
+                                       <tr class="table-row neo-700 ">
+                                           <td class="table-row__td col-1">
+                                               <div class="table-row__Numero">
+                                                   <p class="outer">2   </p>
+                                               </div>
+                                           </td>
+
+                                           <td class="table-row__td col-10 ">
+                                               <div class="table-row__name neo-500 ">
+                                                   <input class="form-control-11 neo-700" type="text"
+                                                       placeholder="Tipo de Gestión">
+                                                   •<input class="form-control-12" type="text" placeholder="Fecha">
+                                                   •<input class="form-control-12" type="text" placeholder="Usuario">
+                                                   •<input class="form-control-12" type="text" placeholder="Canal">
+                                               </div>
+                                           </td>
+
+                                           <!--INICIO BOTON DE EXPANDIR GESTIONES-->
+                                           <td class="table-row__Numero col-1">
+                                               <!-- Example single danger button -->
+                                               <div class="btn-group">
+                                                   <a class="dropdown-toggle" data-toggle="dropdown"
+                                                       aria-haspopup="true" aria-expanded="false" href="#">
+                                                       <i class="fa fa-caret-right " style="color: darkgrey;"></i>
+                                                   </a>
+                                               </div>
+                                           </td>
+                                           <!--FIN BOTON DE EXPANDIR GESTIONES-->
+                                       </tr>
+                                       <!--INICIO DE CARD DE GESTION INDIVIDUAL-->
+                                 </table>
                              </div>
                          </div>
                     </div>
-                    
-                   
+                     <!--Fin de Tabla de Gestiones-->                
                 </div>
             </div>
             <!--Fin Panel #1: Medio-->
@@ -140,6 +199,7 @@
                 <p>“Primero el cliente y siempre el cliente”</p>
             </span>
         </div>
+        <!--FIN DE FOOTER-->
 
     </div>
 
@@ -153,8 +213,5 @@
     <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js"
         integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM" crossorigin="anonymous">
     </script>
-
-
 </body>
-
 </html>
