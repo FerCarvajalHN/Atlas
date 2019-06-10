@@ -522,11 +522,17 @@ p.h2 {
 }
 
 div.input-userinfo-icon {
-    border-radius: 19px;
+    border-radius: 9px;
+}
+
+.input-userinfo-icon2 {
+    border-radius: 9px !important;
+    border-top-right-radius: 0px !important;
+    border-bottom-right-radius: 0px !important;
 }
 
 div.input-userinfo-icon3 {
-    border-radius: 19px;
+    border-radius: 9px;
     border-top-left-radius: 0px;
     border-bottom-left-radius: 0px;
 }
@@ -784,7 +790,7 @@ i.fa {
    width: 100%;
    padding: 0.375rem 1.75rem;
    font-size: 1rem;
-   border-radius: 19px;
+   border-radius: 9px;
    color: var(--rojo-afp);
    border: 2px solid var(--rojo-afp);
 }
@@ -794,7 +800,7 @@ i.fa {
     height: calc(1.5em + 0.75rem + 2px);
     padding: 0.375rem 1.75rem;
     font-size: 1rem;
-    border-radius: 19px;
+    border-radius: 9px;
     color: var(--gris-afp);
     border: 1px solid var(--gris-afp);
 }
@@ -847,7 +853,7 @@ i.fa {
 }
 
 .table-row__Numero{
-    margin-left: 20px;
+    margin:5px 0px 10px 20px;
     color: var(--rojo-afp);
     font-size: 22px;
 }
@@ -860,8 +866,7 @@ i.fa {
 
 
 .table-row__icon img {
-    margin-left: 30px;
-    margin-top: 5px;
+    margin: 10px 0px 10px 30px;
 }
 
 .table-row__td.context-menu {
@@ -931,6 +936,20 @@ li.page-item a:hover {
     color: var(--blanco-afp);
     background-color: var(--gris-afp);
     border: 1px solid var(--gris-afp);
+    border-radius: 6px;
+    border-top-left-radius: 0px;
+    border-bottom-left-radius: 0px;
+}
+
+.form-control-8b {
+    width: 85%;
+    height: calc(.65rem + 0.5rem + 2px);
+    padding: 0.375rem 1.75rem;
+    font-size: 1rem;
+    color: var(--blanco-afp);
+    background-color: var(--gris-afp);
+    border: 1px solid var(--gris-afp);
+    border-radius: 6px;
 }
 
 .p-box7{
@@ -959,6 +978,9 @@ li.page-item a:hover {
     width: 380px;
 }
 
+.dropmenu {
+    margin: 8px 0px;
+}
 
 /* MODALES */
 
@@ -1043,7 +1065,7 @@ div.modal {
     width: 80%;
     padding: 0.375rem 1.75rem;
     font-size: 1rem;
-    border-radius: 19px;
+    border-radius: 9px;
     border-top-right-radius: 0px;
     border-bottom-right-radius: 0px;
     color: var(--gris-afp);
@@ -1054,7 +1076,7 @@ div.modal {
     width: 100%;
     padding: 0.375rem 1.75rem;
     font-size: 1rem;
-    border-radius: 19px;
+    border-radius: 9px;
     border-top-right-radius: 0px;
     border-bottom-right-radius: 0px;
     color: var(--gris-afp);
@@ -1116,6 +1138,22 @@ div.modal {
     margin: 10px 0px;
 
 }
+
+
+/* =========================================================================================== */
+/*                                                                                             */
+/*                                5d. Detalles-Gestiones                                       */
+/*                                                                                             */
+/* =========================================================================================== */
+
+.custom-card{
+    margin: 250px 350px;
+    width: 100%;
+}
+
+
+
+
 
 /* =========================================================================================== */
 /*                                                                                             */
