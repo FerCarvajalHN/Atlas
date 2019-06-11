@@ -1127,18 +1127,26 @@ div.modal {
 
 .form-control-12 {
     margin-left: 10px;
-    width: 12%;
+    width: 20%;
     border: none;
     color: var(--gris-afp);
-    font-size: 15px;
+    font-size: 12px;
 }
 
-.outer {
-    border-right: 1px dashed var(--rojo-afp);
-    margin: 10px 0px;
-
+.btn-gestiones {
+    font-size: 22px;
+    margin-left: 50px;
+    padding-left: 50px;
 }
 
+i.fa-custom-2 {
+    color: var(--gris-afp);
+    margin-right: 10px;
+}
+
+i.fa-custom-2:hover {
+    color: var(--rojo-afp);
+}
 
 /* =========================================================================================== */
 /*                                                                                             */
@@ -1146,12 +1154,78 @@ div.modal {
 /*                                                                                             */
 /* =========================================================================================== */
 
-.custom-card{
-    margin: 250px 350px;
-    width: 100%;
+.custom-card {
+    margin: 100px 200px 25px 200px;
 }
 
+.card-header{
+    background-color: #fff;
+    border: none;
+}
 
+.form-control-12b {
+    margin-left: 5px;
+    width: 28%;
+    border: none;
+    color: var(--gris-afp);
+    font-size: 12px;
+}
+
+input.form-control-13 {
+    margin-right: 125px;
+}
+
+.form-control-13 {
+    font-size: 36px;
+    text-align: left;    
+    color: var(--gris-afp);
+    border: none;
+}
+
+.form-control-14 {
+    font-size: 16px;
+    text-align: center;
+    color: var(--gris-afp);
+    width: 95%;
+    border: none;
+    text-align: justify;
+}
+
+hr.horizontal-border1 {
+    border-top: 2px solid var(--rojo-afp);
+    width: 30%;
+    margin-top: 5px;
+    margin-left: 65px;
+}
+
+.detalles-card {
+    color: var(--gris-afp);
+    margin:0px 50px;
+}
+
+.btn-customcolor-1 {
+    border: 1px solid var(--gris-afp);
+    color: var(--gris-afp)
+}
+
+.btn-customcolor-2 {
+    border: 1px solid var(--gris-afp);
+    color: var(--gris-afp);
+}
+
+.btn-customcolor-2:hover {
+    border: 1px solid var(--rojo-afp);
+    color: var(--rojo-afp);
+}
+
+i.fa-custom-1 {
+    color: var(--gris-afp);
+    margin-right: 10px;
+}
+
+i.fa-custom-1:hover {
+     color: var(--rojo-afp);
+}
 
 
 
