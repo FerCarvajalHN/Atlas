@@ -5,10 +5,16 @@
     <!-- Required meta tags -->
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
-    <meta http-equiv="x-ua-compatible" content="ie-edge" <!-- Bootstrap CSS -->
+    <meta http-equiv="x-ua-compatible" content="ie-edge"
+
+    <!-- Bootstrap CSS -->
     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css"
         integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
-    <link rel="stylesheet" href="/css/main.css">
+    <link rel="stylesheet" href="css/main.css">
+
+    <!--OwlCarousel-->
+    <link rel="stylesheet" href="plugins/owlcarousel/owl.carousel.min.css">
+    <link rel="stylesheet" href="plugins/owlcarousel/owl.theme.default.min.css">
 
     <!-- FontAwesome -->
     <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.8.2/css/all.css"
@@ -25,7 +31,7 @@
 
         <!--HEADER-->
         <div class="row justify-content-center header">
-            <img src="/images/logo.png" alt="logo-afp">
+            <img src="images/logo.png" alt="logo-afp">
         </div>
 
         <!--CONTENIDO-->
@@ -35,7 +41,7 @@
             <div class="col-2 side-nav">
 
                 <div class="">
-                    <img src="/images/atlaslogo-full.png" alt="logo-atlas" class="side-nav--logo">
+                    <img src="images/atlaslogo-full.png" alt="logo-atlas" class="side-nav--logo">
                 </div>
                 <nav class="navbar side-nav--list2">
                     <ul>
@@ -70,6 +76,39 @@
                 <div class="row" style="height: 450px; border-radius: 19px;">
 
                     <div class="col-10 forms-container">
+
+                        <div class="owl-carousel owl-theme">
+                            
+                            <div class="item" style="width:90px">
+                               <a href="#" download=""> <img src="images/form1.png" onmouseover="src='images/form1-color.png'"
+                                    onmouseout="src='images/form1.png'"> </a>
+                            </div>
+
+                            <div class="item" style="width:90px">
+                                <a href="#" download=""> <img src="images/form1.png"
+                                        onmouseover="src='images/form1-color.png'" onmouseout="src='images/form1.png'">
+                                </a>
+                            </div>
+
+                            <div class="item" style="width:90px">
+                                <a href="#" download=""> <img src="images/form1.png"
+                                        onmouseover="src='images/form1-color.png'" onmouseout="src='images/form1.png'">
+                                </a>
+                            </div>
+
+                            <div class="item" style="width:90px">
+                                <a href="#" download=""> <img src="images/form1.png"
+                                        onmouseover="src='images/form1-color.png'" onmouseout="src='images/form1.png'">
+                                </a>
+                            </div>
+
+                            <div class="item" style="width:90px">
+                                <a href="#" download=""> <img src="images/form1.png"
+                                        onmouseover="src='images/form1-color.png'" onmouseout="src='images/form1.png'">
+                                </a>
+                            </div>
+                            
+                        </div>
                     </div>
 
                     <div class="col-2 sidenav-forms">
@@ -108,6 +147,29 @@
     </script>
     <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js"
         integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM" crossorigin="anonymous">
+    </script>
+
+    <script src="plugins/owlcarousel/owl.carousel.min.js"></script>
+
+    <script>
+    
+  $('.owl-carousel').owlCarousel({
+    loop:false,
+    margin:10,
+    nav:true,
+    responsive:{
+        0:{
+            items:1
+        },
+        600:{
+            items:3
+        },
+        1000:{
+            items:5
+        }
+    }
+  })
+    
     </script>
 </body>
 

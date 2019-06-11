@@ -666,7 +666,7 @@ i.fa {
 }
 
 .forms-container {
-    background-color: green;
+    border:1px solid green;
     border-radius:19px;
     border-top-left-radius: 0px;
     border-top-right-radius: 0px;
@@ -704,6 +704,7 @@ i.fa {
 .forms-menu img:hover {
     width: 80%;
 }
+
 
 /* =========================================================================================== */
 /*                                                                                             */
