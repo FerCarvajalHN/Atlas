@@ -924,21 +924,21 @@ li.page-item a:hover {
 }
 
 .canales-act {  
-    padding: 0px 100px;
-    margin: 0px 60px;
+    padding: 0px;
+    margin: 0px 120px;
 }
 
 
 .input-userinfo-icon2 {
     background-color: var(--gris-afp);
     border: 1px solid var(--gris-afp);
-    height: 20px;
+    height: calc(1.4rem + 0.5rem + 2px);
 }
 
 
 .form-control-8 {
     width: 85%;
-    height: calc(.65rem + 0.5rem + 2px);
+    height: calc(1.4rem + 0.5rem + 2px);
     padding: 0.375rem 1.75rem;
     font-size: 1rem;
     color: var(--blanco-afp);
@@ -951,8 +951,9 @@ li.page-item a:hover {
 
 .form-control-8b {
     width: 85%;
-    height: calc(.65rem + 0.5rem + 2px);
+    height: calc(1.4rem + 0.5rem + 2px);
     padding: 0.375rem 1.75rem;
+    margin: 20px 0px;
     font-size: 1rem;
     color: var(--blanco-afp);
     background-color: var(--gris-afp);
@@ -962,7 +963,7 @@ li.page-item a:hover {
 
 .p-box7{
     color: var(--rojo-afp);
-    font-size: 16px;
+    font-size: 20px;
     margin-top: 50px;
     margin-right: 10px;
 }
