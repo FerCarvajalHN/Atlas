@@ -42,7 +42,7 @@
                         <li class="nav-item"><a class="nav-link" href="gestiones.html">Gestiones</a></li>
                         <li class="nav-item"><a class="nav-link" href="#">Formularios</a></li>
                         <li class="nav-item"><a class="nav-link" href="#">Para Ventas</a></li>
-                        <li class="nav-item"><a class="nav-link" href="home.html">Salir</a></li>
+                        <li class="nav-item"><a class="nav-link" href="home.html">Buscar Nuevo Cliente</a></li>
                     </ul>
                 </nav>
                 <!--INICIO MONEY EXCHANGE-->
@@ -72,17 +72,18 @@
                         <p class="text-center p-box6 neo-700">Gestiones</p>
                         <!--FIN TITULO-->
 
-                        <!--INICIO  NOMBRE DE CLIENTE-->
-                        <div class="input-group justify-content-center">
-                            <input class="form-control-9 py-2" type="text" placeholder="Nombre del Cliente">
-                            <span class="input-group-append">
-                                <div class="input-group-text input-userinfo-icon">
-                                    <img src="images/user.png" alt="icono-usuario">
-                                </div>
-                            </span>
-                        </div>
+                         <!--INICIO  NOMBRE DE CLIENTE-->
+                         <div class="d-flex client-boxb">
+                             <div class="iconset-reduser">
+                                 <img src="images/icons-cliente/cliente.png" alt="" class="">
+                             </div>
 
-                        <!--FIN NOMBRE DE CLIENTE-->
+                             <div class="input-group">
+                                 <input class="form-control-6b neo-700" type="text" placeholder="Nombre de cliente">
+                             </div>
+                         </div>
+
+                         <!--FIN NOMBRE DE CLIENTE-->
 
                         <!--INICIO DE ACCIONES GESTIONES CLIENTE-->
                         <div class="row gestiones-row">
@@ -99,7 +100,8 @@
 
                             <!--INICIO COLUMNA BUSCAR GESTIONES-->
                             <div class="col-6 d-flex gestion-button">
-                                <input class="form-control-10 py-2" type="text" placeholder="Buscar Gestiones">
+                                <input id="myInput" class="form-control-10 py-2" type="text"
+                                    placeholder="Buscar Gestiones">
                                 <span class="input-group-append">
                                     <div class="input-group-text input-userinfo-icon3">
                                         <img src="images/search.png" alt="icono-usuario">
@@ -119,7 +121,7 @@
                              <div class="table-container-gestiones scrolld-1">
                                  <table class="table table-wrapper table-borderless table-gestiones">
 
-                                    <tbody class="table__tbody">
+                                    <tbody id="myTable" class="table__tbody">
 
                                         <!--INICIO DE CARD DE GESTION INDIVIDUAL-->
                                         <tr class="table-row neo-700 ">
@@ -204,5 +206,17 @@
     <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js"
         integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM" crossorigin="anonymous">
     </script>
+
+    <script>
+        $(document).ready(function () {
+            $("#myInput").on("keyup", function () {
+                var value = $(this).val().toLowerCase();
+                $("#myTable tr").filter(function () {
+                    $(this).toggle($(this).text().toLowerCase().indexOf(value) > -1)
+                });
+            });
+        });
+    </script>
+
 </body>
 </html>

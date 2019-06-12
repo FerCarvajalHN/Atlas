@@ -56,7 +56,7 @@
                     <li class="nav-item"><a class="nav-link" href="gestiones.html">Gestiones</a></li>
                     <li class="nav-item"><a class="nav-link" href="#">Formularios</a></li>
                     <li class="nav-item"><a class="nav-link" href="#">Para Ventas</a></li>
-                    <li class="nav-item"><a class="nav-link" href="home.html">Salir</a></li>
+                    <li class="nav-item"><a class="nav-link" href="home.html">Buscar Nuevo Cliente</a></li>
                 </ul>
             </nav>
 
@@ -84,6 +84,19 @@
                     <!--INICIO TITULO-->
                     <p class="text-center p-box6 neo-700">Resumen de Productos y Servicios</p>
                     <!--FIN TITULO-->
+
+                    <!--INICIO  NOMBRE DE CLIENTE-->
+                    <div class="d-flex client-boxc">
+                        <div class="iconset-reduser">
+                            <img src="images/icons-cliente/cliente.png" alt="" class="">
+                        </div>
+
+                        <div class="input-group">
+                            <input class="form-control-6 neo-700" type="text" placeholder="Nombre de cliente">
+                        </div>
+                    </div>
+
+                    <!--FIN NOMBRE DE CLIENTE-->
 
 
                     <!--INICIO TABLA DE PRODUCTOS Y SERVICIOS-->
@@ -297,9 +310,14 @@
                     <div class="modal-dialog" role="document">
                         <div class="modal-content modal-content__custom1">
                             <div class="modal-header modal-header__custom1">
-                                <h5 class="modal-title neo-700" id="exampleModalLabel">Generar estado de cuenta</h5>
+                                <h5 class="modal-title neo-700" id="exampleModalLabel">Generar Estado de Cuenta:</h5>
+                                 <input class="form-control-15 neo-500" type="text" placeholder="Número de Cuenta">
+                                 <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                                     <span aria-hidden="true">&times;</span>
+                                 </button>
                             </div>
                             <div class="modal-body">
+                                <p class="modal-text1 neo-500">Selecciona el rango de fecha para generar el Estado de Cuenta. </p>
                                 
                                 <div class="d-flex client-box">
                                     <input id="Desde" width="450" placeholder="Desde:"/>
@@ -307,11 +325,13 @@
                                 <div class="d-flex client-box">
                                     <input id="Hasta" width="450" placeholder="Hasta:"/>
                                 </div>
+
                             </div>
+
                             <div class="modal-footer modal-footer__custom1">
-                                <button type="button" class="btn btn-modal-close" data-dismiss="modal">Cerrar</button>
-                                <button type="button" class="btn btn-modal-1">Solicitar</button>
+                                <button type="button" class="btn btn-outline-light">Solicitar</button>
                             </div>
+
                         </div>
                     </div>
                 </div>
@@ -324,13 +344,17 @@
                         <div class="modal-content modal-content__custom1">
                             
                             <div class="modal-header modal-header__custom2">
-                                <h5 class="modal-title neo-700" id="exampleModalLabel">Ver o enviar Constancia</h5>
+                                <h5 class="modal-title neo-700" id="exampleModalLabel">Generar o Enviar Constancia</h5>
+                                <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                                    <span aria-hidden="true">&times;</span>
+                                </button>
                             </div>
 
-                            <div class="modal-body modal-body__custom1">                                                             
-                                <button type="button" class="btn btn-modal-2">Ver Archivo</button>
-                                <button type="button" class="btn btn-modal-2">Enviar por E-mail BASA</button>
-                                <button type="button" class="btn btn-modal-2">Enviar por E-mail</button>                                
+                            <div class="modal-body modal-body__custom1">
+                                <p class="modal-text1 neo-500">Selecciona una de las siguientes opciones:</p>
+                                <button type="button" class="btn btn-outline-light btn-modal-group">Ver Archivo</button>
+                                <button type="button" class="btn btn-outline-light btn-modal-group">Enviar por E-mail BASA</button>
+                                <button type="button" class="btn btn-outline-light btn-modal-group">Enviar por E-mail</button>                                
                             </div>
                            
                         </div>
@@ -346,13 +370,17 @@
                         <div class="modal-content modal-content__custom1">
                 
                             <div class="modal-header modal-header__custom2">
-                                <h5 class="modal-title neo-700" id="exampleModalLabel">Ver o enviar Expediente</h5>
+                                <h5 class="modal-title neo-700" id="exampleModalLabel">Generar o Enviar Expediente</h5>
+                                <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                                    <span aria-hidden="true">&times;</span>
+                                </button>
                             </div>
                 
                             <div class="modal-body modal-body__custom1">
-                                <button type="button" class="btn btn-modal-2">Ver Archivo</button>
-                                <button type="button" class="btn btn-modal-2">Enviar por E-mail BASA</button>
-                                <button type="button" class="btn btn-modal-2">Enviar por E-mail</button>
+                                <p class="modal-text1 neo-500">Selecciona una de las siguientes opciones:</p>
+                                <button type="button" class="btn btn-outline-light btn-modal-group">Ver Archivo</button>
+                                <button type="button" class="btn btn-outline-light btn-modal-group">Enviar por E-mail BASA</button>
+                                <button type="button" class="btn btn-outline-light btn-modal-group">Enviar por E-mail</button>
                             </div>
                 
                         </div>
@@ -367,15 +395,18 @@
                 
                             <div class="modal-header modal-header__custom2">
                                 <h5 class="modal-title neo-700" id="exampleModalLabel">Ingrese el número de celular</h5>
+                                <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                                    <span aria-hidden="true">&times;</span>
+                                </button>
                             </div>
                 
                             <div class="modal-body modal-body__custom1">
-                                <input class="form-control" type="text" placeholder="Número de celular...">
+                                <p class="modal-text1 neo-500">Selecciona una de las siguientes opciones:</p>
+                                <input class="form-control-cel" type="text" placeholder="Número de celular...">
                             </div>
 
                             <div class="modal-footer modal-footer__custom1">
-                                <button type="button" class="btn btn-modal-close" data-dismiss="modal">Cerrar</button>
-                                <button type="button" class="btn btn-modal-1">Activar Número</button>
+                                <button type="button" class="btn btn-outline-light btn-modal-group">Activar Número</button>
                             </div>
                 
                         </div>
@@ -486,19 +517,19 @@
 
 <script>
     $('#Desde').datepicker({
+        format: 'dd/mm/yyyy',
         uiLibrary: 'bootstrap4',
         modal: true,
         width: 450,
         size: 'small',
-        footer: true
     });
 
     $('#Hasta').datepicker({
+        format: 'dd/mm/yyyy',
         uiLibrary: 'bootstrap4',
         modal: true,
         width: 450,
         size: 'small',
-        footer: true
     });
 </script>
 
