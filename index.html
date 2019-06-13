@@ -18,7 +18,7 @@
     <link rel="stylesheet" href="css/spinner-loader/style/spinner-style.css">
 
 
-    <title>Atlas - Inicio</title>
+    <title>AFP Atlántida - Atlas</title>
   </head>
  
   <body>
@@ -52,7 +52,7 @@
 
 
     <!--HEADER-->
-    <div class="row justify-content-center header"> 
+    <div class="row justify-content-center header-index"> 
       <img src="images/logo.png" alt="logo-afp">
     </div>
 
@@ -65,9 +65,9 @@
         <div class="side-nav--logo">
             <img src="images/atlaslogo-full.png" alt="logo-atlas">
         </div>
-          <nav class="navbar side-nav--list  neo-400">
-            <ul>
-              <li class="nav-item"><a class="nav-link active" href="#">Login</a></li>
+          <nav class="navbar side-nav--list neo-400">
+            <ul id="menu">
+              <li class="nav-item"><a class="nav-link" href="index.html">Login</a></li>
               <li class="nav-item"><a class="nav-link" href="#">Formularios</a></li>
               <li class="nav-item"><a class="nav-link" href="#">Para Ventas</a></li>
               <li class="nav-item"><a class="nav-link" href="#">Nuevo Cliente</a></li>
@@ -117,7 +117,7 @@
 
       <!--Panel #2: Derecho-->
       <div id="LoginPanel" class="col-3 info-2 login-panel">
-        <div class="row">
+        <div class="row logintitle">
           <p class="h2 p-box1 neo-700">Login</p>
           <p class="text-justified p-box2 neo-400"> Lorem ipsum dolor sit amet consectetur adipisicing elit. Dolore quaerat
             optio
@@ -149,14 +149,6 @@
 
         </div>
 
-        <div class="row consulta">
-          <p class="text-justified p-box neo-700">
-            ¿Olvidaste tu contraseña o tienes alguna consulta?
-          </p>
-          <button type="button" class="btn btn-primary btn-consulta neo-400">Consultar</button>
-        </div>
-      </div>
-
     </div>
 
     <!--FOOTER-->
@@ -181,13 +173,22 @@
       $('.spinner-container').hide();
     });
 
-
-    $('.navbar .nav-item').click(function(){
-    $('.navbar .nav-item.active').removeClass('active');
-    $(this).addClass('active');
-    })
-
   </script>
+
+    <script>
+      $(function () {
+        // this will get the full URL at the address bar
+        var url = window.location.href;
+
+        // passes on every "a" tag
+        $("#menu a").each(function () {
+          // checks if its the same on the address bar
+          if (url == (this.href)) {
+            $(this).closest("li").addClass("active-nav-2");
+          }
+        });
+      });
+    </script>
 
   </body>
 </html>

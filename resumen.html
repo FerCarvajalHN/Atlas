@@ -25,7 +25,7 @@
           
 
 
-    <title>Atlas - Resumen de Productos y Servicios</title>
+    <title>AFP Atlántida - Atlas | Resumen de Productos y Servicios</title>
 
 </head>
 
@@ -50,7 +50,7 @@
                 <img src="images/atlaslogo-white.png" alt="logo-atlas" class="side-navb--logo">
             </div>
             <nav class="navbar side-navb--list neo-400">
-                <ul>
+                <ul id="menu">
                     <li class="nav-item"><a class="nav-link" href="info-cliente.html">Información del Cliente</a></li>
                     <li class="nav-item"><a class="nav-link" href="resumen.html">Resumen</a></li>
                     <li class="nav-item"><a class="nav-link" href="gestiones.html">Gestiones</a></li>
@@ -532,6 +532,21 @@
         size: 'small',
     });
 </script>
+
+  <script>
+      $(function () {
+          // this will get the full URL at the address bar
+          var url = window.location.href;
+
+          // passes on every "a" tag
+          $("#menu a").each(function () {
+              // checks if its the same on the address bar
+              if (url == (this.href)) {
+                  $(this).closest("li").addClass("active-nav-3");
+              }
+          });
+      });
+  </script>
 
 </body>
 

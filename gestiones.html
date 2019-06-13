@@ -16,7 +16,7 @@
     <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.8.2/css/all.css" 
     integrity="sha384-oS3vJWv+0UjzBfQzYUhtDYW+Pj2yciDJxpsK1OYPAYjqT085Qq/1cq5FLXAZQ7Ay" crossorigin="anonymous">
 
-    <title>Atlas - Gestiones</title>
+    <title>AFP Atlántida - Atlas | Gestiones</title>
 </head>
 
 <body>
@@ -36,7 +36,7 @@
                     <img src="images/atlaslogo-white.png" alt="logo-atlas" class="side-navb--logo">
                 </div>
                 <nav class="navbar side-navb--list neo-400">
-                    <ul>
+                    <ul id="menu">
                         <li class="nav-item"><a class="nav-link" href="info-cliente.html">Información del Cliente</a></li>
                         <li class="nav-item"><a class="nav-link" href="resumen.html">Resumen</a></li>
                         <li class="nav-item"><a class="nav-link" href="gestiones.html">Gestiones</a></li>
@@ -217,6 +217,21 @@
             });
         });
     </script>
+
+      <script>
+          $(function () {
+              // this will get the full URL at the address bar
+              var url = window.location.href;
+
+              // passes on every "a" tag
+              $("#menu a").each(function () {
+                  // checks if its the same on the address bar
+                  if (url == (this.href)) {
+                      $(this).closest("li").addClass("active-nav-3");
+                  }
+              });
+          });
+      </script>
 
 </body>
 </html>

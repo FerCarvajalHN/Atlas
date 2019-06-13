@@ -14,7 +14,7 @@
     <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.8.2/css/all.css"
         integrity="sha384-oS3vJWv+0UjzBfQzYUhtDYW+Pj2yciDJxpsK1OYPAYjqT085Qq/1cq5FLXAZQ7Ay" crossorigin="anonymous">
 
-    <title>Atlas - Home</title>
+    <title>AFP Atlántida - Atlas | Home</title>
 </head>
 
 <body>
@@ -38,12 +38,12 @@
                     <img src="  images/atlaslogo-full.png" alt="logo-atlas" class="side-nav--logo2 neo-400">
                 </div>
                 <nav class="navbar side-nav--list2">
-                    <ul>
-                        <li class="nav-item"><a class="nav-link" href="#">Buscar Cliente</a></li>
+                    <ul id="menu">
+                        <li class="nav-item"><a class="nav-link" href="home.html">Buscar Cliente</a></li>
                         <li class="nav-item"><a class="nav-link" href="#">Formularios</a></li>
                         <li class="nav-item"><a class="nav-link" href="#">Para Ventas</a></li>
                         <li class="nav-item"><a class="nav-link" href="#">Nuevo Cliente</a></li>
-                        <li class="nav-item"><a class="nav-link out" href="#">Salir</a></li>
+                        <li class="nav-item"><a class="nav-link out" href="index.html">Cerrar Sesión</a></li>
                     </ul>
                 </nav>
 
@@ -73,7 +73,7 @@
                             <div class="input-group-text input-userinfo-icon"><img src="images/user.png" alt="icono-usuario"></div>
                         </span>
                     </div>
-
+                    <!--
                     <div class="input-group">
                         <input class="form-control-4 py-2 input-userinfo" type="text" placeholder="Ciudad">
                         <span class="input-group-append">
@@ -89,6 +89,7 @@
                             </div>
                         </span>
                     </div>
+                    -->
 
                     <div class="input-group">
                         <input class="form-control-4 py-2 input-userinfo" type="text" placeholder="Fecha">
@@ -163,6 +164,23 @@
     <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js"
         integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM" crossorigin="anonymous">
     </script>
+
+      <script>
+          $(function () {
+              // this will get the full URL at the address bar
+              var url = window.location.href;
+
+              // passes on every "a" tag
+              $("#menu a").each(function () {
+                  // checks if its the same on the address bar
+                  if (url == (this.href)) {
+                      $(this).closest("li").addClass("active-nav-2");
+                  }
+              });
+          });
+      </script>
+
+
 </body>
 
 </html>
