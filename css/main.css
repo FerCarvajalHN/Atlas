@@ -662,6 +662,10 @@ i.fa {
     margin:110px 0px 30px 0px;;
 }
 
+.btn-submit-constancia {
+   margin: 0px 200px
+}
+
 
 /* =========================================================================================== */
 /*                                                                                             */
@@ -784,7 +788,11 @@ i.fa {
 
 .clients-menu img {
     width: 50%;
-    margin: 20px 0px 30px 25px;
+    margin: 20px 0px 25px 25px;
+}
+
+.clients-menu a {
+    text-decoration: none;  
 }
 
 .clients-menu img:hover {
@@ -815,6 +823,16 @@ i.fa {
 
 
 .form-control-7 {
+    width: 90%;
+    height: calc(1.5em + 0.75rem + 2px);
+    padding: 0.375rem 1.75rem;
+    font-size: 1rem;
+    border-radius: 9px;
+    color: var(--gris-afp);
+    border: 1px solid var(--rojob-afp);
+}
+
+.form-control-7-readonly input{
     width: 90%;
     height: calc(1.5em + 0.75rem + 2px);
     padding: 0.375rem 1.75rem;
@@ -953,7 +971,7 @@ li.page-item a:hover {
 
 .canales-act {  
     padding: 0px;
-    margin: 0px 120px;
+    margin: 0px 75px;
 }
 
 
@@ -991,7 +1009,7 @@ li.page-item a:hover {
 
 .p-box7{
     color: var(--rojo-afp);
-    font-size: 20px;
+    font-size: 16px;
     margin-top: 50px;
     margin-right: 10px;
 }
@@ -1007,8 +1025,10 @@ li.page-item a:hover {
     margin: 30px 0;
 }
 
+
 .input-group2 {
     margin-top: 5px;
+    width: 100%;
 }
 
 .canales__sms {
@@ -1063,12 +1083,12 @@ div.modal {
     text-align: center;
 }
 
-.modal-footer__custom1 {
-    justify-content: center;
-      border: none;
+.btn-modal-custom1 {
+    border:none;
+    color: var(--rojo-afp);
+    font-weight: 700;
+
 }
-
-
 .modal-body {
     margin: 0px 0px;
     
@@ -1120,7 +1140,29 @@ span.input-group-append > button{
     background-color: var(--blanco-afp);
 }
 
-/* =========================================================================================== */
+.btn-constancia {
+    border: 1px solid var(--blanco-afp);
+    color: var(var(--blanco-afp))
+}
+
+a {
+    color: #0c0c0c;
+    text-decoration: none;
+}
+.multiselect-selected-text {
+    color: #0c0c0c;
+}
+
+
+a.multiselect-all:hover {
+    color: var(--rojo-afp);
+}
+
+label.checkbox:hover {
+    color:var(--rojo-afp);
+}
+
+/*============================================================================================ */
 /*                                                                                             */
 /*                                     5c. Gestiones                                           */
 /*                                                                                             */
