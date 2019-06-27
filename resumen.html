@@ -54,22 +54,33 @@
                     <li class="nav-item"><a class="nav-link" href="info-cliente.html">Información del Cliente</a></li>
                     <li class="nav-item"><a class="nav-link" href="resumen.html">Resumen</a></li>
                     <li class="nav-item"><a class="nav-link" href="gestiones.html">Gestiones</a></li>
-                    <li class="nav-item"><a class="nav-link" href="#">Formularios</a></li>
-                    <li class="nav-item"><a class="nav-link" href="#">Para Ventas</a></li>
+                    <li class="nav-item"><a class="nav-link" href="forms-logged-e.html">Formularios</a></li>
+                    <li class="nav-item"><a class="nav-link" href="ventas-logged.html">Para Ventas</a></li>
                     <li class="nav-item"><a class="nav-link" href="home.html">Buscar Nuevo Cliente</a></li>
+                    <hr class="sidenav-c" />
                 </ul>
             </nav>
 
+            <!--INICIO MONEY EXCHANGE-->
             <div class="d-flex">
                 <div class="exchangeb">
                     <img src="images/icons-cliente/exchangeb.png" alt="">
                 </div>
 
-                <div class="exchangeb-text neo-700">
-                    <p>Venta:<input class="form-control-5 w-25 d-inline " type="text" placeholder="test 24$"></p>
-                    <p>Compra:<input class="form-control-5 w-25 d-inline" type="text" placeholder="test"></p>
+                <div class="exchange-container">
+                    <div class="exchangeb-text neo-700">
+                        <p class="">Venta:<input class="form-control-5 d-inline" type="text" placeholder="test 24.60$">
+                        </p>
+
+                    </div>
+
+                    <div class="exchangeb-text neo-700">
+                        <p>Compra:<input class="form-control-5 d-inline" type="text" placeholder="test 24.50$">
+                        </p>
+                    </div>
                 </div>
             </div>
+            <!--FIN MONEY EXCHANGE-->
 
         </div>
 
@@ -351,7 +362,7 @@
                             </div>
 
                             <div class="modal-body modal-body__custom1">
-                                <p class="modal-text1 neo-500">Selecciona las cuentas que quieres constancia:</p>
+                                <p class="modal-text1 neo-500">Selecciona las siguientes opciones:</p>
 
                                 <!--INICIO DE SELECCION DE CUENTAS-->
                                 <div class="custom-formconstancia">
@@ -359,8 +370,8 @@
                                         <div class="form-group">
                                             <div class="">
                                                 <select id="example" name="multiselect[]" multiple="multiple">
-                                                    <option value="2">Option 2</option>
                                                     <option value="1">Option 1</option>
+                                                    <option value="2">Option 2</option>
                                                     <option value="4">Option 4</option>
                                                     <option value="3">Option 3</option>
                                                     <option value="6">Option 6</option>
@@ -441,9 +452,6 @@
                 </div>
                 <!--Fin modal 4: Activacion SMS-->
 
-
-
-
                 <!--FIN DE MODAL DE SERVICIOS-->
 
 
@@ -499,7 +507,6 @@
 
                        <div class="canales__sms col-4">
 
-
                            <div class="input-group">
                                 <a href="#" data-toggle="modal" data-target="#SMS"><input class="form-control-8b neo-500" type="text" placeholder="Número del Cliente"></a>
                            </div>
@@ -509,13 +516,8 @@
                    </div>
 
                    <!--FIN ACTIVACION DE CANALES -->
-
             </div>
-
-
         </div>
-
-
     </div>
 
     <!--FOOTER-->
@@ -591,17 +593,26 @@
             buttonWidth: '460px',
             includeSelectAllOption: true,
             enableFiltering: true,
-            filterPlaceholder: 'Buscar Cuentas...',
+            filterPlaceholder: 'Buscar Cuentas...',          
+            numberDisplayed: 10,
+            enableCaseInsensitiveFiltering: true,
             selectAllText: 'Seleccionar todo',
             buttonText: function(options, select) {
-                return 'Elige tus cuentas';
-            },
-            buttonTitle: function(options, select) {
-                var labels = [];
-                options.each(function () {
-                    labels.push($(this).text());
-                });
-                return labels.join(' - ');
+                    if (options.length === 0) {
+                    return 'Elije las cuentas que deseas agregar ...';
+                }
+                    else {
+                    var labels = [];
+                    options.each(function() {
+                    if ($(this).attr('label') !== undefined) {
+                    labels.push($(this).attr('label'));
+                }
+                    else {
+                    labels.push($(this).html());
+                }
+                    });
+                    return labels.join(', ') + '';
+                }
             }
                 
         });
