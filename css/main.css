@@ -1,5 +1,6 @@
-/* Tabla de Contenidos */ 
-/* 0. - Colores y Fuentes
+/* ===== Tabla de Contenidos ===== */
+
+/* x. - Colores y Fuentes
    1. Background
    2. Header
    3. Layout
@@ -8,21 +9,28 @@
     4b.-Content / Sidenav - Home
     4c.-Content / Sidenav - InfoClients+Resumen+Gestiones+Para Ventas
     4d.-Content / Middle-StartCarousel
-    4e.-Content / RightLoginPanel
-    4f.-Content / RightSearchClient
-    4g.-Formularios
+    4e.-Content / MiddleUserInfo
+    4f.-Content / RightLoginPanel
+    4g.-Content / RightSearchClient
+    4h.-Formularios / Index + Home
+    4i.-Formularios / Logged
+    4j.-Para Ventas / Index + Home
+    4k.-Para Ventas / Logged
+    4l.-Nuevo Cliente / Index y Home
    5. Contenido despues de Logeo exitoso, de todas las pestañas InfoClients + Resumen + Gestiones + Para Ventas
     5a.-Info-Cliente 
-   x. Footer 
+    5b.-Resumen
+    5c.-Gestiones
+    5d.-Detalles de Gestiones
+   6. Footer 
+   7. MediaQuerys
 */
-
-
 
 /* COMIENZO DE CODIGO FINAL */
 
 /* =========================================================================================== */
 /*                                                                                             */
-/*                                    0.Colores y Fuentes                                      */
+/*                                    x.Colores y Fuentes                                      */
 /*                                                                                             */
 /* =========================================================================================== */
 
@@ -107,7 +115,6 @@
 
 */
 
-
 /* =========================================================================================== */
 /*                                                                                             */
 /*                                    1.-BACKGROUND                                            */
@@ -152,6 +159,11 @@
     border-bottom-right-radius: 0px;
 }
 
+.side-navc {
+    background-color: var(--blanco-afp);
+    border-radius: 19px;
+}
+
 .info-2 {
     border-top-left-radius: 0px;
     border-bottom-left-radius: 0px;
@@ -173,11 +185,10 @@
 }
 
 .side-navb {
-     background-color: var(--rojo-afp);
-     border-radius: 19px;
-     border-top-left-radius: 0px;
-     border-bottom-left-radius: 0px;
-    
+    background-color: var(--rojo-afp);
+    border-radius: 19px;
+    border-top-left-radius: 0px;
+    border-bottom-left-radius: 0px;
 }
 
 /* =========================================================================================== */
@@ -190,17 +201,14 @@
     height: 120px;
 }
 
-
 /* =========================================================================================== */
 /*                                                                                             */
 /*                                     3.-LAYOUT                                               */
 /*                                                                                             */
 /* =========================================================================================== */
 
-
 .wrapper {
     height: 984px;
-    
 }
 
 .header,
@@ -213,6 +221,7 @@
 }
 
 .side-nav,
+.side-navc,
 .info-2 {
     height: 600px;
 }
@@ -257,9 +266,6 @@ input.form-control {
     height: 64px;
 }
 
-
-
-
 /* =========================================================================================== */
 /*                                                                                             */
 /*                               4a.-Content / Sidenav - Index                                 */
@@ -271,7 +277,6 @@ input.form-control {
     padding: 0;
 }
 
-
 .navbar {
     margin: 0;
     padding: 0;
@@ -281,7 +286,6 @@ input.form-control {
     font-size: 22px;
     list-style:none;
     padding: 5px 0px;
-   
 }
 
 .side-nav--list a {
@@ -305,68 +309,82 @@ input.form-control {
   /*                                                                                             */
   /* =========================================================================================== */
 
-  .side-nav--logo {
-      margin: 50px 0px 10px 35px;
-      padding: 0;
-  }
+.side-nav--logo {
+    margin: 50px 0px 10px 35px;
+    padding: 0;
+}
 
-  .side-nav--logo2 {
-      margin: 50px 0px 10px 65px;
-      padding: 0;
-  }
+.side-nav--logo2 {
+    margin: 50px 0px 10px 65px;
+    padding: 0;
+}
 
+.navbar {
+    margin: 0;
+    padding: 0;
+}
 
+.side-nav--list2 li {
+    font-size: 22px;
+    list-style: none;
+    padding: 5px 0px;
 
-  .navbar {
-      margin: 0;
-      padding: 0;
-  }
+}
 
-  .side-nav--list2 li {
-      font-size: 22px;
-      list-style: none;
-      padding: 5px 0px;
-
-  }
-
-
-  .side-nav--list2 a {
-      text-decoration: none;
-      color: var(--gris-afp);
-  }
-
-  .side-nav--list2 a:hover {
-      font-weight: bold;
-  }
-
-  .nav-link.out {
-      color: var(--rojob-afp);
-  }
-
-  .exchange-text {
+.side-nav--list2 a {
+    text-decoration: none;
     color: var(--gris-afp);
-  }
+}
 
-  .exchange-text p {
-      margin-left: 10px;
-      margin-bottom: 0px;
-  }
+.side-nav--list2 a:hover {
+    font-weight: bold;
+}
 
-  .form-control-3 {
-      margin-left: 15px;
-      height: 20px;
-      border: none;
-      font-size: 14px;
-      font-weight: bold;
-      color: var(--rojo-afp);
-  }
+.nav-link.out {
+    color: var(--rojob-afp);
+}
+
+.exchange-text {
+    color: var(--gris-afp);
+}
+
+.exchange-text p {
+    margin-left: 5px;
+    margin-bottom: 0px;
+    font-size: 14px;
+}
+
+.exchangeb img {
+   margin-right: 5px;
+}
+
+.form-control-3 {
+    height: 20px;
+    border: none;
+    font-size: 14px;
+    font-weight: bold;
+    color: var(--blanco-afp);
+    margin-left: 5px;
+    background-color:var(--gris-afp);
+    border-color: white;
+    width: 50px;
+}
+
+.active-nav-2 {
+    box-shadow: 0px 24px 10px -24px rgba(0, 0, 0, 0.25);
+    font-weight: bold;
+    color: red !important;
+}
 
 
-  .active-nav-2 {
-      box-shadow: 0px 24px 10px -24px rgba(0, 0, 0, 0.25);
-      font-weight: bold;
-      color: red !important;
-  }
+hr.sidenav-d {
+    display: block;
+    height: 1px;
+    border: 0;
+    border-top: 1px solid var(--grisb-afp);
+    margin: 5px 0px;
+    padding: 0;
+}
 
 /* =========================================================================================== */
 /*                                                                                             */
@@ -383,7 +401,6 @@ input.form-control {
     padding: 10px;
     width: 45%;
 }
-
 
 .navbar {
     margin: 0;
@@ -418,15 +435,16 @@ input.form-control {
     margin-bottom: 0px;
 }
 
-
 .form-control-5 {
-    margin-left: 15px;
+    margin-left: 10px;
     height: 20px;
     border: none;
     font-size: 14px;
     font-weight: bold;
     color: var(--blanco-afp);
-    background-color:var(--rojo-afp);
+    background-color:var(--rojob-afp);
+    border-color: white;
+    width: 75px;
 }
 
 .active-nav-3 {
@@ -434,10 +452,24 @@ input.form-control {
     font-weight: bold;
 }
 
+hr.sidenav-c {
+    display: block;
+    height: 1px;
+    border: 0;
+    border-top: 1.5px solid var(--rojob-afp);
+    margin: 1em 0;
+    padding: 0;
+}
+
+.exchange-container {
+    display: flex;
+    flex-direction: row;
+    margin: 10px 0px;
+}
 
 /* =========================================================================================== */
 /*                                                                                             */
-/*                            4b.-Content / Middle-StartCarousel                               */
+/*                            4d.-Content / Middle-StartCarousel                               */
 /*                                                                                             */
 /* =========================================================================================== */
 
@@ -457,8 +489,7 @@ input.form-control {
     border-radius: 100%;
   }
 
-
-  .carousel-indicators {
+.carousel-indicators {
     bottom: -50px;
 }
 
@@ -477,11 +508,9 @@ p.h2 {
     margin: 40px 0px;
 }
 
-
-
 /* =========================================================================================== */
 /*                                                                                             */
-/*                            4d.-Content / MiddleUserInfo                                     */
+/*                            4e.-Content / MiddleUserInfo                                     */
 /*                                                                                             */
 /* =========================================================================================== */
 
@@ -514,7 +543,6 @@ p.h2 {
     padding: 0.375rem 0.75rem;
 }
 
-
 .form-control-2 {
     width: 300px;
     padding: 0.375rem 0px;
@@ -534,7 +562,6 @@ p.h2 {
     margin: 130px 10px 40px 10px;
     color: var(--blanco-afp);
     font-size: 32px;
-
 }
 
 div.input-userinfo-icon {
@@ -553,16 +580,18 @@ div.input-userinfo-icon3 {
     border-bottom-left-radius: 0px;
 }
 
-
 .usergroup {
     margin: 0px 5px; 
 }
 
 /* =========================================================================================== */
 /*                                                                                             */
-/*                            4e.-Content / RightLoginPanel                                    */
+/*                            4f.-Content / RightLoginPanel                                    */
 /*                                                                                             */
 /* =========================================================================================== */
+.form-control-customwidth {
+    width: 385px;
+}
 
 .btn-circle.btn-xl {
     width: 50px;
@@ -593,7 +622,6 @@ div.input-userinfo-icon3 {
     font-size: 14px;
     margin: 10px 20px;
     color:var(--gris-afp)
-
 }
 
 .p-box1 {
@@ -609,7 +637,6 @@ div.input-userinfo-icon3 {
     margin: 0px 140px;
     background-color:var(--rojo-afp);
     border: var(--rojo-afp);
-
 }
 
 .btn-consulta:hover {
@@ -640,9 +667,10 @@ i.fa {
 
 /* =========================================================================================== */
 /*                                                                                             */
-/*                            4f.-Content / RightSearchClient                                  */
+/*                            4g.-Content / RightSearchClient                                  */
 /*                                                                                             */
 /* =========================================================================================== */
+
 .idbox {
     margin: 20px 0px 30px 0px;
 }
@@ -666,40 +694,50 @@ i.fa {
    margin: 0px 200px
 }
 
-
 /* =========================================================================================== */
 /*                                                                                             */
-/*                                   4g.-Formularios                                           */
+/*                                4h.-Formularios / Index y Home                               */
 /*                                                                                             */
 /* =========================================================================================== */
-
 
 .collap-title {
-   border: 1px solid black;
    height: 200px;
    border-radius: 19px;
    border-bottom-left-radius: 0px;
    border-bottom-right-radius: 0px;
-   padding:45px;
+   padding:75px 75px;
+  /* background-color: yellow; */
 }
-.collap-title p {
-    text-align: center;
+
+
+.collap-title-header-b {
+    font-size: 36px;
+    color: var(--rojo-afp);
+    margin: 10px 123px;
+}
+
+.collap-title-header-c {
+    font-size: 36px;
+    color: var(--rojo-afp);
+    margin: 10px 129px;
+}
+
+.collap-title-header-d {
+    font-size: 36px;
+    color: var(--rojo-afp);
+    margin: 10px 123px;
 }
 
 .forms-container {
-    border:1px solid green;
+    /* border:1px solid green; */
     border-radius:19px;
     border-top-left-radius: 0px;
     border-top-right-radius: 0px;
+    padding: 100px 50px;
 }
 
 .sidenav-forms {
-    padding-left: 40px;
-    padding-right: 0px;
-  /*  background-color: yellow; */
-    border-radius:19px;
-    border-top-left-radius: 0px;
-    border-top-right-radius: 0px;
+   padding: 0px;
 }
 
 .forms-menu {
@@ -709,22 +747,168 @@ i.fa {
     border-top-right-radius: 0px;
     border-bottom-right-radius: 0px;
     padding: 10px;
-    margin: 100px 0;
-}
-.forms-menu p {
-    color: var(--blanco-afp);
-    font-weight: bold;
-    font-size: 14px;
-    margin: 10px;
+    margin: 50px 0;
 }
 
 .forms-menu img {
-    margin: 5px 5px 30px 15px;
+    width: 90%;
+    margin: 25px 5px;
+}
+
+.forms-menu p {
+    color: var(--blanco-afp);
+    font-size: 12px;
+    margin: 10px 0px;
+    margin-top: -25px;
+    text-align: center;
+    font-weight: bold;
+}
+
+.forms-menu a {
+    text-decoration: none;
 }
 
 .forms-menu img:hover {
-    width: 80%;
+    -webkit-transform: scale(1.1);
+    -ms-transform: scale(1.1);
+    transform: scale(1.1);
 }
+
+
+/* =========================================================================================== */
+/*                                                                                             */
+/*                                4i.-Formularios / Logged                                     */
+/*                                                                                             */
+/* =========================================================================================== */
+
+.sidenav-forms-b {
+    /*  background-color: yellow; */
+    border-radius: 19px;
+    border-top-left-radius: 0px;
+    border-top-right-radius: 0px;
+    padding-right: 0px;
+}
+
+.forms-menu-b {
+    background-color: var(--rojo-afp);
+    height: 250px;
+    border-radius: 19px;
+    border-top-right-radius: 0px;
+    border-bottom-right-radius: 0px;
+    padding: 10px;
+    margin: 50px 0;
+}
+
+.forms-menu-b img {
+    width: 70%;
+    margin: 25px 12px;
+}
+
+.forms-menu-b p {
+    color: var(--blanco-afp);
+    font-size: 12px;
+    margin: 10px 0px;
+    margin-top: -20px;
+    text-align: center;
+    font-weight: bold;
+}
+
+.forms-menu-b a {
+    text-decoration: none;
+}
+
+.forms-menu-b img:hover {
+    -webkit-transform: scale(1.1);
+    -ms-transform: scale(1.1);
+    transform: scale(1.1);
+}
+
+.collap-title-header-e {
+    font-size: 36px;
+    color: var(--rojo-afp);
+    margin: 50px 271px;
+}
+
+.collap-title-header-f {
+    font-size: 36px;
+    color: var(--rojo-afp);
+    margin: 50px 264px;
+}
+
+/* =========================================================================================== */
+/*                                                                                             */
+/*                            4j.-Para Ventas / Index y Home                                   */
+/*                                                                                             */
+/* =========================================================================================== */
+
+.collap-title-header-h {
+    font-size: 36px;
+    color: var(--rojo-afp);
+    margin: 10px 260px;
+}
+
+.ventas-container-logged {
+    height: 750px;
+    border-radius: 19px;
+    padding: 40px;
+}
+
+/* =========================================================================================== */
+/*                                                                                             */
+/*                               4k.-Para Ventas / Logged                                      */
+/*                                                                                             */
+/* =========================================================================================== */
+
+.collap-title-header-g {
+    font-size: 36px;
+    color: var(--rojo-afp);
+    margin: 10px 400px;
+}
+
+.ventas-container-logged {
+     height: 750px;
+     border-radius: 19px;
+     padding: 40px;
+}
+
+
+/* =========================================================================================== */
+/*                                                                                             */
+/*                          4l.-Nuevo Cliente / Index y Home                                   */
+/*                                                                                             */
+/* =========================================================================================== */
+
+
+.collap-title-header-i {
+    font-size: 36px;
+    color: var(--rojo-afp);
+    margin: 0px 160px;
+    height: 100px;
+}
+
+.nuevocliente-container {
+    padding: 0;
+  /*  background-color: yellow; */
+    margin-bottom: 120px;
+}
+
+.collap-title-ventas {
+    height: 150px;
+    padding: 75px 75px;
+ /*   background-color: yellow; */
+}
+
+.iconset-reduser-3 {
+    margin-top: 4px;
+    margin-right: 10px;
+}
+
+.btn-cliente {
+    background: var(--rojo-afp);
+    color: var(--blanco-afp);
+    margin: 0px 250px;
+}
+
 
 
 /* =========================================================================================== */
@@ -829,17 +1013,8 @@ i.fa {
     font-size: 1rem;
     border-radius: 9px;
     color: var(--gris-afp);
-    border: 1px solid var(--rojob-afp);
-}
-
-.form-control-7-readonly input{
-    width: 90%;
-    height: calc(1.5em + 0.75rem + 2px);
-    padding: 0.375rem 1.75rem;
-    font-size: 1rem;
-    border-radius: 9px;
-    color: var(--gris-afp);
     border: 1px solid var(--gris-afp);
+    border-bottom: 1px solid var(--gris-afp);
 }
 
 .form-control-7b {
@@ -850,8 +1025,49 @@ i.fa {
     border-radius: 9px;
     color: var(--gris-afp);
     border: 1px solid var(--gris-afp);
+    border-bottom: 1px solid var(--gris-afp);
 }
 
+.editable-buttons {
+    background-color:var(--gris-afp);
+}
+
+.editable-submit {
+    background-color: var(--rojo-afp);
+    border-color: var(--rojo-afp)
+}
+
+.editable-submit:hover {
+    background-color: var(--rojob-afp);
+    border-color: var(--rojob-afp);
+}
+
+.editable-click,
+a.editable-click,
+a.editable-click {
+    text-decoration: none;
+    border-bottom: dashed 1px var(--gris-afp);
+}
+
+.editable-click,
+a.editable-click,
+a.editable-click:hover {
+    text-decoration: none;
+    border-bottom: dashed 1px var(--rojo-afp);
+}
+
+.editable-click.editable-disabled,
+a.editable-click.editable-disabled,
+a.editable-click.editable-disabled:hover {
+    color: var(--gris-afp);
+    cursor: default;
+    text-decoration: none;
+    border-bottom: solid 1px var(--grisb-afp);
+}
+
+.modal-footer-borderless {
+    border: none;
+}
 
 
 /* =========================================================================================== */
@@ -865,8 +1081,6 @@ i.fa {
     padding: 20px 80px 20px 40px;
 }
 
-
-
 .table-row {
     border: 1px solid #e4e9ea;
     background-color: var(--blanco-afp);
@@ -876,7 +1090,6 @@ i.fa {
     margin: 98px;
 }
 
-
 .table__thead th {
     color: var(--grisb-afp);
     font-family: 'NeoSans-Bold'sans-serif;
@@ -884,7 +1097,6 @@ i.fa {
     font-style: normal;
     padding-bottom: 25px;
 }
-
 
 .vl {
     border-left: 2px dashed var(--rojo-afp);
@@ -912,7 +1124,6 @@ i.fa {
     font-size: 18px;
 }
 
-
 .table-row__icon img {
     margin: 10px 0px 10px 30px;
 }
@@ -935,19 +1146,18 @@ i.fa {
     margin: 0px 25px;
 }
 
+.dropdown-toggle::after {
+    display: none;
+}
 
- .dropdown-toggle::after {
-     display: none;
- }
+table {
+    border-collapse: separate;
+    border-spacing: 0 1em;
+}
 
- table {
-     border-collapse: separate;
-     border-spacing: 0 1em;
- }
-
- .table-row {
-     box-shadow: 1px 1px 4px 0px rgba(0, 0, 0, 0.25);
- }
+.table-row {
+    box-shadow: 1px 1px 4px 0px rgba(0, 0, 0, 0.25);
+}
 
 li.page-item a{
     border: 1px solid var(--rojo-afp);
@@ -974,13 +1184,11 @@ li.page-item a:hover {
     margin: 0px 75px;
 }
 
-
 .input-userinfo-icon2 {
     background-color: var(--gris-afp);
     border: 1px solid var(--gris-afp);
     height: calc(1.4rem + 0.5rem + 2px);
 }
-
 
 .form-control-8 {
     width: 85%;
@@ -1025,7 +1233,6 @@ li.page-item a:hover {
     margin: 30px 0;
 }
 
-
 .input-group2 {
     margin-top: 5px;
     width: 100%;
@@ -1051,7 +1258,6 @@ div.modal {
     margin-top: 15px;
     margin-right: 15px;
 }
-
 
 .p-box9 {
     color: var(--gris-afp);
@@ -1091,7 +1297,6 @@ div.modal {
 }
 .modal-body {
     margin: 0px 0px;
-    
 }
 
 .modal-text1 {
@@ -1101,8 +1306,6 @@ div.modal {
 .modal-body__custom1 {
     display: flex;
     flex-direction: column;
-
-  
 }
 
 .btn-modal-group {
@@ -1116,7 +1319,6 @@ div.modal {
 .close:hover {
     color: var(--gris-afp);
 }
-
 
 .form-control-15 {
     margin: 5px;
@@ -1152,7 +1354,6 @@ a {
 .multiselect-selected-text {
     color: #0c0c0c;
 }
-
 
 a.multiselect-all:hover {
     color: var(--rojo-afp);
@@ -1217,7 +1418,6 @@ label.checkbox:hover {
     border-radius: 9px;
     color: var(--rojo-afp);
     border: 2px solid var(--rojo-afp);
-
 }
 
 .input-userinfo-icon3 {
@@ -1243,7 +1443,6 @@ label.checkbox:hover {
     width: 30%;
     border: none;
     color: var(--gris-afp);
-
 }
 
 .form-control-12 {
@@ -1298,8 +1497,9 @@ input.form-control-13 {
 
 .form-control-13 {
     font-size: 36px;
-    text-align: left;    
+    text-align: center;    
     color: var(--gris-afp);
+    width: 100%;
     border: none;
 }
 
@@ -1351,7 +1551,7 @@ i.fa-custom-1:hover {
 
 /* =========================================================================================== */
 /*                                                                                             */
-/*                                        x.-FOOTER                                            */
+/*                                        6.-FOOTER                                            */
 /*                                                                                             */
 /* =========================================================================================== */
 
@@ -1359,4 +1559,308 @@ i.fa-custom-1:hover {
     color: #fff;
     font-size: 24px;
     margin: 0px 0px;
+}
+
+
+/* =========================================================================================== */
+/*                                                                                             */
+/*                                   7.-Media Queries                                          */
+/*                                                                                             */
+/* =========================================================================================== */
+
+/* 
+  ##Device = Laptops, Desktops
+  ##Screen = B/w 1025px to 1280px
+*/
+
+@media (min-width: 1366px) and (max-width: 1439px) {}
+
+@media (min-width: 1280px) and (max-width: 1439px) {}
+
+@media (min-width: 1024px) and (max-width: 1279px) {
+
+    /* =========================================================================================== */
+    /*                                                                                             */
+    /*                                     2.-HEADER                                               */
+    /*                                                                                             */
+    /* =========================================================================================== */
+
+    .header-index {
+        height: 90px;
+    }
+
+    .header-index img,
+    .header img {
+        width: 35%;
+    }
+  
+    /* =========================================================================================== */
+    /*                                                                                             */
+    /*                                     3.-LAYOUT                                               */
+    /*                                                                                             */
+    /* =========================================================================================== */
+
+    .wrapper {
+        height: 768px;
+    }
+
+    .main-content {
+        height: 618px;
+    }
+
+    .footer {
+        height: 60px;
+    }
+
+    .side-nav,
+    .side-navc,
+    .info-2 {
+        height: 500px;
+    }
+
+    .info-1 {
+        height: 600px;
+        padding: 50px;
+    }
+
+    .info-2 {
+        padding: 30px;
+    }
+
+    .info-3 {
+        height: 600px;
+    }
+
+    /* =========================================================================================== */
+    /*                                                                                             */
+    /*                               4a.-Content / Sidenav - Index                                 */
+    /*                                                                                             */
+    /* =========================================================================================== */
+
+    .side-nav--logo img {
+        margin: 10px 5px;
+        padding: 0;
+    }
+
+    .navbar {
+        margin: 0;
+        padding: 0;
+    }
+
+    .side-nav--list li {
+        font-size: 22px;
+        list-style: none;
+        padding: 5px 0px;
+    }
+
+    .side-nav--list a {
+        text-decoration: none;
+        color: var(--gris-afp);
+    }
+
+    /*.side-nav--list a:hover {
+    font-weight: bold;
+    }*/
+
+    .active-nav {
+        box-shadow: 0px 24px 10px -24px rgba(0, 0, 0, 0.50);
+        font-weight: bold;
+    }
+
+    ul#menu {
+        padding: 0px 20px;
+    }
+
+    /* =========================================================================================== */
+    /*                                                                                             */
+    /*                                4b.-Content / Sidenav - Home                                 */
+    /*                                                                                             */
+    /* =========================================================================================== */
+
+    .side-nav--logo2 {
+        margin: 20px 0px 10px 65px;
+        padding: 0;
+        width: 45%;
+    }
+
+    .side-nav--list2 li {
+        font-size: 18px;
+        list-style: none;
+        padding: 5px 0px;
+    }
+
+    .exchange-text p {
+        margin-left: 5px;
+        margin-bottom: 0px;
+        font-size: 12px;
+    }
+
+    .exchangeb img {
+        width: 85%;
+        
+        margin-right: 5px;
+    }
+
+    .exchange-container {
+        display: flex;
+        flex-direction: row;
+    }
+
+    .form-control-3 {
+        font-size: 10px;
+        width: 35px;
+    }
+
+
+    /* =========================================================================================== */
+    /*                                                                                             */
+    /*                            4c.-Content / Middle-StartCarousel                               */
+    /*                                                                                             */
+    /* =========================================================================================== */
+
+    .p-box0 {
+        font-size: 24px;
+        color: var(--blanco-afp);
+        margin: 40px 0px;
+    }
+
+    /* =========================================================================================== */
+    /*                                                                                             */
+    /*                            4d.-Content / RightLoginPanel                                    */
+    /*                                                                                             */
+    /* =========================================================================================== */
+    .p-box2 {
+        margin: 18px 10px;
+        color: var(--gris-afp);
+    }
+
+    .form-control-customwidth {
+        width: 310px;
+    }
+    .btn-circle.btn-xl {
+        width: 50px;
+        height: 50px;
+        padding: 10px 16px;
+        border-radius: 35px;
+        font-size: 18px;
+        line-height: 1.33;
+        margin: 0px 260px;
+        background-color: var(--gris-afp);
+        border-color: var(--gris-afp);
+    }
+
+    .btn-circle.btn-xl:hover {
+        width: 50px;
+        height: 50px;
+        padding: 10px 16px;
+        border-radius: 35px;
+        font-size: 18px;
+        line-height: 1.33;
+        background-color: var(--rojo-afp);
+        border-color: var(--rojo-afp);
+    }
+
+    .logintitle {
+        margin-top: 30px;
+    }
+
+    /* =========================================================================================== */
+    /*                                                                                             */
+    /*                            4e.-Content / MiddleUserInfo                                     */
+    /*                                                                                             */
+    /* =========================================================================================== */
+    .p-box3 {
+        margin: 50px 10px 40px 10px;
+    }
+
+    /* =========================================================================================== */
+    /*                                                                                             */
+    /*                            4g.-Content / RightSearchClient                                  */
+    /*                                                                                             */
+    /* =========================================================================================== */
+
+
+    .p-box4 {
+        color: var(--rojo-afp);
+        margin: 70px 0px 30px 0px;
+    }
+
+
+
+    /* =========================================================================================== */
+    /*                                                                                             */
+    /*                                4g.-Formularios / Index y Home                               */
+    /*                                                                                             */
+    /* =========================================================================================== */
+    .collap-title-header-b {
+        font-size: 32px;
+        color: var(--rojo-afp);
+        margin: 10px 61px;
+    }
+
+    .collap-title-header-c {
+        font-size: 32px;
+        color: var(--rojo-afp);
+        margin: 10px 65px;
+    }
+
+    .forms-menu {
+        background-color: var(--rojo-afp);
+        height: 250px;
+        border-radius: 19px;
+        border-top-right-radius: 0px;
+        border-bottom-right-radius: 0px;
+        padding: 5px;
+        margin: 40px 0;
+    }
+
+    .forms-menu img {
+        width: 80%;
+        margin: 35px 5px;
+    }
+
+    .forms-menu p {
+        color: var(--blanco-afp);
+        font-size: 11px;
+        margin: 5px 0px;
+        margin-top: -25px;
+        text-align: center;
+        font-weight: bold;
+    }
+
+
+    /* =========================================================================================== */
+    /*                                                                                             */
+    /*                            4i.-Para Ventas / Index y Home                                   */
+    /*                                                                                             */
+    /* =========================================================================================== */
+
+    .collap-title-header-h {
+        font-size: 36px;
+        color: var(--rojo-afp);
+        margin: 10px 135px;
+    }
+
+    /* =========================================================================================== */
+    /*                                                                                             */
+    /*                          4k.-Nuevo Cliente / Index y Home                                   */
+    /*                                                                                             */
+    /* =========================================================================================== */
+
+
+    .collap-title-header-i {
+        font-size: 36px;
+        color: var(--rojo-afp);
+        margin: 0px 40px;
+        height: 100px;
+    }
+
+    .btn-cliente {
+        background: var(--rojo-afp);
+        color: var(--blanco-afp);
+        margin: 0px 250px;
+    }
+
+
+    
 }

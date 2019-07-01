@@ -8,8 +8,12 @@
     <meta http-equiv="x-ua-compatible" content="ie-edge" <!-- Bootstrap CSS -->
     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css"
         integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+
+    <link href="css/bootstrap-editable.css" rel="stylesheet">
+
     <link rel="stylesheet" href="css/main.css">
 
+    
     <!-- FontAwesome -->
     <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.8.2/css/all.css"
         integrity="sha384-oS3vJWv+0UjzBfQzYUhtDYW+Pj2yciDJxpsK1OYPAYjqT085Qq/1cq5FLXAZQ7Ay" crossorigin="anonymous">
@@ -71,22 +75,34 @@
                         <li class="nav-item"><a class="nav-link" href="info-cliente.html">Información del Cliente</a></li>
                         <li class="nav-item"><a class="nav-link" href="resumen.html">Resumen</a></li>
                         <li class="nav-item"><a class="nav-link" href="gestiones.html">Gestiones</a></li>
-                        <li class="nav-item"><a class="nav-link" href="#">Formularios</a></li>
-                        <li class="nav-item"><a class="nav-link" href="#">Para Ventas</a></li>
+                        <li class="nav-item"><a class="nav-link" href="forms-logged-e.html">Formularios</a></li>
+                        <li class="nav-item"><a class="nav-link" href="ventas-logged.html">Para Ventas</a></li>
                         <li class="nav-item"><a class="nav-link" href="home.html">Buscar Nuevo Cliente</a></li>
+                        <hr class="sidenav-c"/>
                     </ul>
                 </nav>
 
+                <!--INICIO MONEY EXCHANGE-->
                 <div class="d-flex">
                     <div class="exchangeb">
                         <img src="images/icons-cliente/exchangeb.png" alt="">
                     </div>
 
-                    <div class="exchangeb-text neo-700">
-                        <p>Venta:<input class="form-control-5 w-25 d-inline " type="text" placeholder="test 24$"></p>
-                        <p>Compra:<input class="form-control-5 w-25 d-inline" type="text" placeholder="test"></p>
+                    <div class="exchange-container">
+                        <div class="exchangeb-text neo-700">
+                            <p class="">Venta:<input class="form-control-5 d-inline" type="text"
+                                    placeholder="test 24.60$">
+                            </p>
+
+                        </div>
+
+                        <div class="exchangeb-text neo-700">
+                            <p>Compra:<input class="form-control-5 d-inline" type="text" placeholder="test 24.50$">
+                            </p>
+                        </div>
                     </div>
                 </div>
+                <!--FIN MONEY EXCHANGE-->
 
             </div>
 
@@ -116,7 +132,7 @@
 
                          <!--INICIO DATOS DE CLIENTE-->
                         <div  class="row form-row form-control-7-readonly">
-                            <div class="col-6 infoclient-input">
+                            <div class="col-6 infoclient-input"  id="user">
 
                                 <!--INICIO COLUMNA DERECHA DE CLIENTE-->
                                 <div class="d-flex client-box2" >
@@ -125,10 +141,10 @@
                                             data-toggle="tooltip" data-placement="top" title="Número de Identidad">
                                     </div>
 
-                                    <div class="input-group" id="test">
-                                        <input class="neo-500" type="text"
-                                            placeholder="Actualizar Campo"
-                                            readonly="readonly" >
+                                    <div class="input-group">
+                                        <a href="#" id="username" data-type="text" data-placement="right"
+                                            data-title="Ingresa o Actualiza el Número de Identidad"
+                                            class="editable editable-click editable-empty form-control-7"></a>
                                     </div>
                                 </div>
 
@@ -139,7 +155,7 @@
                                     </div>
 
                                     <div class="input-group">
-                                        <input class="form-control-7 neo-500" type="text" placeholder="Actualizar Campo">
+                                        <a href="#" class="editable editable-click editable-empty form-control-7" id="dob" data-type="combodate"  data-url="/post" data-value="2001-01-01" data-title="Selecciona una Fecha"></a>
                                     </div>
                                 </div>
 
@@ -151,7 +167,9 @@
                                     </div>
                                 
                                     <div class="input-group">
-                                        <input class="form-control-7 neo-500" type="text" placeholder="Actualizar Campo">
+                                        <a href="#" id="nacionalidad1" data-type="text" data-placement="right"
+                                            data-title="Ingresa o Actualiza la Nacionalidad"
+                                            class="editable editable-click editable-empty form-control-7"></a>
                                     </div>
                                 </div>
                                 
@@ -162,7 +180,9 @@
                                     </div>
                                 
                                     <div class="input-group">
-                                        <input class="form-control-7 neo-500" type="text" placeholder="Actualizar Campo">
+                                        <a href="#" id="nacionalidad2" data-type="text" data-placement="right"
+                                            data-title="Ingresa o Actualiza la segunda Nacionalidad"
+                                            class="editable editable-click editable-empty form-control-7"></a>
                                     </div>
                                 </div>
 
@@ -174,7 +194,9 @@
                                     </div>
 
                                     <div class="input-group">
-                                        <input class="form-control-7 neo-500" type="text" placeholder="Actualizar Campo">
+                                        <a href="#" id="status" data-type="select" data-placement="right"
+                                            data-title="Ingresa o Actualiza la segunda Nacionalidad"
+                                            class="editable editable-click editable-empty form-control-7"></a>
                                     </div>
                                 </div>
 
@@ -185,7 +207,9 @@
                                     </div>
 
                                     <div class="input-group">
-                                        <input class="form-control-7 neo-500" type="text" placeholder="Actualizar Campo">
+                                        <a href="" id="name-conyugue" data-type="text" data-placement="right"
+                                            data-title="Ingresa o Actualiza el Nombre de tu Cónyugue"
+                                            class="editable editable-click editable-empty form-control-7"></a>
                                     </div>
                                 </div>
 
@@ -196,7 +220,9 @@
                                     </div>
                                 
                                     <div class="input-group">
-                                        <input class="form-control-7 neo-500" type="text" placeholder="Actualizar Campo">
+                                        <a href="" id="email" data-type="text" data-placement="right"
+                                            data-title="Ingresa o Actualiza el Correo Electrónico"
+                                            class="editable editable-click editable-empty form-control-7"></a>
                                     </div>
                                 </div>
                                 
@@ -207,7 +233,9 @@
                                     </div>
                                 
                                     <div class="input-group">
-                                        <input class="form-control-7 neo-500" type="text" placeholder="Actualizar Campo">
+                                        <a href="#" id="number-cellphone" data-type="text" data-placement="right"
+                                            data-title="Ingresa o Actualiza el Número de Celular"
+                                            class="editable editable-click editable-empty form-control-7"></a>
                                     </div>
                                 </div>
 
@@ -218,7 +246,9 @@
                                     </div>
                                 
                                     <div class="input-group">
-                                        <input class="form-control-7 neo-500" type="text" placeholder="Actualizar Campo">
+                                        <a href="#" id="number-home" data-type="text" data-placement="right"
+                                            data-title="Ingresa o Actualiza el Número de Teléfono"
+                                            class="editable editable-click editable-empty form-control-7"></a>
                                     </div>
                                 </div>
 
@@ -229,8 +259,9 @@
                                     </div>
                                 
                                     <div class="input-group">
-                                        <textarea class="form-control-7b" id="exampleTextarea" rows="2" placeholder="Actualizar Campo"
-                                            readonly="readonly"></textarea>
+                                        <a href="#" id="direction-home" data-type="textarea" data-placement="right"
+                                            data-title="Ingresa o Actualiza el Número de Teléfono"
+                                            class="editable editable-click editable-empty form-control-7b"></a>
                                     </div>
                                 </div>
 
@@ -247,7 +278,9 @@
                                     </div>
                                 
                                     <div class="input-group">
-                                        <input class="form-control-7 neo-500" type="text" placeholder="Actualizar Campo">
+                                        <a href="#" id="profesion" data-type="text" data-placement="right"
+                                            data-title="Ingresa o Actualiza el Número de Teléfono"
+                                            class="editable editable-click editable-empty form-control-7"></a>
                                     </div>
                                 </div>
 
@@ -258,7 +291,9 @@
                                     </div>
                                 
                                     <div class="input-group">
-                                        <input class="form-control-7 neo-500" type="text" placeholder="Actualizar Campo">
+                                        <a href="#" id="oficio" data-type="text" data-placement="right"
+                                            data-title="Ingresa o Actualiza el Número de Teléfono"
+                                            class="editable editable-click editable-empty form-control-7"></a>
                                     </div>
                                 </div>
 
@@ -269,7 +304,9 @@
                                     </div>
                                 
                                     <div class="input-group">
-                                        <input class="form-control-7 neo-500" type="text" placeholder="Actualizar Campo">
+                                        <a href="#" id="actividad-economica" data-type="text" data-placement="right"
+                                            data-title="Ingresa o Actualiza el Número de Teléfono"
+                                            class="editable editable-click editable-empty form-control-7"></a>
                                     </div>
                                 </div>
 
@@ -281,7 +318,9 @@
                                     </div>
 
                                     <div class="input-group">
-                                        <input class="form-control-7 neo-500" type="text" placeholder="Actualizar Campo">
+                                    <a href="#" id="lugar-trabajo" data-type="text" data-placement="right"
+                                        data-title="Ingresa o Actualiza el Número de Teléfono"
+                                        class="editable editable-click editable-empty form-control-7"></a>
                                     </div>
                                 </div>
 
@@ -292,7 +331,9 @@
                                     </div>
 
                                     <div class="input-group">
-                                        <input class="form-control-7 neo-500" type="text" placeholder="Actualizar Campo">
+                                        <a href="#" id="cargo" data-type="text" data-placement="right"
+                                            data-title="Ingresa o Actualiza el Número de Teléfono"
+                                            class="editable editable-click editable-empty form-control-7"></a>
                                     </div>
                                 </div>
 
@@ -303,7 +344,9 @@
                                     </div>
                                 
                                     <div class="input-group">
-                                        <input class="form-control-7 neo-500" type="text" placeholder="Actualizar Campo">
+                                        <a href="#" id="ingreso" data-type="text" data-placement="right"
+                                            data-title="Ingresa o Actualiza el Número de Teléfono"
+                                            class="editable editable-click editable-empty form-control-7"></a>
                                     </div>
                                 </div>
 
@@ -315,7 +358,9 @@
                                     </div>
 
                                     <div class="input-group">
-                                        <input class="form-control-7 neo-500" type="text" placeholder="Actualizar Campo">
+                                        <a href="#" id="number-work" data-type="text" data-placement="right"
+                                            data-title="Ingresa o Actualiza el Número de Teléfono"
+                                            class="editable editable-click editable-empty form-control-7"></a>
                                     </div>
                                 </div>
 
@@ -326,7 +371,9 @@
                                     </div>
                                 
                                     <div class="input-group">
-                                        <input class="form-control-7 neo-500" type="text" placeholder="Actualizar Campo">
+                                        <a href="#" id="number-desembolso" data-type="text" data-placement="right"
+                                            data-title="Ingresa o Actualiza el Número de Teléfono"
+                                            class="editable editable-click editable-empty form-control-7"></a>
                                     </div>
                                 </div>
 
@@ -339,7 +386,9 @@
                                     </div>
 
                                     <div class="input-group">
-                                        <textarea class="form-control-7b" id="exampleTextarea" rows="2" placeholder="Actualizar Campo"></textarea>
+                                        <a href="#" id="direction-work" data-type="textarea" data-placement="right"
+                                            data-title="Ingresa o Actualiza el Número de Teléfono"
+                                            class="editable editable-click editable-empty form-control-7b"></a>
                                     </div>
                                 </div>
                                    
@@ -353,29 +402,17 @@
                     </div>
                     <!--FIN CONTENEDOR INFORMACION DEL CLIENTE-->
 
-
-
                     <!--INICIO sidenav-cliente-->
                     <div class="col-1 sidenav-client">
                         <div class="clients-menu neo-700">
-                           <!-- <p>Formularios</p> -->
 
-                            <!--<a href="#"><img src="images/Datos-edit.png" alt="" data-toggle="modal"
-                                    data-target="#ACTUALIZARDATOS">
-                                <p class="clients-menu-text">Actualizar Datos</p>
-                                </a> -->
-
-                            <a href="#"><img src="images/Datos-edit.png" alt="" class="makeEditable" id="makeEditable">
+                            <a href="#" id="enable"><img src="images/Datos-edit.png" alt="">
                                 <p class="clients-menu-text">Modificar <br> Datos</p>
                             </a>
 
-                            <!--
-                            <a href="#"><img src="images/Datos.png" alt="" data-toggle="modal" data-target="#ACTUALIZARDATOS">
-                                <p class="clients-menu-text" class="makeNonEditable">Confirmar Datos</p>
-                            </a>
-                            -->
+                          
 
-                            <a href="#"><img src="images/Datos.png" alt="" class="makeNonEditable">
+                            <a href="#PrintData" id="disable"><img src="images/Datos.png" alt="" class="makeNonEditable">
                                 <p class="clients-menu-text" >Confirmar Datos</p>
                             </a>
 
@@ -383,7 +420,6 @@
                                     alt="">
                                 <p class="clients-menu-text">Encuesta</p> 
                             </a>
-                            <a href="#"><img src="images/print.png" alt=""><p class="clients-menu-text">Imprimir</p></a>
                         </div>
                     </div>
                     <!--FIN sidenav-cliente-->
@@ -425,7 +461,7 @@
                             <div class="modal-content modal-content__custom1">
                     
                                 <div class="modal-header modal-header__custom2">
-                                    <h5 class="modal-title neo-700" id="exampleModalLabel">Generar o Enviar Expediente
+                                    <h5 class="modal-title neo-700" id="exampleModalLabel">Generar o Enviar Encuesta
                                     </h5>
                                     <button type="button" class="close" data-dismiss="modal" aria-label="Close">
                                         <span aria-hidden="true">&times;</span>
@@ -444,13 +480,40 @@
                     <!--Fin modal 6: Encuesta-->
 
                     <!-- FIN MODAL DE SIDENAV-->
+
+                    <!--Inicio modal 7: Imprimir Datos-->
+                    <div class="modal fade" id="PrintData" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel"
+                        aria-hidden="true">
+                        <div class="modal-dialog" role="document">
+                            <div class="modal-content modal-content__custom1">
+                    
+                                <div class="modal-header modal-header__custom2">
+                                    <h5 class="modal-title neo-700" id="exampleModalLabel">Imprimir datos de Usuario
+                                    </h5>
+                                    <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                                        <span aria-hidden="true">&times;</span>
+                                    </button>
+                                </div>
+                    
+                                <div class="modal-body modal-body__custom1 justify-content-center align-items-center">  
+                                    <img src="images/print2.png" alt="">
+                                </div>
+
+                                <div class="modal-footer modal-footer-borderless justify-content-center align-items-center">
+                                    <button type="button" class="btn btn-outline-light btn-modal-group" data-dismiss="modal">Ahora no</button>
+                                    <button type="button" class="btn btn-outline-light btn-modal-group">Imprimir</button>
+                                </div>
+                    
+                            </div>
+                        </div>
+                    </div>
+                    <!--Fin modal 7: Imprimir Datos-->
+                    
+                    <!-- FIN MODAL DE SIDENAV-->
                     
                 </div>
-
                 
             </div>
-
-            
 
         </div>
 
@@ -476,6 +539,12 @@
         integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM" crossorigin="anonymous">
     </script>
 
+    
+    <script src="js/bootstrap-editable.js"></script>
+    <script src="js/moment.js"></script>
+    <script src="js/combodate.js"></script>
+    
+
 
   <script>
       $(document).ready(function (e) {
@@ -483,6 +552,8 @@
       });
   </script>
 
+
+<!--INICIO SCRIPT SELECT DEL NAV MENU-->
   <script>
     $(function(){
     // this will get the full URL at the address bar
@@ -506,35 +577,221 @@
   
   </script>
 
-  <!--<script>
-  
-   $(function () {
-   $(".makeEditable").click(function () {
-    $('input:text').removeAttr("readonly");
-   });
-   $(".makeNonEditable").click(function () {
-     $('input:text').attr("readonly", "readonly");
-   });
-   })
-  
-  </script> -->
+<!--FIN SCRIPT SELECT DEL NAV MENU-->
 
+
+<!-- INICIO SCRIPT PARA HACER CONTENIDO EDITABLE-->
   <script>
   
-  $('#makeEditable').click(function(){
-  $('#test').toggleClass('form-control-7');
-  $('input').each(function(){
-  var inp = $(this);
-  if (inp.attr('readonly')) {
-  inp.removeAttr('readonly');
-  }
-  else {
-  inp.attr('readonly', 'readonly');
-  }
-  });
-  });
-  
-  </script>
+  $(document).ready(function() {
+    //toggle `popup` / `inline` mode
+    $.fn.editable.defaults.mode = 'popup'; 
+    
+     $('#enable').click(function () {
+          edit();
+      });
+
+      $('#disable').click(function () {
+
+          $('#user .editable').editable('destroy');
+      });
+
+    function edit() {
+
+            //Columna Izquierda 
+
+            //make username editable
+            $('#username').editable({
+                url: '/post',
+                title: 'Número de Identidad',
+                placeholder: 'Escribe el Número de Identidad',
+                emptytext: 'Número de Identidad'
+            });
+
+            //Cambiar Fecha de Nacimiento
+             $('#dob').editable({
+                 format: 'YYYY-MM-DD',
+                 viewformat: 'DD.MM.YYYY',
+                 template: 'D / MMMM / YYYY',
+                 combodate: {
+                     minYear: 1919,
+                     maxYear: 2001,
+                     minuteStep: 1
+                 }
+            });
+
+            //make nacionalidad1 editable
+            $('#nacionalidad1').editable({
+                url: '/post',
+                title: 'Nacionalidad 1',
+                placeholder: 'Escribe la Nacionalidad',
+                emptytext: 'Nacionalidad 1'
+            });
+
+            //make nacionalidad2 editable
+            $('#nacionalidad2').editable({
+                url: '/post',
+                title: 'Nacionalidad 2',
+                placeholder: 'Escribe la segunda Nacionalidad',
+                emptytext: 'Nacionalidad 2'
+            });
+
+
+            //make status editable
+            $('#status').editable({
+                value: 1,
+                source: [{
+                    value: 1,
+                    text: 'Soltero (a)'
+                },
+                {
+                    value: 2,
+                    text: 'Casado (a)'
+                },
+                {
+                    value: 3,
+                    text: 'Union Libre'
+                },
+                {
+                value: 4,
+                text: 'Divorciado (a)'
+                },
+                {
+                value: 5,
+                text: 'Viudo (a)'
+                }
+                ]
+            });
+
+            //make nombre del conyugue editable
+            $('#name-conyugue').editable({
+                url: '/post',
+                title: 'Nombre del Conyugue',
+                placeholder: 'Escribe el nombre de tu Conyugue',
+                emptytext: 'Nombre del Conyugue'
+            });
+
+            //make correo electronico editable
+            $('#email').editable({
+                url: '/post',
+                title: 'Correo Electrónico',
+                placeholder: 'Escribe el Correo Electrónico',
+                emptytext: 'Correo Electrónico'
+            });
+
+            //make número de celular editable
+            $('#number-cellphone').editable({
+                url: '/post',
+                title: 'Número de Celular',
+                placeholder: 'Escribe el Número de Celular',
+                emptytext: 'Número de Celular'
+            });
+
+            //make teléfono de casa editable
+            $('#number-home').editable({
+                url: '/post',
+                title: 'Teléfono de Casa',
+                placeholder: 'Escribe el Teléfono de Casa',
+                emptytext: 'Teléfono de Casa'
+            });
+            
+            //make direccion de casa editable editable
+            $('#direction-home').editable({
+                url: '/post',
+                title: 'Dirección de Casa',
+                rows: 4,
+            });
+
+             //Columna Derecha
+
+            //make profesion editable
+            $('#profesion').editable({
+                url: '/post',
+                title: 'Profesión',
+                placeholder: 'Escribe la Profesión',
+                emptytext: 'Profesión'
+            });
+
+            //make ocupacion u oficio editable
+            $('#oficio').editable({
+                url: '/post',
+                title: 'Ocupación u Oficio',
+                placeholder: 'Escribe la Ocupación u Oficio',
+                emptytext: 'Ocupación u Oficio'
+            });
+
+            //make actividad economica editable
+            $('#actividad-economica').editable({
+                url: '/post',
+                title: 'Actividad Económica',
+                placeholder: 'Escribe la Actividad Económica',
+                emptytext: 'Actividad Económica'
+            });
+
+            //make lugar de trabajo editable
+            $('#lugar-trabajo').editable({
+                url: '/post',
+                title: 'Lugar de Trabajo',
+                placeholder: 'Escribe el Lugar de Trabajo',
+                emptytext: 'Lugar de Trabajo'
+            });
+
+            //make cargo editable
+            $('#cargo').editable({
+                url: '/post',
+                title: 'Cargo',
+                placeholder: 'Escribe el Cargo',
+                emptytext: 'Cargo'
+            });
+
+            //make ingreso mensual editable
+            $('#ingreso').editable({
+                url: '/post',
+                title: 'Ingresos',
+                placeholder: 'Escribe los Ingresos',
+                emptytext: 'Ingresos'
+            });
+
+            //make telefono de trabajo editable
+            $('#number-work').editable({
+                url: '/post',
+                title: 'Número de Trabajo',
+                placeholder: 'Escribe el Número de Trabajo',
+                emptytext: 'Número de Trabajo'
+            });
+
+            //make numero para desembolso editable
+            $('#number-desembolso').editable({
+                url: '/post',
+                title: 'Número de Desembolso',
+                placeholder: 'Escribe el Número de Desembolso',
+                emptytext: 'Número de Desembolso'
+            });
+
+            //make direccion de trabajo editable editable
+            $('#direction-work').editable({
+                url: '/post',
+                title: 'Dirección del Trabajo',
+                rows: 4,
+            });
+
+
+            
+        }
+ });
+</script>
+
+<!-- FIN SCRIPT PARA HACER CONTENIDO EDITABLE-->
+
+<!--INICIO SCRIPT PARA LANZAR MODAL AL CANCELAR ESTADO EDITABLE-->
+
+<script>
+    $('a[href$="#PrintData"]').on("click", function () {
+        $('#PrintData').modal('show');
+    });
+</script>
+
+<!--FIN SCRIPT PARA LANZAR MODAL AL CANCELAR ESTADO EDITABLE-->
 
 
 </body>

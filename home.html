@@ -32,35 +32,45 @@
         <div class="row justify-content-center align-items-center main-content">
 
             <!--Sidenav-->
-            <div class="col-2 side-nav">
+            <div class="col-lg-3 col-xl-2 side-nav">
 
                 <div class="">
-                    <img src="  images/atlaslogo-full.png" alt="logo-atlas" class="side-nav--logo2 neo-400">
+                    <img src="images/atlaslogo-full.png" alt="logo-atlas" class="side-nav--logo2 neo-400">
                 </div>
                 <nav class="navbar side-nav--list2">
                     <ul id="menu">
                         <li class="nav-item"><a class="nav-link" href="home.html">Buscar Cliente</a></li>
-                        <li class="nav-item"><a class="nav-link" href="#">Formularios</a></li>
-                        <li class="nav-item"><a class="nav-link" href="#">Para Ventas</a></li>
-                        <li class="nav-item"><a class="nav-link" href="#">Nuevo Cliente</a></li>
+                        <li class="nav-item"><a class="nav-link" href="forms-home-c.html">Formularios</a></li>
+                        <li class="nav-item"><a class="nav-link" href="ventas-home.html">Para Ventas</a></li>
+                        <li class="nav-item"><a class="nav-link" href="nuevocliente-home.html">Nuevo Cliente</a></li>
                         <li class="nav-item"><a class="nav-link out" href="index.html">Cerrar Sesión</a></li>
+                        <hr class="sidenav-d" />
                     </ul>
                 </nav>
 
+                <!--INICIO MONEY EXCHANGE-->
                 <div class="d-flex">
-                    <div class="exchange">
+                    <div class="exchangeb">
                         <img src="images/exchange.png" alt="">
                     </div>
 
-                    <div class="exchange-text neo-700">
-                        <p>Venta:<input class="form-control-3 w-25 d-inline" type="text" placeholder="test 24$"></p>
-                        <p>Compra:<input class="form-control-3 w-25 d-inline" type="text" placeholder="test"></p>
+                    <div class="exchange-container">
+                        <div class="exchange-text neo-700">
+                            <p class="">Venta:<input class="form-control-3 d-inline" type="text" placeholder="test 24.60$">
+                            </p>
+                        </div>
+
+                        <div class="exchange-text neo-700">
+                            <p>Compra:<input class="form-control-3 d-inline" type="text" placeholder="test 24.50$">
+                            </p>
+                        </div>
                     </div>
                 </div>
+                <!--FIN MONEY EXCHANGE-->
             </div>
 
             <!--Panel #1: Medio-->
-            <div id="Middle-UserInfo" class="col-3 info-1">
+            <div id="Middle-UserInfo" class="col-lg-4 col-xl-3 info-1">
                 <p class="h3 text-center neo-700 p-box3">Bienvenido</p>
                  
 
@@ -120,7 +130,7 @@
             </div>
 
             <!--Panel #2: Derecho-->
-            <div id="Right-LoginPanel" class="col-3 info-2">
+            <div id="Right-LoginPanel" class="col-lg-4 col-xl-3 info-2">
 
                 <p class="h3 text-center p-box4 neo-700 ">Buscar Cliente</p>
 
@@ -164,20 +174,20 @@
         integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM" crossorigin="anonymous">
     </script>
 
-      <script>
-          $(function () {
-              // this will get the full URL at the address bar
-              var url = window.location.href;
+    <script>
+        $(function () {
+            // this will get the full URL at the address bar
+            var url = window.location.href;
 
-              // passes on every "a" tag
-              $("#menu a").each(function () {
-                  // checks if its the same on the address bar
-                  if (url == (this.href)) {
-                      $(this).closest("li").addClass("active-nav-2");
-                  }
-              });
-          });
-      </script>
+            // passes on every "a" tag
+            $("#menu a").each(function () {
+                // checks if its the same on the address bar
+                if (url == (this.href)) {
+                    $(this).closest("li").addClass("active-nav-2");
+                }
+            });
+        });
+    </script>
 
 
 </body>
