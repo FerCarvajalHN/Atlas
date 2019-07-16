@@ -26,6 +26,13 @@
    7. MediaQuerys
 */
 
+/* Breakpoints: 
+    lg = 992 px
+    xl = 1200 px
+    xxl = 1440 px
+    xxxl = 1600 px
+*/    
+
 /* COMIENZO DE CODIGO FINAL */
 
 /* =========================================================================================== */
@@ -825,13 +832,13 @@ i.fa {
 .collap-title-header-e {
     font-size: 36px;
     color: var(--rojo-afp);
-    margin: 50px 271px;
+    margin: 50px 320px;
 }
 
 .collap-title-header-f {
     font-size: 36px;
     color: var(--rojo-afp);
-    margin: 50px 264px;
+    margin: 50px 315px;
 }
 
 /* =========================================================================================== */
@@ -1140,9 +1147,21 @@ a.editable-click.editable-disabled:hover {
     font-size: 30px;
 }
 
+.p-box6b {
+    color: var(--rojo-afp);
+    margin: 20px 0px 10px 0px;
+    padding-right: 70px;
+    font-size: 30px;
+}
+
 .client-boxc {
     padding: 0px 75px 0px 20px;
     margin: 0px 25px;
+}
+
+.scrolld-2 {
+    height: 475px;
+    overflow-y: scroll;
 }
 
 .dropdown-toggle::after {
@@ -1171,11 +1190,6 @@ li.page-item a:hover {
 .active-1 {
     background-color:white;
     color: red;
-}
-
-.scrolld-1 {
-    height: 475px;
-    overflow-y: scroll;
 }
 
 .canales-act {  
@@ -1394,7 +1408,6 @@ label.checkbox:hover {
     margin-top: 20px;
 }
 
-
 .gestiones-container {
     border-radius: 19px;
     border-bottom-right-radius: 0px;
@@ -1465,6 +1478,11 @@ i.fa-custom-2 {
 
 i.fa-custom-2:hover {
     color: var(--rojo-afp);
+}
+
+.scrolld-1 {
+    height: 475px;
+    overflow-y: scroll;
 }
 
 /* =========================================================================================== */
@@ -1572,11 +1590,7 @@ i.fa-custom-1:hover {
   ##Screen = B/w 1025px to 1280px
 */
 
-@media (min-width: 1366px) and (max-width: 1439px) {}
-
-@media (min-width: 1280px) and (max-width: 1439px) {}
-
-@media (min-width: 1024px) and (max-width: 1279px) {
+@media (max-width: 1024px) {
 
     /* =========================================================================================== */
     /*                                                                                             */
@@ -1714,7 +1728,6 @@ i.fa-custom-1:hover {
 
     .exchangeb img {
         width: 85%;
-        
         margin-right: 5px;
     }
 
@@ -1761,11 +1774,35 @@ i.fa-custom-1:hover {
         padding: 0;
     }
 
-    .clients-menu {
-        height: 320px;
-        width: 88px;
-        margin: 130px 0px 130px -38px;
+    .form-control-5 {
+        margin-left: 0px;
+        height: 10px;
+        border: none;
+        font-size: 12px;
+        font-weight: bold;
+        color: var(--blanco-afp);
+        background-color: var(--rojob-afp);
+        border-color: white;
+        width: 50px;
     }
+
+    .exchangeb-text p {
+        margin-left: 0px;
+        margin-bottom: 0px;
+    }
+
+     .exchange-container-b {
+        margin-left:-10px;
+     }
+
+     .exchangeb-image {
+        margin-top: 15px;
+        margin-right: 15px;
+     }
+
+     .exchangeb-main-container {
+        margin-left: -15px;
+     }
 
 
     /* =========================================================================================== */
@@ -2016,7 +2053,7 @@ i.fa-custom-1:hover {
     }
 
     .infoclient-input {
-        padding: 10px 50px 20px 0px;
+        padding: 5px 0px 0px 0px;
         margin: 0px 0px;
     }
 
@@ -2034,13 +2071,249 @@ i.fa-custom-1:hover {
         width: 100%;
         padding: 0.375rem 1.75rem;
         font-size: 1.2rem;
+        height: 85%;
     }
 
     .client-box2 {
-        margin-left: 60px;
+        margin-left: 50px;
+    }
+
+    .client-box3 {
+        margin-right: 25px;
+    }
+
+    .client-box {
+        padding: 0px 50px;
+    }
+
+    .clients-menu {
+        height: 320px;
+        width: 65px;            
+        margin: 140px 0px 140px -15px;
+    }
+
+    .clients-menu p {
+        font-size: 12px;
+        margin: 12px 0px;
+        margin-top: -25px;
+    }
+
+
+    .clients-menu img {
+        width: 65%;
+        margin: 20px 0px 25px 15px;
+    }
+
+    .info-client-icon img {
+        width: 95%;
+    }
+
+    .form-control-7 {
+        width: 92%;
+        height: calc(1.3em + 0.75rem + 2px);
+        padding: 0.375rem 1.75rem;
+        font-size: 1rem;
+        border-radius: 9px;
+        color: var(--gris-afp);
+        border: 1px solid var(--gris-afp);
+        border-bottom: 1px solid var(--gris-afp);
+    }
+
+    .form-control-7b {
+        width: 92%;
+        height: calc(3em + 0.75rem + 2px);
+        padding: 0.375rem 1.75rem;
+        font-size: 12px;
+        font-weight: 500;
+        border-radius: 9px;
+        color: var(--gris-afp);
+        border: 1px solid var(--gris-afp);
+        border-bottom: 1px solid var(--gris-afp);
+    }
+
+    /* =========================================================================================== */
+    /*                                                                                             */
+    /*                                   5b.-Resumen-Cliente                                       */
+    /*                                                                                             */
+    /* =========================================================================================== */
+
+    .client-boxc {
+        padding: 0px 25px 0px 20px;
+        margin: 0px 25px;
+    }
+
+    .p-box6b {
+        color: var(--rojo-afp);
+        margin: 20px 0px 10px 0px;
+        padding-right: 5px;
+        font-size: 22px;
+    }
+    
+    .table-container {
+        padding: 10px 5px 10px 5px;
+        height: 300px;
+    }
+
+    .table-row__icon img {
+        margin: 10px 0px 10px 5px;
+    }
+
+    .table-row {
+        border: 1px solid #e4e9ea;
+        background-color: var(--blanco-afp);
+    }
+
+    .table-row__td {
+        margin: 98px;
+    }
+
+    .table__thead th {
+        color: var(--grisb-afp);
+        padding-bottom: 5px;
+    }
+
+    .scrolld-2 {
+        height: 350px;
+        overflow-y: scroll;
+    }
+
+    .table-row__name {
+        margin: 10px 0px;
+        font-size: 16px;
+    }
+
+    .canales-act {
+        padding: 0px 15px;
+        margin: 0px 0px;
+        height: 132px;  
+        padding: 0px 60px;
+    }
+
+    .form-control-8 {
+        width: 75%;
+        height: calc(1.4rem + 0.5rem + 2px);
+        padding: 0.375rem 0rem;
+        font-size: 12px;
+    }
+
+    .form-control-8b {
+        width: 100%;
+        height: calc(1.4rem + 0.5rem + 2px);
+        padding: 0.375rem 1.75rem;
+        margin: 20px 0px;
+        font-size: 12px;
+    }
+
+    .input-userinfo-icon2 {
+        background-color: var(--gris-afp);
+        border: 1px solid var(--gris-afp);
+        height: calc(1.4rem + 0.5rem + 2px);
+    }
+
+    .iconset-reduser2 {
+        margin-top: 20px;
+        margin-bottom: 20px;
+        margin-left: 10px;
+        margin-right: 0px;
+    }
+
+    .iconset-reduser2 img {
+        width: 80px;
+    }
+
+    .canales__ovp {
+        padding-right: 0px;
+        margin: 20px 0px;
+    }
+
+    .canales__sms {
+        margin: 20px 0px;
+    }
+
+    .p-box7 {
+        font-size: 12px;
+        margin-top: 35px;
+        margin-bottom: 35px;
+        margin-left: 0px;
+        margin-right: 5px;
     }
 
 
 
-    
+    /*============================================================================================ */
+    /*                                                                                             */
+    /*                                     5c. Gestiones                                           */
+    /*                                                                                             */
+    /* =========================================================================================== */
+
+    .tab-gestiones {
+        border-radius: 19px;
+        height: 410px;
+    }
+
+    .scrolld-1 {
+        height: 410px;
+        border-radius: 19px;
+        overflow-y: scroll;
+    }
+
+    .p-box6 {
+        padding: 0px 40px 0px 0px;
+        font-size: 22px;
+    }
+
+    .form-control-6b {
+        width: 95%;
+        padding: 0.375rem 1.75rem;
+        font-size: 1rem;
+        border: 2px solid var(--rojo-afp);
+    }
+
+    .client-boxb {
+        padding: 0px 10px;
+        margin-left: 30px;
+    }
+
+    .gestiones-row {
+        padding: 0px 40px;
+    }
+
+    .form-control-10 {
+        width: 100%;
+        padding: 0.375rem 1.75rem;
+        font-size: 1rem;
+    }
+
+    .gestion-button {
+        padding-right: 15px;
+        padding-left: 15px;
+    }
+
+    .table-container-gestiones {
+        margin-top: 5px;
+        padding: 20px 65px 20px 45px;
+    }
+
+    /* =========================================================================================== */
+    /*                                                                                             */
+    /*                                5d. Detalles-Gestiones                                       */
+    /*                                                                                             */
+    /* =========================================================================================== */
+
+    .custom-card {
+        margin: 40px 65px 15px 65px;
+    }
+
+    .detalles-card {
+        color: var(--gris-afp);
+        margin: 0px 00px;
+        
+    }
+
+    .form-control-12b {
+        margin-left: 5px;
+        width: 47%;
+        font-size: 12px;
+    }
+
 }

@@ -5,10 +5,10 @@
     <!-- Required meta tags -->
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
-    <meta http-equiv="x-ua-compatible" content="ie-edge" <!-- Bootstrap CSS -->
-    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css"
-        integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
-
+    <meta http-equiv="x-ua-compatible" content="ie-edge">
+    
+    <!-- Bootstrap CSS -->
+    <link rel="stylesheet" href="css/bootstrap.css">
     <link href="css/bootstrap-editable.css" rel="stylesheet">
 
     <link rel="stylesheet" href="css/main.css">
@@ -65,7 +65,7 @@
         <div class="row align-items-center main-content">
 
             <!--Sidenav-->
-            <div class="col-lg-3 col-xl-3 side-navb">
+            <div class="col-lg-3 col-xxl-3 col-xxxl-3 side-navb">
 
                 <div class="">
                     <img src="images/atlaslogo-white.png" alt="logo-atlas" class="side-navb--logo">
@@ -83,12 +83,12 @@
                 </nav>
 
                 <!--INICIO MONEY EXCHANGE-->
-                <div class="d-flex">
-                    <div class="exchangeb">
+                <div class="d-flex exchangeb-main-container">
+                    <div class="exchangeb exchangeb-image">
                         <img src="images/icons-cliente/exchangeb.png" alt="">
                     </div>
 
-                    <div class="exchange-container">
+                    <div class="exchange-container exchange-container-b">
                         <div class="exchangeb-text neo-700">
                             <p class="">Venta:<input class="form-control-5 d-inline" type="text"
                                     placeholder="test 24.60$">
@@ -107,12 +107,12 @@
             </div>
 
             <!--Panel #1: Medio-->
-            <div id="Middle-ClientInfo" class="col-lg-9 col-xl-8 info-4">
+            <div id="Middle-ClientInfo" class="col-lg-9 col-xxl-9 col-xxxl-8 info-4">
 
                 <div class="row" style="border-radius: 19px;">
 
                     <!--INICIO CONTENEDOR INFORMACION DEL CLIENTE-->
-                    <div class="col-lg-11 col-xl-11 infoclient-container">
+                    <div class="col-lg-11 col-xxxl-11 infoclient-container">
                         <!--INICIO TITULO-->
                         <p class="text-center p-box5 neo-700">Información del Cliente</p>
                         <!--FIN TITULO-->
@@ -136,7 +136,7 @@
 
                                 <!--INICIO COLUMNA DERECHA DE CLIENTE-->
                                 <div class="d-flex client-box2" >
-                                    <div class="iconset-reduser" >
+                                    <div class="iconset-reduser info-client-icon">
                                         <img src="images/icons-cliente/identidad.png" alt="" class=""
                                             data-toggle="tooltip" data-placement="top" title="Número de Identidad">
                                     </div>
@@ -149,7 +149,7 @@
                                 </div>
 
                                 <div class="d-flex client-box2">
-                                    <div class="iconset-reduser">
+                                    <div class="iconset-reduser info-client-icon">
                                         <img src="images/icons-cliente/birth.png" alt="" class="" data-toggle="tooltip"
                                             data-placement="top" title="Fecha de Nacimiento">
                                     </div>
@@ -161,7 +161,7 @@
 
 
                                 <div class="d-flex client-box2">
-                                    <div class="iconset-reduser">
+                                    <div class="iconset-reduser info-client-icon">
                                         <img src="images/icons-cliente/nacionalidad.png" alt="" class="" data-toggle="tooltip" data-placement="top"
                                             title="Nacionalidad 1">
                                     </div>
@@ -174,7 +174,7 @@
                                 </div>
                                 
                                 <div class="d-flex client-box2">
-                                    <div class="iconset-reduser">
+                                    <div class="iconset-reduser info-client-icon">
                                         <img src="images/icons-cliente/nacionalidad.png" alt="" class="" data-toggle="tooltip" data-placement="top"
                                             title="Nacionalidad 2">
                                     </div>
@@ -188,7 +188,7 @@
 
                                 
                                 <div class="d-flex client-box2">
-                                    <div class="iconset-reduser">
+                                    <div class="iconset-reduser info-client-icon">
                                         <img src="images/icons-cliente/estadocivil.png" alt="" class=""
                                             data-toggle="tooltip" data-placement="top" title="Estado Civil">
                                     </div>
@@ -201,7 +201,7 @@
                                 </div>
 
                                 <div class="d-flex client-box2">
-                                    <div class="iconset-reduser">
+                                    <div class="iconset-reduser info-client-icon">
                                         <img src="images/icons-cliente/conyugue.png" alt="" class=""
                                             data-toggle="tooltip" data-placement="top" title="Nombre del Cónyugue">
                                     </div>
@@ -214,7 +214,7 @@
                                 </div>
 
                                 <div class="d-flex client-box2">
-                                    <div class="iconset-reduser">
+                                    <div class="iconset-reduser info-client-icon">
                                         <img src="images/icons-cliente/mail.png" alt="" class="" data-toggle="tooltip" data-placement="top"
                                             title="Correo Electrónico">
                                     </div>
@@ -227,7 +227,7 @@
                                 </div>
                                 
                                 <div class="d-flex client-box2">
-                                    <div class="iconset-reduser">
+                                    <div class="iconset-reduser info-client-icon">
                                         <img src="images/icons-cliente/celular.png" alt="" class="" data-toggle="tooltip" data-placement="top"
                                             title="Número de Celular">
                                     </div>
@@ -240,7 +240,7 @@
                                 </div>
 
                                 <div class="d-flex client-box2">
-                                    <div class="iconset-reduser">
+                                    <div class="iconset-reduser info-client-icon">
                                         <img src="images/icons-cliente/telefono.png" alt="" class="" data-toggle="tooltip" data-placement="top"
                                             title="Teléfono de Casa">
                                     </div>
@@ -253,7 +253,7 @@
                                 </div>
 
                                 <div class="d-flex client-box2">
-                                    <div class="iconset-reduser">
+                                    <div class="iconset-reduser info-client-icon">
                                         <img src="images/icons-cliente/direccion.png" alt="" class="" data-toggle="tooltip" data-placement="top"
                                             title="Dirección de Casa">
                                     </div>
@@ -269,10 +269,10 @@
                             <!--FIN COLUMNA DERECHA DE CLIENTE-->
 
                             <!--INICIO COLUMNA IZQUIERDA DE CLIENTE-->
-                            <div class="col-6 infoclient-input">
+                            <div class="col-6 infoclient-input" id="user">
 
                                 <div class="d-flex client-box3">
-                                    <div class="iconset-reduser">
+                                    <div class="iconset-reduser info-client-icon">
                                         <img src="images/icons-cliente/profesion.png" alt="" class="" data-toggle="tooltip" data-placement="top"
                                             title="Profesión">
                                     </div>
@@ -285,7 +285,7 @@
                                 </div>
 
                                 <div class="d-flex client-box3">
-                                    <div class="iconset-reduser">
+                                    <div class="iconset-reduser info-client-icon">
                                         <img src="images/icons-cliente/oficio.png" alt="" class="" data-toggle="tooltip" data-placement="top"
                                             title="Ocupación u Oficio">
                                     </div>
@@ -298,7 +298,7 @@
                                 </div>
 
                                 <div class="d-flex client-box3">
-                                    <div class="iconset-reduser">
+                                    <div class="iconset-reduser info-client-icon">
                                         <img src="images/icons-cliente/actividade.png" alt="" class="" data-toggle="tooltip" data-placement="top"
                                             title="Actividad Económica">
                                     </div>
@@ -312,7 +312,7 @@
 
                                
                                 <div class="d-flex client-box3">
-                                    <div class="iconset-reduser">
+                                    <div class="iconset-reduser info-client-icon">
                                         <img src="images/icons-cliente/lugartrabajo.png" alt="" class=""
                                             data-toggle="tooltip" data-placement="top" title="Lugar de Trabajo">
                                     </div>
@@ -325,7 +325,7 @@
                                 </div>
 
                                 <div class="d-flex client-box3">
-                                    <div class="iconset-reduser">
+                                    <div class="iconset-reduser info-client-icon">
                                         <img src="images/icons-cliente/cargo.png" alt="" class="" data-toggle="tooltip"
                                             data-placement="top" title="Cargo">
                                     </div>
@@ -338,7 +338,7 @@
                                 </div>
 
                                 <div class="d-flex client-box3">
-                                    <div class="iconset-reduser">
+                                    <div class="iconset-reduser info-client-icon">
                                         <img src="images/icons-cliente/ingreso.png" alt="" class="" data-toggle="tooltip" data-placement="top"
                                             title="Ingreso Mensual">
                                     </div>
@@ -352,7 +352,7 @@
 
 
                                 <div class="d-flex client-box3">
-                                    <div class="iconset-reduser">
+                                    <div class="iconset-reduser info-client-icon">
                                         <img src="images/icons-cliente/telefono.png" alt="" class=""
                                             data-toggle="tooltip" data-placement="top" title="Teléfono de Trabajo">
                                     </div>
@@ -365,7 +365,7 @@
                                 </div>
 
                                 <div class="d-flex client-box3">
-                                    <div class="iconset-reduser">
+                                    <div class="iconset-reduser info-client-icon">
                                         <img src="images/icons-cliente/cuenta.png" alt="" class="" data-toggle="tooltip" data-placement="top"
                                             title="Número para desembolsos" contenteditable="true">
                                     </div>
@@ -379,7 +379,7 @@
 
 
                                 <div class="d-flex client-box3">
-                                    <div class="iconset-reduser">
+                                    <div class="iconset-reduser info-client-icon">
                                         <img src="images/icons-cliente/lugartrabajo.png" alt="" class=""
                                                data-toggle="tooltip" data-placement="top" title="Dirección de Trabajo"
                                                rows="12">
@@ -403,7 +403,7 @@
                     <!--FIN CONTENEDOR INFORMACION DEL CLIENTE-->
 
                     <!--INICIO sidenav-cliente-->
-                    <div class="col-lg-1 col-xl-1 sidenav-client">
+                    <div class="col-lg-1 col-xxxl-1 sidenav-client">
                         <div class="clients-menu neo-700">
 
                             <a href="#" id="enable"><img src="images/Datos-edit.png" alt="">
@@ -568,7 +568,9 @@
         });
     });
   </script>
+<!--FIN SCRIPT SELECT DEL NAV MENU-->
 
+  <!--INICIO SCRIPT PARA ACTIVAR TOOLTIPS-->
   <script>
   
   $(function () {
@@ -577,7 +579,7 @@
   
   </script>
 
-<!--FIN SCRIPT SELECT DEL NAV MENU-->
+  <!--FIN SCRIPT PARA ACTIVAR TOOLTIPS-->
 
 
 <!-- INICIO SCRIPT PARA HACER CONTENIDO EDITABLE-->

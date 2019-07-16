@@ -5,11 +5,10 @@
     <!-- Required meta tags -->
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
-    <meta http-equiv="x-ua-compatible" content="ie-edge"
+    <meta http-equiv="x-ua-compatible" content="ie-edge">
 
     <!-- Bootstrap CSS -->
-    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css"
-        integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+    <link rel="stylesheet" href="css/bootstrap.css">
     <link rel="stylesheet" href="css/main.css">
 
     <!--OwlCarousel-->
@@ -37,7 +36,7 @@
         <!--CONTENIDO-->
         <div class="row align-items-center main-content">
             <!--Inicio de Sidenav-->
-            <div class="col-lg-3 col-xl-3 side-navb">
+            <div class="col-lg-3 col-xxxl-3 side-navb">
                 <div class="">
                     <img src="images/atlaslogo-white.png" alt="logo-atlas" class="side-navb--logo">
                 </div>
@@ -54,12 +53,12 @@
                     </ul>
                 </nav>
                  <!--INICIO MONEY EXCHANGE-->
-                 <div class="d-flex">
-                     <div class="exchangeb">
+                 <div class="d-flex exchangeb-main-container">
+                     <div class="exchangeb exchangeb-image">
                          <img src="images/icons-cliente/exchangeb.png" alt="">
                      </div>
 
-                     <div class="exchange-container">
+                     <div class="exchange-container exchange-container-b">
                          <div class="exchangeb-text neo-700">
                              <p class="">Venta:<input class="form-control-5 d-inline" type="text"
                                      placeholder="test 24.60$">
@@ -78,7 +77,7 @@
             <!--Fin de Sidenav-->
 
             <!--Inicio Panel #1: Medio-->
-            <div id="Middle-ClientInfo" class="col-lg-9 col-xl-8 info-4">
+            <div id="Middle-ClientInfo" class="col-lg-9 col-xxxl-8 info-4">
 
                 <!-- Inicio contenedor principal-->
                 <div class="row" style="height: 350px; border-radius: 19px;">
@@ -103,7 +102,8 @@
                                     <div class="item" style="width: 128px">
                                         <a href="#" download=""> <img src="images/form1.png"
                                                 onmouseover="src='images/form1-color.png'"
-                                                onmouseout="src='images/form1.png'">
+                                                onmouseout="src='images/form1.png'" data-toggle="tooltip"
+                                                data-placement="top" title="Ejemplo de titulo para el formulario">
                                         </a>
                                         <span>Lorem ipsum....</span>
                                     </div>
@@ -111,7 +111,8 @@
                                     <div class="item" style="width: 128px">
                                         <a href="#" download=""> <img src="images/form1.png"
                                                 onmouseover="src='images/form1-color.png'"
-                                                onmouseout="src='images/form1.png'">
+                                                onmouseout="src='images/form1.png'" data-toggle="tooltip"
+                                                data-placement="top" title="Ejemplo de titulo para el formulario">
                                         </a>
                                         <span>Lorem ipsum....</span>
                                     </div>
@@ -119,7 +120,8 @@
                                     <div class="item" style="width: 128px">
                                         <a href="#" download=""> <img src="images/form1.png"
                                                 onmouseover="src='images/form1-color.png'"
-                                                onmouseout="src='images/form1.png'">
+                                                onmouseout="src='images/form1.png'" data-toggle="tooltip"
+                                                data-placement="top" title="Ejemplo de titulo para el formulario">
                                         </a>
                                         <span>Lorem ipsum....</span>
                                     </div>
@@ -127,7 +129,8 @@
                                     <div class="item" style="width: 128px">
                                         <a href="#" download=""> <img src="images/form1.png"
                                                 onmouseover="src='images/form1-color.png'"
-                                                onmouseout="src='images/form1.png'">
+                                                onmouseout="src='images/form1.png'" data-toggle="tooltip"
+                                                data-placement="top" title="Ejemplo de titulo para el formulario">
                                         </a>
                                         <span>Lorem ipsum....</span>
                                     </div>
@@ -135,7 +138,8 @@
                                     <div class="item" style="width: 128px">
                                         <a href="#" download=""> <img src="images/form1.png"
                                                 onmouseover="src='images/form1-color.png'"
-                                                onmouseout="src='images/form1.png'">
+                                                onmouseout="src='images/form1.png'" data-toggle="tooltip"
+                                                data-placement="top" title="Ejemplo de titulo para el formulario">
                                         </a>
                                         <span>Lorem ipsum....</span>
                                     </div>
@@ -143,7 +147,8 @@
                                     <div class="item" style="width: 128px">
                                         <a href="#" download=""> <img src="images/form1.png"
                                                 onmouseover="src='images/form1-color.png'"
-                                                onmouseout="src='images/form1.png'">
+                                                onmouseout="src='images/form1.png'" data-toggle="tooltip"
+                                                data-placement="top" title="Ejemplo de titulo para el formulario">
                                         </a>
                                         <span>Lorem ipsum....</span>
                                     </div>
@@ -235,6 +240,15 @@
             });
         });
     </script>
+
+    <!--INICIO SCRIPT PARA ACTIVAR TOOLTIPS-->
+    <script>
+        $(function () {
+            $('[data-toggle="tooltip"]').tooltip()
+        })
+    </script>
+
+    <!--FIN SCRIPT PARA ACTIVAR TOOLTIPS-->
 
 </body>
 

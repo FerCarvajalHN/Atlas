@@ -5,11 +5,10 @@
     <!-- Required meta tags -->
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
-    <meta http-equiv="x-ua-compatible" content="ie-edge" 
+    <meta http-equiv="x-ua-compatible" content="ie-edge">
     
     <!-- Bootstrap CSS -->
-    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css"
-          integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+    <link rel="stylesheet" href="css/bootstrap.css">
           
     <link href="https://unpkg.com/gijgo@1.9.13/css/gijgo.min.css" rel="stylesheet" type="text/css">
 
@@ -41,10 +40,10 @@
     </div>
 
     <!--CONTENIDO-->
-    <div class="row  align-items-center main-content">
+    <div class="row align-items-center main-content">
 
         <!--Sidenav-->
-        <div class="col-lg-3 col-xl-3 side-navb">
+        <div class="col-lg-3 col-xxl-3 col-xxxl-3 side-navb">
 
             <div class="">
                 <img src="images/atlaslogo-white.png" alt="logo-atlas" class="side-navb--logo">
@@ -62,12 +61,12 @@
             </nav>
 
             <!--INICIO MONEY EXCHANGE-->
-            <div class="d-flex">
-                <div class="exchangeb">
+            <div class="d-flex exchangeb-main-container">
+                <div class="exchangeb exchangeb-image">
                     <img src="images/icons-cliente/exchangeb.png" alt="">
                 </div>
 
-                <div class="exchange-container">
+                <div class="exchange-container exchange-container-b">
                     <div class="exchangeb-text neo-700">
                         <p class="">Venta:<input class="form-control-5 d-inline" type="text" placeholder="test 24.60$">
                         </p>
@@ -85,15 +84,15 @@
         </div>
 
         <!--Panel #1: Medio-->
-        <div id="Middle-ClientInfo" class="col-lg-9 col-xl-8 info-4">
+        <div id="Middle-ClientInfo" class="col-lg-9 col-xxl-9 col-xxxl-8 info-4">
 
-            <div class="row" style="height: 750px; border-radius: 19px;">
+            <div class="row" style="border-radius: 19px;">
 
                 <!--INICIO CONTENEDOR SERVICIOS Y PRODUCTOS DEL CLIENTE-->
                 <div class="col-12 infoclient-container">
 
                     <!--INICIO TITULO-->
-                    <p class="text-center p-box6 neo-700">Resumen de Productos y Servicios</p>
+                    <p class="text-center p-box6b neo-700">Resumen de Productos y Servicios</p>
                     <!--FIN TITULO-->
 
                     <!--INICIO  NOMBRE DE CLIENTE-->
@@ -109,204 +108,213 @@
 
                     <!--FIN NOMBRE DE CLIENTE-->
 
-
                     <!--INICIO TABLA DE PRODUCTOS Y SERVICIOS-->
 
-                    <div class="table-container scrolld-1">
-                        <table class="table table-wrapper table-borderless">
-                            <thead class="table__thead">
-                            <tr>
-                                <th></th>
-                                <th>Cuenta</th>
-                                <th>Producto</th>
-                                <th>Saldo</th>
-                                <th>Cta. Colectiva</th>
-                                <th>Medio</th>
-                                <th>Estado de Cta.</th>
-                                <th>Constancia</th>
-                                <th>Expediente</th>
-                                <th></th>
-                            </tr>
-                            </thead>
+                     <div class="col-12">
+                            <div class="table-container scrolld-2">
+                                <table class="table table-wrapper table-borderless">
+                                    <thead class="table__thead">
+                                        <tr>
+                                            <th></th>
+                                            <th>Cuenta</th>
+                                            <th>Producto</th>
+                                            <th>Saldo</th>
+                                            <th>Cta. Colectiva</th>
+                                            <th>Medio</th>
+                                            <th>Estado de Cta.</th>
+                                            <th>Constancia</th>
+                                            <th>Expediente</th>
+                                            <th></th>
+                                        </tr>
+                                    </thead>
 
-                            <tbody class="table__tbody">
+                                    <tbody class="table__tbody">
 
-                            <tr class="table-row neo-700">
+                                        <tr class="table-row neo-700">
 
-                                <td class="table-row__td ">
-                                    <div class="table-row__Numero">
-                                        <p class="">1</p>
-                                    </div>
-                                </td>
+                                            <td class="table-row__td ">
+                                                <div class="table-row__Numero">
+                                                    <p class="">1</p>
+                                                </div>
+                                            </td>
 
-                                <td class="table-row__td ">
-                                    <div class="table-row__name neo-500">
-                                        <p class="">Lorem</p>
-                                    </div>
-                                </td>
+                                            <td class="table-row__td ">
+                                                <div class="table-row__name neo-500">
+                                                    <p class="">Lorem</p>
+                                                </div>
+                                            </td>
 
-                                <td class="table-row__td ">
-                                    <div class="table-row__name neo-500">
-                                        <p class="">Lorem</p>
-                                    </div>
-                                </td>
+                                            <td class="table-row__td ">
+                                                <div class="table-row__name neo-500">
+                                                    <p class="">Lorem</p>
+                                                </div>
+                                            </td>
 
-                                <td class="table-row__td ">
-                                    <div class="table-row__name neo-500">
-                                        <p class="">Lorem</p>
+                                            <td class="table-row__td ">
+                                                <div class="table-row__name neo-500">
+                                                    <p class="">Lorem</p>
 
-                                    </div>
-                                </td>
+                                                </div>
+                                            </td>
 
-                                <td class="table-row__td ">
-                                    <div class="table-row__name neo-500">
-                                        <p class="">Lorem</p>
-                                    </div>
-                                </td>
+                                            <td class="table-row__td ">
+                                                <div class="table-row__name neo-500">
+                                                    <p class="">Lorem</p>
+                                                </div>
+                                            </td>
 
-                                <td class="table-row__td ">
-                                    <div class="table-row__name neo-500">
-                                        <p class="">Lorem</p>
-                                    </div>
-                                </td>
+                                            <td class="table-row__td ">
+                                                <div class="table-row__name neo-500">
+                                                    <p class="">Lorem</p>
+                                                </div>
+                                            </td>
 
-                                <td class="table-row__td ">
-                                    <div class="table-row__icon neo-500">
-                                        <a href="#" data-toggle="modal" data-target="#EstadoCuenta" ><img
-                                                src="images/estado-cuenta.png" onmouseover="src='images/estado-cuenta-color.png'" onmouseout="src='images/estado-cuenta.png'"
-                                                alt="Estado de Cuenta"></a>
-                                    </div>
-                                </td>
+                                            <td class="table-row__td ">
+                                                <div class="table-row__icon neo-500">
+                                                    <a href="#" data-toggle="modal" data-target="#EstadoCuenta"><img
+                                                            src="images/estado-cuenta.png"
+                                                            onmouseover="src='images/estado-cuenta-color.png'"
+                                                            onmouseout="src='images/estado-cuenta.png'"
+                                                            alt="Estado de Cuenta"></a>
+                                                </div>
+                                            </td>
 
-                                <td class="table-row__td ">
-                                    <div class="table-row__icon neo-500">
-                                        <a href="#" data-toggle="modal" data-target="#Constancia"><img
-                                                src="images/constancia.png"
-                                                onmouseover="src='images/constancia-color.png'"
-                                                onmouseout="src='images/constancia.png'" alt="Constancia"></a>
-                                    </div>
-                                </td>
+                                            <td class="table-row__td ">
+                                                <div class="table-row__icon neo-500">
+                                                    <a href="#" data-toggle="modal" data-target="#Constancia"><img
+                                                            src="images/constancia.png"
+                                                            onmouseover="src='images/constancia-color.png'"
+                                                            onmouseout="src='images/constancia.png'"
+                                                            alt="Constancia"></a>
+                                                </div>
+                                            </td>
 
-                                <td class="table-row__td ">
-                                    <div class="table-row__icon neo-500">
-                                        <a href="#" data-toggle="modal" data-target="#Expediente"><img
-                                                src="images/expediente.png"
-                                                onmouseover="src='images/expediente-color.png'"
-                                                onmouseout="src='images/expediente.png'"  alt="Expediente"></a>
-                                    </div>
-                                </td>
+                                            <td class="table-row__td ">
+                                                <div class="table-row__icon neo-500">
+                                                    <a href="#" data-toggle="modal" data-target="#Expediente"><img
+                                                            src="images/expediente.png"
+                                                            onmouseover="src='images/expediente-color.png'"
+                                                            onmouseout="src='images/expediente.png'"
+                                                            alt="Expediente"></a>
+                                                </div>
+                                            </td>
 
-                                <!--DROPDOWB-->
-                                <td class="table-row__Numero">
-                                    <!-- Example single danger button -->
-                                    <div class="btn-group">
-                                        <a class="dropdown-toggle" data-toggle="dropdown" aria-haspopup="true"
-                                            aria-expanded="false">
-                                            <i class="fa fa-ellipsis-v" style="color: darkgrey;"></i>
-                                        </a>
-                                        <div class="dropdown-menu">
-                                            <a class="dropdown-item" href="#">Action</a>
-                                            <a class="dropdown-item" href="#">Another action</a>
-                                            <a class="dropdown-item" href="#">Something else here</a>
-                                            <div class="dropdown-divider"></div>
-                                            <a class="dropdown-item" href="#">Separated link</a>
-                                        </div>
-                                    </div>
-                                </td>       
+                                            <!--DROPDOWB-->
+                                            <td class="table-row__Numero">
+                                                <!-- Example single danger button -->
+                                                <div class="btn-group">
+                                                    <a class="dropdown-toggle" data-toggle="dropdown"
+                                                        aria-haspopup="true" aria-expanded="false">
+                                                        <i class="fa fa-ellipsis-v" style="color: darkgrey;"></i>
+                                                    </a>
+                                                    <div class="dropdown-menu">
+                                                        <a class="dropdown-item" href="#">Action</a>
+                                                        <a class="dropdown-item" href="#">Another action</a>
+                                                        <a class="dropdown-item" href="#">Something else here</a>
+                                                        <div class="dropdown-divider"></div>
+                                                        <a class="dropdown-item" href="#">Separated link</a>
+                                                    </div>
+                                                </div>
+                                            </td>
 
-                            </tr>
+                                        </tr>
 
-                            <tr class="table-row neo-700">
+                                        <tr class="table-row neo-700">
 
-                                <td class="table-row__td ">
-                                    <div class="table-row__Numero">
-                                        <p class="">2</p>
-                                    </div>
-                                </td>
+                                            <td class="table-row__td ">
+                                                <div class="table-row__Numero">
+                                                    <p class="">2</p>
+                                                </div>
+                                            </td>
 
-                                <td class="table-row__td ">
-                                    <div class="table-row__name neo-500">
-                                        <p class="">Lorem</p>
-                                    </div>
-                                </td>
+                                            <td class="table-row__td ">
+                                                <div class="table-row__name neo-500">
+                                                    <p class="">Lorem</p>
+                                                </div>
+                                            </td>
 
-                                <td class="table-row__td ">
-                                    <div class="table-row__name neo-500">
-                                        <p class="">Lorem</p>
-                                    </div>
-                                </td>
+                                            <td class="table-row__td ">
+                                                <div class="table-row__name neo-500">
+                                                    <p class="">Lorem</p>
+                                                </div>
+                                            </td>
 
-                                <td class="table-row__td ">
-                                    <div class="table-row__name neo-500">
-                                        <p class="">Lorem</p>
+                                            <td class="table-row__td ">
+                                                <div class="table-row__name neo-500">
+                                                    <p class="">Lorem</p>
 
-                                    </div>
-                                </td>
+                                                </div>
+                                            </td>
 
-                                <td class="table-row__td ">
-                                    <div class="table-row__name neo-500">
-                                        <p class="">Lorem</p>
-                                    </div>
-                                </td>
+                                            <td class="table-row__td ">
+                                                <div class="table-row__name neo-500">
+                                                    <p class="">Lorem</p>
+                                                </div>
+                                            </td>
 
-                                <td class="table-row__td ">
-                                    <div class="table-row__name neo-500">
-                                        <p class="">Lorem</p>
-                                    </div>
-                                </td>
+                                            <td class="table-row__td ">
+                                                <div class="table-row__name neo-500">
+                                                    <p class="">Lorem</p>
+                                                </div>
+                                            </td>
 
-                                <td class="table-row__td ">
-                                    <div class="table-row__icon neo-500">
-                                        <a href="#" data-toggle="modal" data-target="#EstadoCuenta"><img
-                                                src="images/estado-cuenta.png"
-                                                onmouseover="src='images/estado-cuenta-color.png'"
-                                                onmouseout="src='images/estado-cuenta.png'" alt="Estado de Cuenta"></a>
-                                    </div>
-                                </td>
+                                            <td class="table-row__td ">
+                                                <div class="table-row__icon neo-500">
+                                                    <a href="#" data-toggle="modal" data-target="#EstadoCuenta"><img
+                                                            src="images/estado-cuenta.png"
+                                                            onmouseover="src='images/estado-cuenta-color.png'"
+                                                            onmouseout="src='images/estado-cuenta.png'"
+                                                            alt="Estado de Cuenta"></a>
+                                                </div>
+                                            </td>
 
-                                <td class="table-row__td ">
-                                    <div class="table-row__icon neo-500">
-                                        <a href="#" data-toggle="modal" data-target="#Constancia"><img
-                                                src="images/constancia.png"
-                                                onmouseover="src='images/constancia-color.png'"
-                                                onmouseout="src='images/constancia.png'" alt="Constancia"></a>
-                                    </div>
-                                </td>
+                                            <td class="table-row__td ">
+                                                <div class="table-row__icon neo-500">
+                                                    <a href="#" data-toggle="modal" data-target="#Constancia"><img
+                                                            src="images/constancia.png"
+                                                            onmouseover="src='images/constancia-color.png'"
+                                                            onmouseout="src='images/constancia.png'"
+                                                            alt="Constancia"></a>
+                                                </div>
+                                            </td>
 
-                                <td class="table-row__td ">
-                                    <div class="table-row__icon neo-500">
-                                        <a href="#" data-toggle="modal" data-target="#Expediente"><img
-                                                src="images/expediente.png"
-                                                onmouseover="src='images/expediente-color.png'"
-                                                onmouseout="src='images/expediente.png'" alt="Expediente"></a>
-                                    </div>
-                                </td>
+                                            <td class="table-row__td ">
+                                                <div class="table-row__icon neo-500">
+                                                    <a href="#" data-toggle="modal" data-target="#Expediente"><img
+                                                            src="images/expediente.png"
+                                                            onmouseover="src='images/expediente-color.png'"
+                                                            onmouseout="src='images/expediente.png'"
+                                                            alt="Expediente"></a>
+                                                </div>
+                                            </td>
 
-                                <!--DROPDOWB-->
-                                <td class="table-row__Numero">
-                                    <!-- Example single danger button -->
-                                    <div class="btn-group dropmenu">
-                                        <a class="dropdown-toggle" data-toggle="dropdown" aria-haspopup="true"
-                                            aria-expanded="false">
-                                            <i class="fa fa-ellipsis-v" style="color: darkgrey;"></i>
-                                        </a>
-                                        <div class="dropdown-menu">
-                                            <a class="dropdown-item" href="#">Action</a>
-                                            <a class="dropdown-item" href="#">Another action</a>
-                                            <a class="dropdown-item" href="#">Something else here</a>
-                                            <div class="dropdown-divider"></div>
-                                            <a class="dropdown-item" href="#">Separated link</a>
-                                        </div>
-                                    </div>
-                                </td>
+                                            <!--DROPDOWB-->
+                                            <td class="table-row__Numero">
+                                                <!-- Example single danger button -->
+                                                <div class="btn-group dropmenu">
+                                                    <a class="dropdown-toggle" data-toggle="dropdown"
+                                                        aria-haspopup="true" aria-expanded="false">
+                                                        <i class="fa fa-ellipsis-v" style="color: darkgrey;"></i>
+                                                    </a>
+                                                    <div class="dropdown-menu">
+                                                        <a class="dropdown-item" href="#">Action</a>
+                                                        <a class="dropdown-item" href="#">Another action</a>
+                                                        <a class="dropdown-item" href="#">Something else here</a>
+                                                        <div class="dropdown-divider"></div>
+                                                        <a class="dropdown-item" href="#">Separated link</a>
+                                                    </div>
+                                                </div>
+                                            </td>
 
-                            </tr>
-                         
-                            </tbody>
+                                        </tr>
+                                         
+                                    </tbody>
 
-
-                        </table>
+                                </table>
+                            </div>
                     </div>
+
+                    
 
                     <!--FIN TABLA DE PRODUCTOS Y SERVICIOS-->
 
@@ -456,66 +464,51 @@
 
 
 
-                   <!--INICIO ACTIVACION DE CANALES -->
+                <!--INICIO ACTIVACION DE CANALES -->
 
-                   <div class="d-flex canales-act col-12">
+                <div class="d-flex canales-act col-12">
 
+                    <p class="p-box7 neo-700">Activación de Canales: </p>
 
-                       <p class="p-box7 neo-700">Activación de Canales: </p>
-
-
-                       <!--INICIO OVP -->
-
-                       <div class="iconset-reduser2">
-                           <img src="images/ovp.png" alt="" class="">
-                       </div>
+                     <!--INICIO OVP -->
+                    <div class="iconset-reduser2">
+                        <img src="images/ovp.png" alt="" class="">
+                    </div>
  
-                       <div class="canales__ovp col-4">
+                    <div class="canales__ovp col-4">
+                        <div class="input-group2 input-group">
+                            <span class="input-group-append">
+                                <div class="input-group-text input-userinfo-icon2"><img src="images/user.png"alt="icono-usuario"></div>
+                            </span>
 
+                            <input class="form-control-8 py-2 input-userinfo3" type="text" placeholder="Nombre del Cliente">
+                        </div>
 
-                           <div class="input-group2 input-group">
+                        <div class="input-group2 input-group">
+                            <span class="input-group-append">
+                                <div class="input-group-text input-userinfo-icon2"><img src="images/mail_1.png" alt="icono-usuario"></div>
+                            </span>
 
-                               <span class="input-group-append">
-                                   <div class="input-group-text input-userinfo-icon2"><img src="images/user.png"
-                                           alt="icono-usuario"></div>
-                               </span>
+                            <input class="form-control-8 py-2 input-userinfo" type="text" placeholder="E-mail del Cliente">
+                        </div>
+                    </div>
+                    <!--FIN OVP -->
 
-                               <input class="form-control-8 py-2 input-userinfo3" type="text"
-                                   placeholder="Nombre del Cliente">
+                    <!--INICIO SMS -->
+                    <div class="iconset-reduser2">
+                        <img src="images/sms.png" alt="" class="">
+                    </div>
 
-                           </div>
+                    <div class="canales__sms col-4">
+                        <div class="input-group">
+                            <a href="#" data-toggle="modal" data-target="#SMS"><input class="form-control-8b neo-500" type="text" placeholder="Número del Cliente"></a>
+                        </div>
+                    </div>
+                    <!--FIN SMS -->
 
-                           <div class="input-group2 input-group">
+                </div>
 
-                               <span class="input-group-append">
-                                   <div class="input-group-text input-userinfo-icon2"><img src="images/mail_1.png"
-                                           alt="icono-usuario"></div>
-                               </span>
-
-                               <input class="form-control-8 py-2 input-userinfo" type="text"
-                                   placeholder="E-mail del Cliente">
-
-                           </div>
-                       </div>
-                       <!--FIN OVP -->
-
-                       <!--INICIO SMS -->
-
-                       <div class="iconset-reduser2">
-                           <img src="images/sms.png" alt="" class="">
-                       </div>
-
-                       <div class="canales__sms col-4">
-
-                           <div class="input-group">
-                                <a href="#" data-toggle="modal" data-target="#SMS"><input class="form-control-8b neo-500" type="text" placeholder="Número del Cliente"></a>
-                           </div>
-
-                       </div>
-                       <!--FIN SMS -->
-                   </div>
-
-                   <!--FIN ACTIVACION DE CANALES -->
+                <!--FIN ACTIVACION DE CANALES -->
             </div>
         </div>
     </div>
