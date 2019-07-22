@@ -24,14 +24,11 @@
     5d.-Detalles de Gestiones
    6. Footer 
    7. MediaQuerys
-*/
-
-/* Breakpoints: 
-    lg = 992 px
-    xl = 1200 px
-    xxl = 1440 px
-    xxxl = 1600 px
-*/    
+    7a. 1440x900
+    7b. 1336x768
+    7c. 1280x1024
+    7d. 1024x768
+*/  
 
 /* COMIENZO DE CODIGO FINAL */
 
@@ -901,6 +898,7 @@ i.fa {
 .collap-title-ventas {
     height: 150px;
     padding: 75px 75px;
+    margin-bottom: 70px;
  /*   background-color: yellow; */
 }
 
@@ -914,6 +912,14 @@ i.fa {
     color: var(--blanco-afp);
     margin: 0px 250px;
 }
+
+ .new-clientext-a{
+    margin:-40px 0px;
+ }
+
+ .new-clientext-b {
+     margin: -40px 0px;
+ }
 
 
 
@@ -1578,17 +1584,650 @@ i.fa-custom-1:hover {
     margin: 0px 0px;
 }
 
-
 /* =========================================================================================== */
 /*                                                                                             */
 /*                                   7.-Media Queries                                          */
 /*                                                                                             */
 /* =========================================================================================== */
 
-/* 
-  ##Device = Laptops, Desktops
-  ##Screen = B/w 1025px to 1280px
+/* Breakpoints: 
+    lg = 1024 px
+    xl = 1200 px
+    xxl = 1440 px
+    xxxl = 1600 px
 */
+
+/* =========================================================================================== */
+/*                                                                                             */
+/*                                    7a. 1444x900                                             */
+/*                                                                                             */
+/* =========================================================================================== */
+
+
+/* =========================================================================================== */
+/*                                                                                             */
+/*                                    7b. 1336x768                                             */
+/*                                                                                             */
+/* =========================================================================================== */
+
+@media (max-width: 1336px) {
+
+    /* =========================================================================================== */
+    /*                                                                                             */
+    /*                                     2.-HEADER                                               */
+    /*                                                                                             */
+    /* =========================================================================================== */
+
+    .header-index {
+        height: 100px;
+    }
+
+    .header-index img,
+    .header img {
+        width: 28%;
+    }
+
+    .headerb img {
+        width: 30%;
+    }
+
+    /* =========================================================================================== */
+    /*                                                                                             */
+    /*                                     3.-LAYOUT                                               */
+    /*                                                                                             */
+    /* =========================================================================================== */
+
+    .wrapper {
+        height: 768px;
+    }
+
+    .main-content {
+        height: 618px;
+    }
+
+    .footer {
+        height: 60px;
+    }
+
+    .side-nav,
+    .side-navc,
+    .info-2 {
+        height: 525px;
+    }
+
+    .info-1 {
+        height: 600px;
+        padding: 50px;
+    }
+
+    .info-2 {
+        padding: 30px;
+    }
+
+    .info-3 {
+        height: 575px;
+    }
+
+    .info-4 {
+        height: 600px;
+
+    }
+
+    .side-navb {
+        height: 650px;
+    }
+
+    .headerb,
+    .footerb {
+        height: 60px;
+    }
+
+    /* =========================================================================================== */
+    /*                                                                                             */
+    /*                                4b.-Content / Sidenav - Home                                 */
+    /*                                                                                             */
+    /* =========================================================================================== */
+
+    .side-nav--logo2 {
+        margin: 15px 0px 10px 65px;
+        padding: 0;
+        width: 45%;
+    }
+
+    .side-nav--list2 li {
+        font-size: 18px;
+        list-style: none;
+        padding: 5px 0px;
+        margin: 0px 15px;
+    }
+
+    .exchange-text p {
+        margin-left: 5px;
+        margin-bottom: 0px;
+        font-size: 12px;
+    }
+
+    .exchangeb img {
+        width: 80%;
+        margin-right: 0px;
+    }
+
+    .exchange-container {
+        display: flex;
+        flex-direction: row;
+    }
+
+    .form-control-3 {
+        font-size: 12px;
+        width: 65px;
+    }
+
+    /* =========================================================================================== */
+    /*                                                                                             */
+    /*           4c.-Content / Sidenav - InfoClients + Resumen+ Gestiones + Para Ventas            */
+    /*                                                                                             */
+    /* =========================================================================================== */
+
+    .side-navb {
+        padding: 20px;
+    }
+
+    .side-navb--logo {
+        margin: 10px 0px 0px 55px;
+        padding: 10px;
+        width: 50%;
+    }
+
+    .side-navb--list li {
+        font-size: 16px;
+        list-style: none;
+        padding: 10px 0px;
+        text-align: center;
+        margin: 0px 0px 0px 0px;
+    }
+
+    .form-control-5 {
+        margin-left: 0px;
+        height: 15px;
+        font-size: 12px;
+        font-weight: bold;
+        width: 50px;
+    }
+
+    .exchangeb-text p {
+        margin-left: 0px;
+        margin-bottom: 0px;
+    }
+
+    .exchange-container-b {
+        margin-left: -10px;
+    }
+
+    .exchangeb-image {
+        margin-top: -10px;
+        margin-right: 10px;
+    }
+
+    .exchangeb-main-container {
+        margin-left: -15px;
+    }
+
+    /* =========================================================================================== */
+    /*                                                                                             */
+    /*                            4e.-Content / MiddleUserInfo                                     */
+    /*                                                                                             */
+    /* =========================================================================================== */
+    .p-box3 {
+        margin: 5px 10px 30px 10px;
+    }
+
+    .form-control-4 {
+        width: 330px;
+        border-radius: 9px;
+        border-top-right-radius: 0;
+        border-bottom-right-radius: 0;
+        padding: 0.375rem 0.75rem;
+    }
+
+    .info-1--lowres {
+        padding: 0px 30px;
+    }
+
+    .usergroup {
+        margin: 150px 5px;
+    }
+
+    /* =========================================================================================== */
+    /*                                                                                             */
+    /*                            4f.-Content / RightLoginPanel                                    */
+    /*                                                                                             */
+    /* =========================================================================================== */
+    .p-box2 {
+        margin: 18px 10px;
+        color: var(--gris-afp);
+    }
+
+    .form-control-customwidth {
+        width: 390px;
+        margin-left: 10px;
+    }
+
+    .btn-circle.btn-xl {
+        width: 50px;
+        height: 50px;
+        padding: 10px 16px;
+        border-radius: 35px;
+        font-size: 18px;
+        line-height: 1.33;
+        margin: 0px 350px;
+        background-color: var(--gris-afp);
+        border-color: var(--gris-afp);
+    }
+
+    .btn-circle.btn-xl:hover {
+        width: 50px;
+        height: 50px;
+        padding: 10px 16px;
+        border-radius: 35px;
+        font-size: 18px;
+        line-height: 1.33;
+        background-color: var(--rojo-afp);
+        border-color: var(--rojo-afp);
+    }
+
+    .logintitle {
+        margin-top: 30px;
+    }
+
+
+    /* =========================================================================================== */
+    /*                                                                                             */
+    /*                                4h.-Formularios / Index y Home                               */
+    /*                                                                                             */
+    /* =========================================================================================== */
+    .collap-title-header-b {
+        font-size: 32px;
+        color: var(--rojo-afp);
+        margin: 10px 165px;
+    }
+
+    .collap-title-header-c {
+        font-size: 32px;
+        color: var(--rojo-afp);
+        margin: 10px 170px;
+    }
+
+    .collap-title-header-d {
+        font-size: 32px;
+        color: var(--rojo-afp);
+        margin: 10px 165px;
+    }
+
+    /* =========================================================================================== */
+    /*                                                                                             */
+    /*                                4i.-Formularios / Logged                                     */
+    /*                                                                                             */
+    /* =========================================================================================== */
+
+    .collap-title-header-e {
+        font-size: 32px;
+        color: var(--rojo-afp);
+        margin: 20px 225px;
+    }
+
+    .collap-title-header-f {
+        font-size: 32px;
+        color: var(--rojo-afp);
+        margin: 20px 220px;
+    }
+
+    .forms-menu-b {
+        height: 200px;
+        width: 60px;
+        padding: 5px;
+        margin: 50px 18px;
+    }
+
+    .forms-menu-b img {
+        width: 70%;
+        margin: 25px 12px;
+    }
+
+    .forms-menu-b p {
+        color: var(--blanco-afp);
+        font-size: 10px;
+        margin: 10px 0px;
+        margin-top: -20px;
+        text-align: center;
+        font-weight: bold;
+    }
+
+    .sidenav-forms-b {
+        padding-left: 5px;
+    }
+
+    /* =========================================================================================== */
+    /*                                                                                             */
+    /*                            4j.-Para Ventas / Index y Home                                   */
+    /*                                                                                             */
+    /* =========================================================================================== */
+
+    .collap-title-header-h {
+        font-size: 36px;
+        color: var(--rojo-afp);
+        margin: 10px 240px;
+    }
+
+    /* =========================================================================================== */
+    /*                                                                                             */
+    /*                               4k.-Para Ventas / Logged                                      */
+    /*                                                                                             */
+    /* =========================================================================================== */
+
+    .collap-title-header-g {
+        font-size: 32px;
+        color: var(--rojo-afp);
+        margin: 10px 335px;
+    }
+
+    .ventas-container-logged {
+        height: 680px;
+        border-radius: 19px;
+        padding: 0px;
+    }
+
+    /* =========================================================================================== */
+    /*                                                                                             */
+    /*                          4l.-Nuevo Cliente / Index y Home                                   */
+    /*                                                                                             */
+    /* =========================================================================================== */
+
+    .collap-title-ventas {
+        margin-top: -30px;
+    }
+
+    .collap-title-header-i {
+        font-size: 36px;
+        color: var(--rojo-afp);
+        margin: 0px 145px;
+        height: 100px;
+    }
+
+    .btn-cliente {
+        margin: 0px 250px;
+    }
+
+
+
+    /* =========================================================================================== */
+    /*                                                                                             */
+    /*                                   5a.-Info-Cliente                                          */
+    /*                                                                                             */
+    /* =========================================================================================== */
+
+    .infoclient-container {
+        padding: 0px 0px 0px 0px;
+    }
+
+    .infoclient-input {
+        padding: 5px 0px 0px 0px;
+        margin: 0px 0px;
+    }
+
+    .p-box5 {
+        margin: 20px 0px 5px 0px;
+        font-size: 26px;
+    }
+
+    .iconset-reduser {
+        margin-top: 5px;
+        margin-right: 10px;
+    }
+
+    .form-control-6 {
+        width: 100%;
+        padding: 0.375rem 1.75rem;
+        font-size: 1.2rem;
+        height: 85%;
+    }
+
+    .clients-menu {
+        height: 320px;
+        width: 65px;
+        margin: 140px 0px 140px 4px;
+    }
+
+
+    .clients-menu img {
+        width: 65%;
+        margin: 20px 0px 25px 15px;
+    }
+
+    .info-client-icon img {
+        width: 100%;
+        margin-top: -5px;
+    }
+
+    .form-control-7 {
+        width: 92%;
+        height: calc(1.3em + 0.75rem + 2px);
+        padding: 0.375rem 1.75rem;
+        font-size: 1rem;
+        border-radius: 9px;
+        color: var(--gris-afp);
+        border: 1px solid var(--gris-afp);
+        border-bottom: 1px solid var(--gris-afp);
+    }
+
+    .form-control-7b {
+        width: 92%;
+        height: calc(3em + 0.75rem + 2px);
+        padding: 0.375rem 1.75rem;
+        font-size: 12px;
+        font-weight: 500;
+        border-radius: 9px;
+        color: var(--gris-afp);
+        border: 1px solid var(--gris-afp);
+        border-bottom: 1px solid var(--gris-afp);
+    }
+
+    /* =========================================================================================== */
+    /*                                                                                             */
+    /*                                   5b.-Resumen-Cliente                                       */
+    /*                                                                                             */
+    /* =========================================================================================== */
+
+    .client-boxc {
+        padding: 0px 25px 0px 20px;
+        margin: 0px 25px;
+    }
+
+    .p-box6b {
+        color: var(--rojo-afp);
+        margin: 20px 0px 10px 0px;
+        padding-right: 0px;
+        font-size: 26px;
+    }
+
+    .table-container {
+        padding: 10px 5px 10px 5px;
+        height: 300px;
+    }
+
+    .table-row__icon img {
+        margin: 10px 0px 10px 5px;
+    }
+
+    .table-row {
+        border: 1px solid #e4e9ea;
+        background-color: var(--blanco-afp);
+    }
+
+    .table-row__td {
+        margin: 98px;
+    }
+
+    .table__thead th {
+        color: var(--grisb-afp);
+        padding-bottom: 5px;
+    }
+
+    .scrolld-2 {
+        height: 350px;
+        overflow-y: scroll;
+    }
+
+    .table-row__name {
+        margin: 10px 0px;
+        font-size: 16px;
+    }
+
+    .canales-act {
+        padding: 0px 15px;
+        margin: 0px 0px;
+        height: 132px;
+        padding: 0px 60px;
+    }
+
+    .form-control-8 {
+        width: 85%;
+        height: calc(1.4rem + 0.5rem + 2px);
+        padding: 0.375rem 0rem;
+        font-size: 12px;
+    }
+
+    .form-control-8b {
+        width: 140%;
+        height: calc(1.4rem + 0.5rem + 2px);
+        padding: 0.375rem 1.75rem;
+        margin: 20px 0px;
+        font-size: 12px;
+    }
+
+    .input-userinfo-icon2 {
+        background-color: var(--gris-afp);
+        border: 1px solid var(--gris-afp);
+        height: calc(1.4rem + 0.5rem + 2px);
+    }
+
+    .iconset-reduser2 {
+        margin-top: 20px;
+        margin-bottom: 20px;
+        margin-left: 10px;
+        margin-right: 0px;
+    }
+
+    .iconset-reduser2 img {
+        width: 80px;
+    }
+
+    .canales__ovp {
+        padding-right: 0px;
+        margin: 20px 0px;
+    }
+
+    .canales__sms {
+        margin: 20px 0px;
+    }
+
+    .p-box7 {
+        font-size: 16px;
+        margin-top: 35px;
+        margin-bottom: 35px;
+        margin-left: 0px;
+        margin-right: 5px;
+    }
+
+    /*============================================================================================ */
+    /*                                                                                             */
+    /*                                     5c. Gestiones                                           */
+    /*                                                                                             */
+    /* =========================================================================================== */
+
+    .tab-gestiones {
+        border-radius: 19px;
+        height: 410px;
+    }
+
+    .scrolld-1 {
+        height: 410px;
+        border-radius: 19px;
+        overflow-y: scroll;
+    }
+
+    .p-box6 {
+        padding: 0px 40px 0px 0px;
+        font-size: 26px;
+    }
+
+    .form-control-6b {
+        width: 96.5%;
+        padding: 0.375rem 1.75rem;
+        font-size: 1rem;
+        border: 2px solid var(--rojo-afp);
+    }
+
+    .client-boxb {
+        padding: 0px 10px;
+        margin-left: 30px;
+    }
+
+    .gestiones-row {
+        padding: 0px 40px;
+    }
+
+    .form-control-10 {
+        width: 100%;
+        padding: 0.375rem 1.75rem;
+        font-size: 1rem;
+    }
+
+    .gestion-button {
+        padding-right: 15px;
+        padding-left: 15px;
+    }
+
+    .table-container-gestiones {
+        margin-top: 5px;
+        padding: 20px 65px 20px 45px;
+    }
+
+    /* =========================================================================================== */
+    /*                                                                                             */
+    /*                                5d. Detalles-Gestiones                                       */
+    /*                                                                                             */
+    /* =========================================================================================== */
+
+    .custom-card {
+        margin: 40px 65px 15px 65px;
+    }
+
+    .detalles-card {
+        color: var(--gris-afp);
+        margin: 0px 0px;
+
+    }
+
+    .form-control-12b {
+        margin-left: 5px;
+        width: 47%;
+        font-size: 12px;
+    }
+}
+
+/* =========================================================================================== */
+/*                                                                                             */
+/*                                    7c. 1288x1024                                            */
+/*                                                                                             */
+/* =========================================================================================== */
+
+
+
+/* =========================================================================================== */
+/*                                                                                             */
+/*                                    7d. 1024x768                                             */
+/*                                                                                             */
+/* =========================================================================================== */
 
 @media (max-width: 1024px) {
 
@@ -2028,6 +2667,11 @@ i.fa-custom-1:hover {
     /*                                                                                             */
     /* =========================================================================================== */
 
+    .collap-title-ventas {
+        margin-top: -30px;
+        margin-bottom: 80px;
+    }
+
 
     .collap-title-header-i {
         font-size: 36px;
@@ -2039,7 +2683,7 @@ i.fa-custom-1:hover {
     .btn-cliente {
         background: var(--rojo-afp);
         color: var(--blanco-afp);
-        margin: 0px 250px;
+        margin: 0px 175px;
     }
 
     /* =========================================================================================== */
