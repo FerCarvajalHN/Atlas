@@ -19,10 +19,39 @@
     <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.8.2/css/all.css"
         integrity="sha384-oS3vJWv+0UjzBfQzYUhtDYW+Pj2yciDJxpsK1OYPAYjqT085Qq/1cq5FLXAZQ7Ay" crossorigin="anonymous">
 
+    <!--Spinner loader-->
+    <link rel="stylesheet" href="css/spinner-loader/style/spinner-style.css">
+
     <title>AFP Atlántida - Atlas | Formularios</title>
 </head>
 
 <body>
+
+    <!-- SPINNER LOADER START -->
+    <div class="spinner-container">
+        <div class="spinner-main"></div>
+        <div class="spinner-second">
+            <div class="spinner-content">
+                <svg class="spinner-logo" version="1.1" id="Layer_1" xmlns="http://www.w3.org/2000/svg"
+                    xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px" viewBox="0 0 312.9 312.9"
+                    style="enable-background:new 0 0 312.9 312.9;" xml:space="preserve">
+
+                    <g class="hola">
+                        <path class="st0-1"
+                            d="M9.1,18.6c-5,0-9.1,4-9.1,9.1v148.2c0,71.7,46.2,118.5,117.9,118.5h61.1c5,0,9.1-4.1,9.1-9.1v-73
+                                        c0-5-4.1-9.1-9.1-9.1H140c-5,0-28.3-0.8-28.3-28.3V27.6c0-5-4.1-9.1-9.1-9.1l0,0L9.1,18.6z" />
+                        <path class="st0-2"
+                            d="M134.2,58.4c-5,0-9.1,4.1-9.1,9.1v83.6c0,5,4.1,9.1,9.1,9.1h44.5c5,0,22.5,0.8,22.5,28.3v96.8
+                                        c0,5,4.1,9.1,9.1,9.1h93.5c5,0,9.1-4.1,9.1-9.1V176.9c0-71.8-46.2-118.5-117.9-118.5L134.2,58.4z" />
+                    </g>
+                </svg>
+            </div>
+        </div>
+        <span class="spinner-text" data-name="Loading">Cargando...</span>
+    </div>
+    <!-- SPINNER LOADER END -->
+
+    
     <!-- ************** EMPIEZA EL CONTENIDO ************** -->
 
     <div class="container-fluid wrapper">
@@ -165,40 +194,54 @@
 
     <script src="plugins/owlcarousel/owl.carousel.min.js"></script>
 
-    <script> 
-        $('.owl-carousel').owlCarousel({
-            loop:true,
-            center:true,
-            margin:20,
-            nav:false,
-            responsive:{
-                0:{
-                    items:2
-                },
-                600:{
-                    items:3
-                },
-                1000:{
-                    items:4
-                }
-            }
-        })
-    </script>
+     <!--INICIO SCRIPT PARA LOADER AFP-->
+     <script>
+         $(document).ready(function (e) {
+             $('.spinner-container').hide();
+         });
+     </script>
 
-    <script>
-        $(function () {
-            // this will get the full URL at the address bar
-            var url = window.location.href;
+     <!--FIN SCRIPT PARA LOADER AFP-->
 
-            // passes on every "a" tag
-            $("#menu a").each(function () {
-                // checks if its the same on the address bar
-                if (url == (this.href)) {
-                    $(this).closest("li").addClass("active-nav-2");
-                }
-            });
-        });
-    </script>
+     <!-- INICIO SCRIPT PARA CAROUSEL DE ELEMENTOS -->
+     <script>
+         $('.owl-carousel').owlCarousel({
+             loop: true,
+             center: true,
+             margin: 20,
+             nav: false,
+             responsive: {
+                 0: {
+                     items: 2
+                 },
+                 600: {
+                     items: 2
+                 },
+                 1000: {
+                     items: 4
+                 }
+             }
+         })
+     </script>
+     <!-- FIN SCRIPT PARA CAROUSEL DE ELEMENTOS -->
+
+      <!--INICIO SCRIPT PARA ACTIVE NAV-->
+      <script>
+          $(function () {
+              // this will get the full URL at the address bar
+              var url = window.location.href;
+
+              // passes on every "a" tag
+              $("#menu a").each(function () {
+                  // checks if its the same on the address bar
+                  if (url == (this.href)) {
+                      $(this).closest("li").addClass("active-nav-2");
+                  }
+              });
+          });
+      </script>
+
+      <!--FIN SCRIPT PARA ACTIVE NAV-->
 
      <!--INICIO SCRIPT PARA ACTIVAR TOOLTIPS-->
      <script>

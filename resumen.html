@@ -22,13 +22,40 @@
     <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.8.2/css/all.css"
           integrity="sha384-oS3vJWv+0UjzBfQzYUhtDYW+Pj2yciDJxpsK1OYPAYjqT085Qq/1cq5FLXAZQ7Ay" crossorigin="anonymous">
 
-    <title>AFP Atlántida - Atlas | Resumen de Productos y Servicios</title>
+    <!--Spinner loader-->
+    <link rel="stylesheet" href="css/spinner-loader/style/spinner-style.css">
 
-    
+    <title>AFP Atlántida - Atlas | Resumen de Productos y Servicios</title>
 
 </head>
 
 <body>
+
+<!-- SPINNER LOADER START -->
+<div class="spinner-container">
+    <div class="spinner-main"></div>
+    <div class="spinner-second">
+        <div class="spinner-content">
+            <svg class="spinner-logo" version="1.1" id="Layer_1" xmlns="http://www.w3.org/2000/svg"
+                xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px" viewBox="0 0 312.9 312.9"
+                style="enable-background:new 0 0 312.9 312.9;" xml:space="preserve">
+
+                <g class="hola">
+                    <path class="st0-1"
+                        d="M9.1,18.6c-5,0-9.1,4-9.1,9.1v148.2c0,71.7,46.2,118.5,117.9,118.5h61.1c5,0,9.1-4.1,9.1-9.1v-73
+                                        c0-5-4.1-9.1-9.1-9.1H140c-5,0-28.3-0.8-28.3-28.3V27.6c0-5-4.1-9.1-9.1-9.1l0,0L9.1,18.6z" />
+                    <path class="st0-2"
+                        d="M134.2,58.4c-5,0-9.1,4.1-9.1,9.1v83.6c0,5,4.1,9.1,9.1,9.1h44.5c5,0,22.5,0.8,22.5,28.3v96.8
+                                        c0,5,4.1,9.1,9.1,9.1h93.5c5,0,9.1-4.1,9.1-9.1V176.9c0-71.8-46.2-118.5-117.9-118.5L134.2,58.4z" />
+                </g>
+            </svg>
+        </div>
+    </div>
+    <span class="spinner-text" data-name="Loading">Cargando...</span>
+</div>
+<!-- SPINNER LOADER END -->
+
+
 <!-- ************** EMPIEZA EL CONTENIDO ************** -->
 
 <div class="container-fluid wrapper">
@@ -538,6 +565,17 @@
 
 <!--Datepicker-->
 <script src="https://unpkg.com/gijgo@1.9.13/js/gijgo.min.js" type="text/javascript"></script>
+
+
+ <!--INICIO SCRIPT PARA LOADER AFP-->
+ <script>
+     $(document).ready(function (e) {
+         $('.spinner-container').hide();
+     });
+ </script>
+
+ <!--FIN SCRIPT PARA LOADER AFP-->
+
 
 <!--INICIO SCRIPT DATEPICKER DEL MODAL-->
 <script>
