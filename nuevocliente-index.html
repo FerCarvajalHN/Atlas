@@ -9,11 +9,17 @@
 
     <!-- Bootstrap CSS -->
     <link rel="stylesheet" href="css/bootstrap.css">
+
+    <link href="https://unpkg.com/gijgo@1.9.13/css/gijgo.min.css" rel="stylesheet" type="text/css">
+    
+
     <link rel="stylesheet" href="css/main.css">
 
     <!--OwlCarousel-->
     <link rel="stylesheet" href="plugins/owlcarousel/owl.carousel.min.css">
     <link rel="stylesheet" href="plugins/owlcarousel/owl.theme.default.min.css">
+
+
 
     <!-- FontAwesome -->
     <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.8.2/css/all.css"
@@ -96,9 +102,9 @@
                             Itaque.</span>
                     </div>
 
-                    <div class="row justify-content-center align-items-center">
+                    <div class="row justify-content-center align-items-center scrolld-3">
 
-                        <form class="nuevocliente-container ">
+                        <form class="nuevocliente-container  ">
                             <div class="form-row">
 
                                 <div class="form-group col-6 d-flex">
@@ -106,7 +112,7 @@
                                         <img src="images/cliente-gris.png" alt="" class="" data-toggle="tooltip" data-placement="top"
                                             title="Nombre Completo">
                                     </div>
-                                    <input type="text" class="form-control" id="inputNombreCompleto4" placeholder="Nombre Completo">
+                                    <input type="text" class="form-control" id="inputNombreCompleto4" placeholder="Nombre Completo" required>
                                 </div>
 
                                 <div class="form-group col-6 d-flex">
@@ -114,7 +120,8 @@
                                         <img src="images/icons-cliente/identidad.png" alt="" class="" data-toggle="tooltip" data-placement="top"
                                             title="Número de Identidad">
                                     </div>
-                                    <input type="text" class="form-control" id="NumeroIdentidad4" placeholder="Número de Identidad">
+                                    <input type="text" class="form-control" id="NumeroIdentidad4"
+                                        placeholder="Número de Identidad" required>
                                 </div>
 
                             </div>
@@ -126,41 +133,159 @@
                                         <img src="images/icons-cliente/mail.png" alt="" class="" data-toggle="tooltip" data-placement="top"
                                             title="Correo Electrónico">
                                     </div>
-                                    <input type="email" class="form-control" id="inputCorreo4" placeholder="Correo Electrónico">
+                                    <input type="email" class="form-control" id="inputCorreo4"
+                                        placeholder="Correo Electrónico" required>
                                 </div>
                                 <div class="form-group col-md-6 d-flex">
                                     <div class="iconset-reduser-3">
                                         <img src="images/icons-cliente/celular.png" alt="" class="" data-toggle="tooltip" data-placement="top"
                                             title="Número de Celular">
                                     </div>
-                                    <input type="text" class="form-control" id="inputCelular" placeholder="Número de celular">
+                                    <input type="text" class="form-control" id="inputCelular"
+                                        placeholder="Número de celular" required>
                                 </div>
 
                             </div>
 
-                            <div class="form-group d-flex">
-                                <div class="iconset-reduser-3">
-                                    <img src="images/productos.png" alt="" class="" data-toggle="tooltip" data-placement="top"
-                                        title="Producto Deseado">
+                            <div class="form-row">
+
+                                <div class="form-group d-flex col-md-6">
+                                    <div class="iconset-reduser-3">
+                                        <img src="images/tipo-moneda-fondo.png" alt="" class="" data-toggle="tooltip"
+                                            data-placement="top" title="Moneda del Fondo de Pensiones">
+                                    </div>
+                                    <select id="inputProductoDeseado" class="form-control" required="">
+                                        <option value="">Moneda del Fondo de Pensiones:</option>
+                                        <option value="1">Lempiras</option>
+                                        <option value="2">Dólares</option>
+                                    </select>
                                 </div>
-                                <select id="inputProductoDeseado" class="form-control">
-                                    <option selected>Elige el Producto que te Interesa</option>
-                                    <option>Individual</option>
-                                    <option>Empresarial</option>
-                                </select>
+
+                                <div class="form-group d-flex col-md-6">
+                                    <div class="iconset-reduser-3">
+                                        <img src="images/productos.png" alt="" class="" data-toggle="tooltip"
+                                            data-placement="top" title="Tipo de Afiliación">
+                                    </div>
+                                    <select id="elementreg" class="form-control">
+                                        <option value="">Tipo de Afiliación:</option>
+                                        <option value="1">Individual</option>
+                                        <option value="Empresarial">Empresarial</option>
+                                    </select>
+                                </div>
+
+                            </div>
+
+
+                            <!-- CAMPOS GENERADOS AL SELECCIONAR AFILIACION EMPRESARIAL-->
+
+                            <div class="form-row types" id="Empresarial">
+                                
+                                <div class="form-group col-md d-flex">
+                                    <div class="iconset-reduser-3">
+                                        <img src="images/nombre-empresa.png" alt="" class="" data-toggle="tooltip"
+                                            data-placement="top" title="Nombre de la Empresa">
+                                    </div>
+                                    <input type="text" class="form-control" id="inputNombreCompleto4"
+                                        placeholder="Nombre de la Empresa:" >
+                                </div>
+
+                                <div class="form-group col-md d-flex">
+                                    <div class="iconset-reduser-3">
+                                        <img src="images/numero-empleados.png" alt="" class="" data-toggle="tooltip"
+                                            data-placement="top" title="Número de Empleados">
+                                    </div>
+                                    <input type="text" class="form-control" id="inputNombreCompleto4"
+                                        placeholder="Número de Empleados:" >
+                                </div>
+
+                               <div class="form-group d-flex col-md">
+                                   <div class="iconset-reduser-3">
+                                       <img src="images/plan.png" alt="" class="" data-toggle="tooltip"
+                                           data-placement="top" title="Plan">
+                                   </div>
+                                   <select id="inputProductoDeseado" class="form-control">
+                                       <option value="">Plan:</option>
+                                       <option value="1">Patronal</option>
+                                       <option value="2">Contributivo</option>
+                                       <option value="3">Solo Empleados</option>
+                                   </select>
+                               </div>
+
+                            </div>
+
+                            <!-- CAMPOS GENERADOS AL SELECCIONAR AFILIACION EMPRESARIAL-->
+
+
+
+
+                            <div class="form-row">
+
+                                <div class="form-group col-md-4 d-flex">
+                                    <div class="iconset-reduser-3">
+                                        <img src="images/monto-aporte.png" alt="" class="" data-toggle="tooltip"
+                                            data-placement="top" title="Monto del Aporte">
+                                    </div>
+                                    <input type="text" class="form-control" id="inputNombreCompleto4"
+                                        placeholder="Monto de Aporte:" required>
+                                </div>
+
+
+                                <div class="form-group col-md-4 d-flex">
+                                    <div class="iconset-reduser-3">
+                                        <img src="images/calendario-fondo.png" alt="" class="" data-toggle="tooltip"
+                                            data-placement="top" title="Fecha de Inicio">
+                                    </div>
+                                    <input id="Desde" width="450" placeholder="Desde:" required  />
+                                </div>
+
+                                <div class="form-group d-flex col-md-4">
+                                    <div class="iconset-reduser-3">
+                                        <img src="images/tipo-cliente.png" alt="" class="" data-toggle="tooltip"
+                                            data-placement="top" title="Tipo de Cliente">
+                                    </div>
+                                    <select id="inputProductoDeseado" class="form-control" required="">
+                                        <option value="">Tipo de Cliente:</option>
+                                        <option value="1">Aportes Mensuales</option>
+                                        <option value="2">Aportes Extraordinario</option>
+                                    </select>
+                                </div>
+
+                            </div>
+
+                            <div class="form-group">
+                                <textarea type="textarea" rows="3" class="form-control" id="inputComentarios"
+                                    placeholder="Comentarios:"></textarea>
                             </div>
                             
                             <div class="form-group d-flex">
                                 <div class="iconset-reduser-3">
-                                    <img src="images/icons-cliente/direccion.png" alt="" class="" data-toggle="tooltip" data-placement="top"
-                                        title="Lugar de Residencia">
+                                    <img src="images/tu-nombre-agente.png" alt="" class="" data-toggle="tooltip" data-placement="top"
+                                        title="Nombre del agente">
                                 </div>
-                                <input type="text" class="form-control" id="inputResidencia" placeholder="Lugar de Residencia">
+                                <input type="text" class="form-control" id="inputResidencia" placeholder="Tu nombre:"
+                                    required>
                             </div>
 
-                            <div class="form-group">
-                                <textarea type="textarea" rows="3" class="form-control" id="inputComentarios" placeholder="Comentarios /// Jose: este formulario, tiene que enviarse por medio de un php, a los correos de Cristha Maradiaga y Julia Salgado"></textarea>
+                            <div class="form-group d-flex">
+                                <div class="iconset-reduser-3">
+                                    <img src="images/ubicacion-agencia.png" alt="" class="" data-toggle="tooltip"
+                                        data-placement="top" title="Agencia de Banco Atlántida" >
+                                </div>
+                                <input type="text" class="form-control" id="inputResidencia"
+                                    placeholder="¿En qué agencia de Banco Atlántida te encuentras?" required>
                             </div>
+
+                            <div class="form-group d-flex">
+                                <div class="iconset-reduser-3">
+                                    <img src="images/agente-afp.png" alt="" class="" data-toggle="tooltip"
+                                        data-placement="top" title="Ejecutivo AFP Atlántida">
+                                </div>
+                                <input type="text" class="form-control" id="inputResidencia"
+                                    placeholder="Nombre de tu Ejecutivo AFP Atlántida: " required>
+                            </div>
+
+                            
+
 
                             <button type="submit" class="btn btn-cliente">Enviar Solicitud</button>
                         </form>
@@ -197,7 +322,14 @@
 
     <script src="plugins/owlcarousel/owl.carousel.min.js"></script>
 
+    <!--Datepicker-->
+    <script src="https://unpkg.com/gijgo@1.9.13/js/gijgo.min.js" type="text/javascript"></script>
+
+    <!--Datepicker Lenguaje-->
+    <script src="https://unpkg.com/gijgo@1.9.13/js/messages/messages.es-es.js" type="text/javascript"></script>
+
      <!--INICIO SCRIPT PARA LOADER AFP-->
+
      <script>
          $(document).ready(function (e) {
              $('.spinner-container').hide();
@@ -206,7 +338,26 @@
 
      <!--FIN SCRIPT PARA LOADER AFP-->
 
+
+     <!--INICIO SCRIPT DATEPICKER DEL MODAL-->
+
+     <script>
+         $('#Desde').datepicker({
+             locale: 'es-es',
+             format: 'dd/mm/yyyy',
+             uiLibrary: 'bootstrap4',
+             modal: true,
+             width: 450,
+             size: 'small',
+             showRightIcon: false,
+         });
+
+     </script>
+
+     <!--FIN SCRIPT DATEPICKER DEL MODAL-->
+
     <!--INICIO SCRIPT PARA ACTIVE NAV-->
+
     <script>
         $(function () {
             // this will get the full URL at the address bar
@@ -221,9 +372,11 @@
               });
           });
     </script>
+
     <!--FIN SCRIPT PARA ACTIVE NAV-->
 
     <!--INICIO SCRIPT PARA ACTIVAR TOOLTIPS-->
+
     <script>
         $(function () {
             $('[data-toggle="tooltip"]').tooltip()
@@ -231,6 +384,20 @@
     </script>
 
     <!--FIN SCRIPT PARA ACTIVAR TOOLTIPS-->
+
+    <!--INICIO SCRIPT PARA MOSTRAR/OCULTAR CAMPOS AL SELECCIONAR TIPO DE AFILIACION-->
+
+    <script>
+    
+    $("#elementreg").on("change", function() {
+    var val = $(this).val();
+    $(".types").hide().find('input:text').val(''); // hide and empty
+    if (val) $("#" + val).show();
+    });
+        
+    </script>
+
+    <!--FIN SCRIPT PARA MOSTRAR/OCULTAR CAMPOS AL SELECCIONAR TIPO DE AFILIACION-->
 
 </body>
 

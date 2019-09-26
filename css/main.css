@@ -890,7 +890,7 @@ i.fa {
 }
 
 .nuevocliente-container {
-    padding: 0;
+    padding: 0px 40px;
   /*  background-color: yellow; */
     margin-bottom: 120px;
 }
@@ -910,7 +910,7 @@ i.fa {
 .btn-cliente {
     background: var(--rojo-afp);
     color: var(--blanco-afp);
-    margin: 0px 250px;
+    margin: 0px 330px;
 }
 
  .new-clientext-a{
@@ -921,6 +921,10 @@ i.fa {
      margin: -40px 0px;
  }
 
+
+ .types {
+     display: none
+ }
 
 
 /* =========================================================================================== */
@@ -1170,6 +1174,12 @@ a.editable-click.editable-disabled:hover {
     overflow-y: scroll;
 }
 
+.scrolld-3 {
+    height: 325px;
+    overflow-y: scroll;
+}
+
+
 .dropdown-toggle::after {
     display: none;
 }
@@ -1380,6 +1390,19 @@ a.multiselect-all:hover {
 
 label.checkbox:hover {
     color:var(--rojo-afp);
+}
+
+
+.gj-picker-bootstrap table tr td.selected.gj-cursor-pointer div {
+    color: #fff;
+    background-color: var(--rojo-afp);
+    border-color: var(--rojob-afp);
+    border-radius: 4px;
+}
+
+.gj-picker-bootstrap table tr td.today div {
+    color: var(--rojo-afp);
+    font-weight: 700;
 }
 
 /*============================================================================================ */
@@ -1961,7 +1984,7 @@ i.fa-custom-1:hover {
     }
 
     .btn-cliente {
-        margin: 0px 250px;
+        margin: 0px 325px;
     }
 
 
@@ -2689,7 +2712,7 @@ i.fa-custom-1:hover {
     .btn-cliente {
         background: var(--rojo-afp);
         color: var(--blanco-afp);
-        margin: 0px 255px;
+        margin: 0px 210px;
     }
 
      .new-clientext-a {
