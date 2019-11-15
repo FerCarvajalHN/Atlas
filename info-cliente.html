@@ -56,7 +56,24 @@
 
         <!--HEADER-->
         <div class="row justify-content-center headerb">
-            <img src="images/logo.png" alt="logo-afp">
+
+            <div class="col-5">
+
+            </div>
+
+            <div class="col-2 main-logo">
+                <img src="images/logo.png" alt="logo-afp">
+            </div>
+
+            <div class="col-5 header-navmenu-logged">
+                <a href="#"><img src="/images/salir.png" alt="" data-toggle="tooltip" data-placement="top"
+                        title="Salir de Plataforma"> </a>
+                <a href="#"><img src="/images/mejoras.png" alt="" data-toggle="tooltip" data-placement="top"
+                        title="Solicitud de Mejoras"> </a>
+                <a href="#"><img src="/images/solicitud.png" alt="" data-toggle="tooltip" data-placement="top"
+                        title="Solicitud de Documentos"> </a>
+            </div>
+
         </div>
 
         <!--CONTENIDO-->
@@ -110,7 +127,7 @@
                 <div class="row" style="border-radius: 19px;">
 
                     <!--INICIO CONTENEDOR INFORMACION DEL CLIENTE-->
-                    <div class="col-lg-11 col-xxxl-11 infoclient-container">
+                    <div class="col-lg-11 col-xxxl-11 infoclient-container ">
                         <!--INICIO TITULO-->
                         <p class="text-center p-box5 neo-700">Información del Cliente</p>
                         <!--FIN TITULO-->
@@ -124,12 +141,21 @@
                             <div class="input-group">
                                 <input class="form-control-6 neo-700" type="text" placeholder="Nombre de cliente">
                             </div>
+
+                            <div class="input-group">
+                                <input class="form-control-6c neo-700" type="text"
+                                    placeholder="Ultima fecha de actualización"
+                                    data-toggle="tooltip" data-placement="top" title="Ultima fecha de actualización">
+                            </div>
+
                         </div>
+
+                        
 
                          <!--FIN NOMBRE DE CLIENTE-->
 
                          <!--INICIO DATOS DE CLIENTE-->
-                        <div  class="row form-row form-control-7-readonly">
+                        <div class="row form-row form-control-7-readonly scrolld-4">
                             <div class="col-6 infoclient-input"  id="user">
 
                                 <!--INICIO COLUMNA DERECHA DE CLIENTE-->
@@ -258,7 +284,7 @@
                                 
                                     <div class="input-group">
                                         <a href="#" id="direction-home" data-type="textarea" data-placement="right"
-                                            data-title="Ingresa o Actualiza el Número de Teléfono"
+                                            data-title="Ingresa o Actualiza la dirección de casa"
                                             class="editable editable-click editable-empty form-control-7b"></a>
                                     </div>
                                 </div>
@@ -404,20 +430,31 @@
                     <div class="col-lg-1 col-xxxl-1 sidenav-client">
                         <div class="clients-menu neo-700">
 
-                            <a href="#" id="enable"><img src="images/Datos-edit.png" alt="">
-                                <p class="clients-menu-text">Modificar <br> Datos</p>
+                            <a href="#" data-toggle="modal" data-target="#Encuesta"><img src="images/expediente_1.png"
+                                    alt=""> 
+                                <p class="clients-menu-text">Estatus Expediente</p> <!--Aqui Jose, tenes que agregar una alerta a modo de pop up, que te va a decir si el expediente esta completo o icompleto, y luego recordar de enlazar con el correspondiente modal que se haga para generar esa alerta-->
                             </a>
-
-                          
 
                             <a href="#PrintData" id="disable"><img src="images/Datos.png" alt="" class="makeNonEditable">
                                 <p class="clients-menu-text" >Confirmar Datos</p>
                             </a>
 
+                            <a href="#" id="enable"><img src="images/Datos-edit.png" alt="">
+                                <p class="clients-menu-text">Modificar <br> Datos</p>
+                            </a>
+
+
                             <a href="#" data-toggle="modal" data-target="#Encuesta"><img src="images/Encuesta.png"
                                     alt="">
                                 <p class="clients-menu-text">Encuesta</p> 
                             </a>
+
+                            <a href="#" data-toggle="modal" data-target="#modalIMG"><img src="images/firma.png"
+                                    alt="">
+                                <p class="clients-menu-text">Firma</p>
+                            </a>
+
+
                         </div>
                     </div>
                     <!--FIN sidenav-cliente-->
@@ -506,6 +543,28 @@
                         </div>
                     </div>
                     <!--Fin modal 7: Imprimir Datos-->
+
+
+                    <!--Inicio modal 8: Imagen Firma-->
+                    <div aria-hidden="true" aria-labelledby="myModalLabel" class="modal fade" id="modalIMG"
+                        role="dialog" tabindex="-1">
+                        <div class="modal-dialog modal-lg" role="document">
+                            <div class="modal-content">
+                                <div class="modal-body mb-0 p-0">
+                                    <img src="https://i3.ytimg.com/vi/vr0qNXmkUJ8/maxresdefault.jpg" alt=""
+                                        style="width:100%">
+                                </div>
+                                <div class="modal-footer">
+                                    <div><a href="https://i3.ytimg.com/vi/vr0qNXmkUJ8/maxresdefault.jpg"
+                                            target="_blank">Descargar</a></div>
+                                    <button class="btn btn-custom-firm btn-rounded btn-md ml-4 text-center"
+                                        data-dismiss="modal" type="button">Cerrar</button>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <!--Fin modal 8: Imagen Firma-->
+
                     
                     <!-- FIN MODAL DE SIDENAV-->
                     
@@ -517,7 +576,7 @@
 
         <!--FOOTER-->
         <div class="row justify-content-center footerb">
-            <span class="footer-text">
+            <span class="footer-textb">
                 <p>“Primero el Cliente y Siempre el Cliente”</p>
             </span>
         </div>

@@ -58,13 +58,30 @@
 
         <!--HEADER-->
         <div class="row justify-content-center headerb">
-            <img src="images/logo.png" alt="logo-afp">
+
+            <div class="col-5">
+
+            </div>
+
+            <div class="col-2 main-logo">
+                <img src="images/logo.png" alt="logo-afp">
+            </div>
+
+            <div class="col-5 header-navmenu-logged">
+                <a href="#"><img src="/images/salir.png" alt="" data-toggle="tooltip" data-placement="top"
+                        title="Salir de Plataforma"> </a>
+                <a href="#"><img src="/images/mejoras.png" alt="" data-toggle="tooltip" data-placement="top"
+                        title="Solicitud de Mejoras"> </a>
+                <a href="#"><img src="/images/solicitud.png" alt="" data-toggle="tooltip" data-placement="top"
+                        title="Solicitud de Documentos"> </a>
+            </div>
+            
         </div>
 
         <!--CONTENIDO-->
         <div class="row align-items-center main-content">
             <!--Inicio de Sidenav-->
-            <div class="col-lg-3 col-xxxl-3 side-navb">
+            <div class="col-lg-3 col-xxl-3 col-xxxl-3 side-navb">
                 <div class="">
                     <img src="images/atlaslogo-white.png" alt="logo-atlas" class="side-navb--logo">
                 </div>
@@ -105,7 +122,7 @@
             <!--Fin de Sidenav-->
 
             <!--Inicio Panel #1: Medio-->
-            <div id="Middle-ClientInfo" class="col-lg-9 col-xxxl-8 info-4">
+            <div id="Middle-ClientInfo" class="col-lg-9 col-xxl-9 col-xxxl-8 info-4">
 
                 <!-- Inicio contenedor principal-->
                 <div class="row" style="border-radius: 19px;">
@@ -123,7 +140,7 @@
 
                         <div class="row">
 
-                            <div class="col-12 forms-container">
+                            <div class="col-12 forms-container-logged">
 
                                 <div class="owl-carousel owl-theme">
 
@@ -141,6 +158,36 @@
                                         <a href="#" download=""> <img src="images/xlsx.png"
                                                 onmouseover="src='images/xlsx-color.png'"
                                                 onmouseout="src='images/xlsx.png'" data-toggle="tooltip"
+                                                data-placement="top" title="Ejemplo de titulo para el documento de
+                                                Ventas">
+                                        </a>
+                                        <span>Lorem ipsum....</span>
+                                    </div>
+
+                                    <div class="item" style="width: 128px">
+                                        <a href="#" download=""> <img src="images/ppt.png"
+                                                onmouseover="src='images/ppt-color.png'"
+                                                onmouseout="src='images/ppt.png'" data-toggle="tooltip"
+                                                data-placement="top" title="Ejemplo de titulo para el documento de
+                                                Ventas">
+                                        </a>
+                                        <span>Lorem ipsum....</span>
+                                    </div>
+
+                                    <div class="item" style="width: 128px">
+                                        <a href="#" download=""> <img src="images/form1.png"
+                                                onmouseover="src='images/form1-color.png'"
+                                                onmouseout="src='images/form1.png'" data-toggle="tooltip"
+                                                data-placement="top" title="Ejemplo de titulo para el documento de
+                                                Ventas">
+                                        </a>
+                                        <span>Lorem ipsum....</span>
+                                    </div>
+
+                                    <div class="item" style="width: 128px">
+                                        <a href="#" download=""> <img src="images/form1.png"
+                                                onmouseover="src='images/form1-color.png'"
+                                                onmouseout="src='images/form1.png'" data-toggle="tooltip"
                                                 data-placement="top" title="Ejemplo de titulo para el documento de
                                                 Ventas">
                                         </a>
@@ -195,7 +242,7 @@
 
         <!--FOOTER-->
         <div class="row justify-content-center footerb">
-            <span class="footer-text">
+            <span class="footer-textb">
                 <p>“Primero el Cliente y Siempre el Cliente”</p>
             </span>
         </div>
@@ -221,9 +268,9 @@
     <!-- INICIO SCRIPT PARA CAROUSEL DE ELEMENTOS -->
     <script>
         $('.owl-carousel').owlCarousel({
-            loop: true,
-            center: true,
-            margin: 20,
+            loop: false,
+            center: false,
+            margin: 120,
             nav: false,
             responsive: {
                 0: {

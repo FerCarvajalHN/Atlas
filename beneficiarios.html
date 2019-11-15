@@ -1,0 +1,557 @@
+<!doctype html>
+<html lang="es">
+
+<head>
+    <!-- Required meta tags -->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <meta http-equiv="x-ua-compatible" content="ie-edge">
+
+    <!-- Bootstrap CSS -->
+    <link rel="stylesheet" href="css/bootstrap.css">
+    <link rel="stylesheet" href="css/main.css">
+
+    <!--OwlCarousel-->
+    <link rel="stylesheet" href="plugins/owlcarousel/owl.carousel.min.css">
+    <link rel="stylesheet" href="plugins/owlcarousel/owl.theme.default.min.css">
+
+    <!-- FontAwesome -->
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.8.2/css/all.css"
+        integrity="sha384-oS3vJWv+0UjzBfQzYUhtDYW+Pj2yciDJxpsK1OYPAYjqT085Qq/1cq5FLXAZQ7Ay" crossorigin="anonymous">
+
+    <!--Spinner loader-->
+    <link rel="stylesheet" href="css/spinner-loader/style/spinner-style.css">
+
+    <title>AFP Atlántida - Atlas | Formularios</title>
+</head>
+
+<body>
+
+    <!-- SPINNER LOADER START -->
+    <div class="spinner-container">
+        <div class="spinner-main"></div>
+        <div class="spinner-second">
+            <div class="spinner-content">
+                <svg class="spinner-logo" version="1.1" id="Layer_1" xmlns="http://www.w3.org/2000/svg"
+                    xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px" viewBox="0 0 312.9 312.9"
+                    style="enable-background:new 0 0 312.9 312.9;" xml:space="preserve">
+
+                    <g class="hola">
+                        <path class="st0-1"
+                            d="M9.1,18.6c-5,0-9.1,4-9.1,9.1v148.2c0,71.7,46.2,118.5,117.9,118.5h61.1c5,0,9.1-4.1,9.1-9.1v-73
+                                        c0-5-4.1-9.1-9.1-9.1H140c-5,0-28.3-0.8-28.3-28.3V27.6c0-5-4.1-9.1-9.1-9.1l0,0L9.1,18.6z" />
+                        <path class="st0-2"
+                            d="M134.2,58.4c-5,0-9.1,4.1-9.1,9.1v83.6c0,5,4.1,9.1,9.1,9.1h44.5c5,0,22.5,0.8,22.5,28.3v96.8
+                                        c0,5,4.1,9.1,9.1,9.1h93.5c5,0,9.1-4.1,9.1-9.1V176.9c0-71.8-46.2-118.5-117.9-118.5L134.2,58.4z" />
+                    </g>
+                </svg>
+            </div>
+        </div>
+        <span class="spinner-text" data-name="Loading">Cargando...</span>
+    </div>
+    <!-- SPINNER LOADER END -->
+
+    <!-- ************** EMPIEZA EL CONTENIDO ************** -->
+
+    <div class="container-fluid wrapper">
+
+
+        <!--HEADER-->
+        <div class="row justify-content-center headerb">
+
+            <div class="col-5">
+
+            </div>
+
+            <div class="col-2 main-logo">
+                <img src="images/logo.png" alt="logo-afp">
+            </div>
+
+            <div class="col-5 header-navmenu-logged">
+                <a href="#"><img src="/images/salir.png" alt="" data-toggle="tooltip" data-placement="top"
+                        title="Salir de Plataforma"> </a>
+                <a href="#"><img src="/images/mejoras.png" alt="" data-toggle="tooltip" data-placement="top"
+                        title="Solicitud de Mejoras"> </a>
+                <a href="#"><img src="/images/solicitud.png" alt="" data-toggle="tooltip" data-placement="top"
+                        title="Solicitud de Documentos"> </a>
+            </div>
+            
+        </div>
+
+        <!--CONTENIDO-->
+        <div class="row align-items-center main-content">
+            <!--Inicio de Sidenav-->
+            <div class="col-lg-3 col-xxxl-3 side-navb">
+                <div class="">
+                    <img src="images/atlaslogo-white.png" alt="logo-atlas" class="side-navb--logo">
+                </div>
+                <nav class="navbar side-navb--list neo-400">
+                    <ul id="menu">
+                        <li class="nav-item"><a class="nav-link" href="info-cliente.html">Información del Cliente</a>
+                        </li>
+                        <li class="nav-item"><a class="nav-link" href="resumen.html">Resumen</a></li>
+                        <li class="nav-item"><a class="nav-link" href="gestiones.html">Gestiones</a></li>
+                        <li class="nav-item"><a class="nav-link" href="forms-logged-e.html">Formularios</a></li>
+                        <li class="nav-item"><a class="nav-link" href="ventas-logged.html">Para Ventas</a></li>
+                        <li class="nav-item"><a class="nav-link" href="home.html">Buscar Nuevo Cliente</a></li>
+                        <hr class="sidenav-c" />
+                    </ul>
+                </nav>
+                 <!--INICIO MONEY EXCHANGE-->
+                 <div class="d-flex exchangeb-main-container">
+                     <div class="exchangeb exchangeb-image">
+                         <img src="images/icons-cliente/exchangeb.png" alt="">
+                     </div>
+
+                     <div class="exchange-container exchange-container-b">
+                         <div class="exchangeb-text neo-700">
+                             <p class="">Venta:<input class="form-control-5 d-inline" type="text"
+                                     placeholder="test 24.60$">
+                             </p>
+
+                         </div>
+
+                         <div class="exchangeb-text neo-700">
+                             <p>Compra:<input class="form-control-5 d-inline" type="text" placeholder="test 24.50$">
+                             </p>
+                         </div>
+                     </div>
+                 </div>
+                 <!--FIN MONEY EXCHANGE-->
+            </div>
+            <!--Fin de Sidenav-->
+
+            <!--Inicio Panel #1: Medio-->
+            <div id="Middle-ClientInfo" class="col-lg-9 col-xxl-9 col-xxxl-8 info-4">
+
+                <!-- Inicio contenedor principal-->
+                <div class="row" style="border-radius: 19px;">
+
+                    <!--INICIO CONTENEDOR SERVICIOS Y PRODUCTOS DEL CLIENTE-->
+                    <div class="col-12 infoclient-container">
+
+                        <!--INICIO TITULO-->
+                        <p class="text-center p-box6b neo-700">Beneficiarios</p>
+                        <!--FIN TITULO-->
+
+                        
+
+                        <!--INICIO TABLA DE PRODUCTOS Y SERVICIOS-->
+
+                        <div class="col-12 beneficiarios-container">
+                            <div class="table-container scrolld-5">
+                                <div class="header-beneficiarios-titulares">
+                                    <span class="neo-700">Beneficiarios Directos</span>
+                                </div>
+                                <table class="table table-wrapper table-borderless">
+                                    <thead class="table__thead-2">
+                                        <tr>
+                                            <th></th>
+                                            <th>Primer Nombre</th>
+                                            <th>Segundo Nombre</th>
+                                            <th>Primer Apellido</th>
+                                            <th>Segundo Apellido</th>
+                                            <th>Parentesco</th>
+                                            <th>Número de Identificación</th>
+                                            <th>Fecha de Nacimiento</th>
+                                            <th>Porcentaje</th>
+                                            <th></th>
+                                        </tr>
+                                    </thead>
+
+                                    <tbody class="table__tbody">
+
+                                        <tr class="table-row neo-700">
+
+                                            <td class="table-row__td ">
+                                                <div class="table-row__Numero">
+                                                    <p class="">1</p>
+                                                </div>
+                                            </td>
+
+                                            <td class="table-row__td ">
+                                                <div class="table-row__name-2 neo-500">
+                                                    <p class="">Lorem</p>
+                                                </div>
+                                            </td>
+
+                                            <td class="table-row__td ">
+                                                <div class="table-row__name-2 neo-500">
+                                                    <p class="">Lorem</p>
+                                                </div>
+                                            </td>
+
+                                            <td class="table-row__td ">
+                                                <div class="table-row__name-2 neo-500">
+                                                    <p class="">Lorem</p>
+
+                                                </div>
+                                            </td>
+
+                                            <td class="table-row__td ">
+                                                <div class="table-row__name-2 neo-500">
+                                                    <p class="">Lorem</p>
+                                                </div>
+                                            </td>
+
+                                            <td class="table-row__td ">
+                                                <div class="table-row__name-2 neo-500">
+                                                    <p class="">Lorem</p>
+                                                </div>
+                                            </td>
+
+                                            <td class="table-row__td ">
+                                                <div class="table-row__name-2 neo-500">
+                                                    <p class="">Lorem</p>
+
+                                                </div>
+                                            </td>
+
+                                            <td class="table-row__td ">
+                                                <div class="table-row__name-2 neo-500">
+                                                    <p class="">Lorem</p>
+                                                </div>
+                                            </td>
+
+                                            <td class="table-row__td ">
+                                                <div class="table-row__name-2 neo-500">
+                                                    <p class="">Lorem</p>
+                                                </div>
+                                            </td>
+
+                                            
+
+                                        </tr>
+
+                                       <tr class="table-row neo-700">
+
+                                           <td class="table-row__td ">
+                                               <div class="table-row__Numero">
+                                                   <p class="">2</p>
+                                               </div>
+                                           </td>
+
+                                           <td class="table-row__td ">
+                                               <div class="table-row__name-2 neo-500">
+                                                   <p class="">Lorem</p>
+                                               </div>
+                                           </td>
+
+                                           <td class="table-row__td ">
+                                               <div class="table-row__name-2 neo-500">
+                                                   <p class="">Lorem</p>
+                                               </div>
+                                           </td>
+
+                                           <td class="table-row__td ">
+                                               <div class="table-row__name-2 neo-500">
+                                                   <p class="">Lorem</p>
+
+                                               </div>
+                                           </td>
+
+                                           <td class="table-row__td ">
+                                               <div class="table-row__name-2 neo-500">
+                                                   <p class="">Lorem</p>
+                                               </div>
+                                           </td>
+
+                                           <td class="table-row__td ">
+                                               <div class="table-row__name-2 neo-500">
+                                                   <p class="">Lorem</p>
+                                               </div>
+                                           </td>
+
+                                           <td class="table-row__td ">
+                                               <div class="table-row__name-2 neo-500">
+                                                   <p class="">Lorem</p>
+
+                                               </div>
+                                           </td>
+
+                                           <td class="table-row__td ">
+                                               <div class="table-row__name-2 neo-500">
+                                                   <p class="">Lorem</p>
+                                               </div>
+                                           </td>
+
+                                           <td class="table-row__td ">
+                                               <div class="table-row__name-2 neo-500">
+                                                   <p class="">Lorem</p>
+                                               </div>
+                                           </td>
+
+
+
+                                       </tr>
+
+                                        
+
+                                    </tbody>
+
+                                </table>
+
+                                <div class="header-beneficiarios-titulares">
+                                    <span class="neo-700">Beneficiarios de Contingencia</span>
+                                </div>
+                                <table class="table table-wrapper table-borderless">
+                                    <thead class="table__thead-2">
+                                        <tr>
+                                            <th></th>
+                                            <th>Primer Nombre</th>
+                                            <th>Segundo Nombre</th>
+                                            <th>Primer Apellido</th>
+                                            <th>Segundo Apellido</th>
+                                            <th>Parentesco</th>
+                                            <th>Número de Identificación</th>
+                                            <th>Fecha de Nacimiento</th>
+                                            <th>Porcentaje</th>
+                                            <th></th>
+                                        </tr>
+                                    </thead>
+
+                                    <tbody class="table__tbody">
+
+                                        <tr class="table-row neo-700">
+
+                                            <td class="table-row__td ">
+                                                <div class="table-row__Numero">
+                                                    <p class="">1</p>
+                                                </div>
+                                            </td>
+
+                                            <td class="table-row__td ">
+                                                <div class="table-row__name-2 neo-500">
+                                                    <p class="">Lorem</p>
+                                                </div>
+                                            </td>
+
+                                            <td class="table-row__td ">
+                                                <div class="table-row__name-2 neo-500">
+                                                    <p class="">Lorem</p>
+                                                </div>
+                                            </td>
+
+                                            <td class="table-row__td ">
+                                                <div class="table-row__name-2 neo-500">
+                                                    <p class="">Lorem</p>
+
+                                                </div>
+                                            </td>
+
+                                            <td class="table-row__td ">
+                                                <div class="table-row__name-2 neo-500">
+                                                    <p class="">Lorem</p>
+                                                </div>
+                                            </td>
+
+                                            <td class="table-row__td ">
+                                                <div class="table-row__name-2 neo-500">
+                                                    <p class="">Lorem</p>
+                                                </div>
+                                            </td>
+
+                                            <td class="table-row__td ">
+                                                <div class="table-row__name-2 neo-500">
+                                                    <p class="">Lorem</p>
+
+                                                </div>
+                                            </td>
+
+                                            <td class="table-row__td ">
+                                                <div class="table-row__name-2 neo-500">
+                                                    <p class="">Lorem</p>
+                                                </div>
+                                            </td>
+
+                                            <td class="table-row__td ">
+                                                <div class="table-row__name-2 neo-500">
+                                                    <p class="">Lorem</p>
+                                                </div>
+                                            </td>
+
+
+
+                                        </tr>
+
+                                        <tr class="table-row neo-700">
+
+                                            <td class="table-row__td ">
+                                                <div class="table-row__Numero">
+                                                    <p class="">2</p>
+                                                </div>
+                                            </td>
+
+                                            <td class="table-row__td ">
+                                                <div class="table-row__name-2 neo-500">
+                                                    <p class="">Lorem</p>
+                                                </div>
+                                            </td>
+
+                                            <td class="table-row__td ">
+                                                <div class="table-row__name-2 neo-500">
+                                                    <p class="">Lorem</p>
+                                                </div>
+                                            </td>
+
+                                            <td class="table-row__td ">
+                                                <div class="table-row__name-2 neo-500">
+                                                    <p class="">Lorem</p>
+
+                                                </div>
+                                            </td>
+
+                                            <td class="table-row__td ">
+                                                <div class="table-row__name-2 neo-500">
+                                                    <p class="">Lorem</p>
+                                                </div>
+                                            </td>
+
+                                            <td class="table-row__td ">
+                                                <div class="table-row__name-2 neo-500">
+                                                    <p class="">Lorem</p>
+                                                </div>
+                                            </td>
+
+                                            <td class="table-row__td ">
+                                                <div class="table-row__name-2 neo-500">
+                                                    <p class="">Lorem</p>
+
+                                                </div>
+                                            </td>
+
+                                            <td class="table-row__td ">
+                                                <div class="table-row__name-2 neo-500">
+                                                    <p class="">Lorem</p>
+                                                </div>
+                                            </td>
+
+                                            <td class="table-row__td ">
+                                                <div class="table-row__name-2 neo-500">
+                                                    <p class="">Lorem</p>
+                                                </div>
+                                            </td>
+
+
+
+                                        </tr>
+
+
+
+                                    </tbody>
+
+                                </table>
+                            </div>
+
+                            <a href="resumen.html" class="btn btn-customcolor-3b col-12" role="button"
+                                aria-pressed="true">Volver a Resumen</a>
+                        </div>
+
+
+
+                        <!--FIN TABLA DE PRODUCTOS Y SERVICIOS-->
+
+                        
+
+                    </div>
+                    <!--FIN CONTENEDOR SERVICIOS Y PRODUCTOS DEL CLIENTE-->
+                    
+
+
+
+                    
+
+                </div>
+                <!-- Fin contenedor principal-->
+
+            </div>
+            <!--Fin Panel #1: Medio-->
+        </div>
+
+        <!--FOOTER-->
+        <div class="row justify-content-center footerb">
+            <span class="footer-textb">
+                <p>“Primero el Cliente y Siempre el Cliente”</p>
+            </span>
+        </div>
+        <!--FIN DE FOOTER-->
+
+        </div>
+
+    <!-- ************** TERMINA EL CONTENIDO ************** -->
+
+
+    <!-- Optional JavaScript -->
+    <!-- jQuery first, then Popper.js, then Bootstrap JS -->
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js"
+        integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1" crossorigin="anonymous">
+    </script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js"
+        integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM" crossorigin="anonymous">
+    </script>
+
+    <script src="plugins/owlcarousel/owl.carousel.min.js"></script>
+
+    <!-- INICIO SCRIPT PARA CAROUSEL DE ELEMENTOS -->
+    <script>
+        $('.owl-carousel').owlCarousel({
+            loop: false,
+            center: false,
+            margin: 20,
+            nav: false,
+            responsive: {
+                0: {
+                    items: 2
+                },
+                600: {
+                    items: 2
+                },
+                1000: {
+                    items: 6
+                }
+            }
+        })
+    </script>
+    <!-- FIN SCRIPT PARA CAROUSEL DE ELEMENTOS -->
+    
+    </script>
+
+     <!--INICIO SCRIPT PARA LOADER AFP-->
+     <script>
+         $(document).ready(function (e) {
+             $('.spinner-container').hide();
+         });
+     </script>
+
+     <!--FIN SCRIPT PARA LOADER AFP-->
+
+
+     <!--INICIO SCRIPT PARA ACTIVE NAV-->
+     <script>
+         $(function () {
+             // this will get the full URL at the address bar
+             var url = window.location.href;
+
+             // passes on every "a" tag
+             $("#menu a").each(function () {
+                 // checks if its the same on the address bar
+                 if (url == (this.href)) {
+                     $(this).closest("li").addClass("active-nav-3");
+                 }
+             });
+         });
+     </script>
+
+    <!--INICIO SCRIPT PARA ACTIVAR TOOLTIPS-->
+    <script>
+        $(function () {
+            $('[data-toggle="tooltip"]').tooltip()
+        })
+    </script>
+
+    <!--FIN SCRIPT PARA ACTIVAR TOOLTIPS-->
+
+</body>
+
+</html>

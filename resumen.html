@@ -63,7 +63,24 @@
 
     <!--HEADER-->
     <div class="row justify-content-center headerb">
-        <img src="images/logo.png" alt="logo-afp">
+
+        <div class="col-5">
+
+        </div>
+
+        <div class="col-2 main-logo">
+            <img src="images/logo.png" alt="logo-afp">
+        </div>
+
+        <div class="col-5 header-navmenu-logged">
+            <a href="#"><img src="/images/salir.png" alt="" data-toggle="tooltip" data-placement="top"
+                    title="Salir de Plataforma"> </a>
+            <a href="#"><img src="/images/mejoras.png" alt="" data-toggle="tooltip" data-placement="top"
+                    title="Solicitud de Mejoras"> </a>
+            <a href="#"><img src="/images/solicitud.png" alt="" data-toggle="tooltip" data-placement="top"
+                    title="Solicitud de Documentos"> </a>
+        </div>
+
     </div>
 
     <!--CONTENIDO-->
@@ -129,7 +146,7 @@
                         </div>
 
                         <div class="input-group">
-                            <input class="form-control-6 neo-700" type="text" placeholder="Nombre de cliente">
+                            <input class="form-control-66 neo-700" type="text" placeholder="Nombre de cliente">
                         </div>
                     </div>
 
@@ -230,19 +247,93 @@
                                             <td class="table-row__Numero">
                                                 <!-- Example single danger button -->
                                                 <div class="btn-group">
-                                                    <a class="dropdown-toggle" data-toggle="dropdown"
-                                                        aria-haspopup="true" aria-expanded="false">
+                                                    <a data-toggle="modal" data-target="#Detalles">
                                                         <i class="fa fa-ellipsis-v" style="color: darkgrey;"></i>
                                                     </a>
-                                                    <div class="dropdown-menu">
-                                                        <a class="dropdown-item" href="#">Action</a>
-                                                        <a class="dropdown-item" href="#">Another action</a>
-                                                        <a class="dropdown-item" href="#">Something else here</a>
-                                                        <div class="dropdown-divider"></div>
-                                                        <a class="dropdown-item" href="#">Separated link</a>
-                                                    </div>
                                                 </div>
                                             </td>
+
+                                            <!--Inicio modal 9: Detalles de cuenta-->
+                                            <div class="modal fade" id="Detalles" tabindex="-1" role="dialog"
+                                                aria-labelledby="exampleModalLabel" aria-hidden="true">
+                                                <div class="modal-dialog" role="document">
+                                                    <div class="modal-content modal-content__custom2">
+
+                                                        <div class="modal-header modal-header__custom3">
+                                                            <h5 class="modal-title neo-700" id="exampleModalLabel">
+                                                                Detalles del Producto: 
+                                                            </h5>
+                                                            <input class="form-control-15c neo-500" type="text"
+                                                                placeholder="Número de Cuenta">
+                                                            <button type="button" class="close" data-dismiss="modal"
+                                                                aria-label="Close">
+                                                                <span aria-hidden="true">&times;</span>
+                                                            </button>
+                                                        </div>
+
+                                                        <div class="modal-body modal-body__custom1">
+                                                            <div class="modal-body">
+                                                                <div class="container-fluid">
+                                                                    <div class="row">
+
+                                                                        <div class="col-xxxl-12 d-flex">
+                                                                            <span class="neo-700" style="margin: 10px 0px;">Moneda:</span>
+                                                                            <input class="form-control-15b neo-500" type="text" placeholder="Moneda">
+                                                                        </div>
+                                                                        <br />
+
+                                                                        <div class="col-xxxl-12 d-flex">
+                                                                              <span class="neo-700"
+                                                                                  style="margin: 10px 0px;">Tipo:</span>
+                                                                            <input class="form-control-15b neo-500" type="text" placeholder="Moneda">
+                                                                        </div>
+
+                                                                        <div class="col-xxxl-12 d-flex">
+                                                                              <span class="neo-700"
+                                                                                  style="margin: 10px 0px;">Saldo:</span>
+                                                                            <input class="form-control-15b neo-500" type="text" placeholder="Moneda">
+                                                                        </div>
+
+                                                                        <div class="col-xxxl-12 d-flex">
+                                                                              <span class="neo-700"
+                                                                                  style="margin: 10px 0px;">Aporte/Cuota:</span>
+                                                                            <input class="form-control-15b neo-500" type="text" placeholder="Moneda">
+                                                                        </div>
+
+                                                                        <div class="col-xxxl-12 d-flex">
+                                                                              <span class="neo-700"
+                                                                                  style="margin: 10px 0px;">Forma de Pago:</span>
+                                                                            <input class="form-control-15b neo-500" type="text" placeholder="Moneda">
+                                                                        </div>
+
+                                                                        <div class="col-xxxl-12 d-flex">
+                                                                             <span class="neo-700"
+                                                                                 style="margin: 10px 0px;">Fecha de Apertura:</span>
+                                                                            <input class="form-control-15b neo-500" type="text" placeholder="Moneda">
+                                                                        </div>
+
+                                                                        
+
+                                                                    </div>
+                                                                </div>
+                                                            </div>
+                                                            <div class="col-xxxl-12 text-center">
+                                                                <img src="images/carnet.png"
+                                                                    onmouseover="src='images/carnet-rojo.png'"
+                                                                    onmouseout="src='images/carnet.png'"
+                                                                alt="" class="" data-toggle="tooltip" data-placement="top" title="Generar Carnet">
+                                                            </div>
+
+                                                            <a href="beneficiarios.html" class="btn btn-customcolor-3 btn-modal-group" role="button" aria-pressed="true">Ver Beneficiarios</a>
+
+                                                        </div>
+
+                                                        
+
+                                                    </div>
+                                                </div>
+                                            </div>
+                                            <!--Fin modal 6: Encuesta-->
 
                                         </tr>
 
@@ -542,7 +633,7 @@
 
     <!--FOOTER-->
     <div class="row justify-content-center footerb">
-            <span class="footer-text">
+            <span class="footer-textb">
                 <p>“Primero el Cliente y Siempre el Cliente”</p>
             </span>
     </div>
@@ -656,6 +747,14 @@
     </script>
 <!--FIN SCRIPT DEL SELECCIONADOR DE CONSTANCIAS-->
 
+<!--INICIO SCRIPT PARA ACTIVAR TOOLTIPS-->
+<script>
+    $(function () {
+        $('[data-toggle="tooltip"]').tooltip()
+    })
+</script>
+
+<!--FIN SCRIPT PARA ACTIVAR TOOLTIPS-->
 
 </body>
 
