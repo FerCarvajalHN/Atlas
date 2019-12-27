@@ -11,7 +11,7 @@
     <link rel="stylesheet" href="css/bootst rap.css">
 
     <link href="https://unpkg.com/gijgo@1.9.13/css/gijgo.min.css" rel="stylesheet" type="text/css">
-    
+
 
     <link rel="stylesheet" href="css/main.css">
 
@@ -75,6 +75,52 @@
                         title="Solicitud de Mejoras"> </a>
                 <a href="#"><img src="/images/solicitud.png" alt="" data-toggle="tooltip" data-placement="top"
                         title="Solicitud de Documentos"> </a>
+                <a href="#"><img src="/images/changelogv2.png" alt="" data-toggle="modal" data-target="#Changelog"> </a>
+
+                <!--Inicio modal 9: Detalles de cuenta-->
+                <div class="modal fade" id="Changelog" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel"
+                    aria-hidden="true">
+                    <div class="modal-dialog" role="document">
+                        <div class="modal-content modal-content__custom2">
+
+                            <div class="modal-header modal-header__custom3">
+                                <h6 class="modal-title neo-700" id="exampleModalLabel">
+                                    Registro de cambios. ¿Que hay de nuevo en Atlas?
+                                </h6>
+                                <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                                    <span aria-hidden="true">&times;</span>
+                                </button>
+                            </div>
+
+                            <div class="modal-body modal-body__custom1">
+                                <div class="modal-body">
+                                    <div class="container-fluid">
+                                        <div class="row">
+                                            <p><b>Conoce las nuevas funciones o mejoras en Atlas: </b></p>
+                                            <p>-Lorem ipsum dolor sit amet consectetur, adipisicing elit.</p>
+                                            <p>-Lorem ipsum dolor sit amet consectetur, adipisicing elit.</p>
+                                            <p>-Lorem ipsum dolor sit amet consectetur, adipisicing elit.</p>
+                                            <p>-Lorem ipsum dolor sit amet consectetur, adipisicing elit.</p>
+                                            <p>-Lorem ipsum dolor sit amet consectetur, adipisicing elit.</p>
+                                            <p>-Lorem ipsum dolor sit amet consectetur, adipisicing elit.</p>
+                                            <p>-Lorem ipsum dolor sit amet consectetur, adipisicing elit.</p>
+
+                                        </div>
+                                    </div>
+                                </div>
+
+
+                            </div>
+
+                            <div class="modal-footer">
+                                <p>Versión actual: <b>0.3.2</b></p>
+                                <!--Esto ira de acorde a la version de github que tenemos actualmente, el primer digito es la version "definitiva", el segundo digito indica el # del "big release" en Atlas, hasta la fecha han habido 3 y el ultimo digito indica los pequeños cambios que pueden ir habiendo dentro de cada big release-->
+                            </div>
+
+                        </div>
+                    </div>
+                </div>
+                <!--Fin modal 9: Detalles de Cuenta-->
             </div>
 
         </div>
@@ -96,6 +142,7 @@
                         <li class="nav-item"><a class="nav-link" href="nuevocliente-index.html">Nuevo Cliente</a></li>
                     </ul>
                 </nav>
+                <p class="ver-sistema"><b>Fecha Actualización de Sistema</b></p>
 
             </div>
 
@@ -108,7 +155,8 @@
 
                     <div class="row collap-title-ventas col-12">
                         <p class="neo-700 collap-title-header-i text-center">Ingresar Nuevo Cliente</p>
-                        <span class="text-center new-clientext-a">Lorem ipsum dolor sit amet consectetur, adipisicing elit. Qui
+                        <span class="text-center new-clientext-a">Lorem ipsum dolor sit amet consectetur, adipisicing
+                            elit. Qui
                             voluptatibus consequatur, autem
                             odit ad iste unde vel aliquid harum quas illo.
                             Itaque.</span>
@@ -121,16 +169,17 @@
 
                                 <div class="form-group col-6 d-flex">
                                     <div class="iconset-reduser-3">
-                                        <img src="images/cliente-gris.png" alt="" class="" data-toggle="tooltip" data-placement="top"
-                                            title="Nombre Completo">
+                                        <img src="images/cliente-gris.png" alt="" class="" data-toggle="tooltip"
+                                            data-placement="top" title="Nombre Completo">
                                     </div>
-                                    <input type="text" class="form-control" id="inputNombreCompleto4" placeholder="Nombre Completo" required>
+                                    <input type="text" class="form-control" id="inputNombreCompleto4"
+                                        placeholder="Nombre Completo" required>
                                 </div>
 
                                 <div class="form-group col-6 d-flex">
                                     <div class="iconset-reduser-3">
-                                        <img src="images/icons-cliente/identidad.png" alt="" class="" data-toggle="tooltip" data-placement="top"
-                                            title="Número de Identidad">
+                                        <img src="images/icons-cliente/identidad.png" alt="" class=""
+                                            data-toggle="tooltip" data-placement="top" title="Número de Identidad">
                                     </div>
                                     <input type="text" class="form-control" id="NumeroIdentidad4"
                                         placeholder="Número de Identidad" required>
@@ -142,16 +191,16 @@
 
                                 <div class="form-group col-md-6 d-flex">
                                     <div class="iconset-reduser-3">
-                                        <img src="images/icons-cliente/mail.png" alt="" class="" data-toggle="tooltip" data-placement="top"
-                                            title="Correo Electrónico">
+                                        <img src="images/icons-cliente/mail.png" alt="" class="" data-toggle="tooltip"
+                                            data-placement="top" title="Correo Electrónico">
                                     </div>
                                     <input type="email" class="form-control" id="inputCorreo4"
                                         placeholder="Correo Electrónico" required>
                                 </div>
                                 <div class="form-group col-md-6 d-flex">
                                     <div class="iconset-reduser-3">
-                                        <img src="images/icons-cliente/celular.png" alt="" class="" data-toggle="tooltip" data-placement="top"
-                                            title="Número de Celular">
+                                        <img src="images/icons-cliente/celular.png" alt="" class=""
+                                            data-toggle="tooltip" data-placement="top" title="Número de Celular">
                                     </div>
                                     <input type="text" class="form-control" id="inputCelular"
                                         placeholder="Número de celular" required>
@@ -191,14 +240,14 @@
                             <!-- CAMPOS GENERADOS AL SELECCIONAR AFILIACION EMPRESARIAL-->
 
                             <div class="form-row types" id="Empresarial">
-                                
+
                                 <div class="form-group col-md d-flex">
                                     <div class="iconset-reduser-3">
                                         <img src="images/nombre-empresa.png" alt="" class="" data-toggle="tooltip"
                                             data-placement="top" title="Nombre de la Empresa">
                                     </div>
                                     <input type="text" class="form-control" id="inputNombreCompleto4"
-                                        placeholder="Nombre de la Empresa:" >
+                                        placeholder="Nombre de la Empresa:">
                                 </div>
 
                                 <div class="form-group col-md d-flex">
@@ -207,21 +256,21 @@
                                             data-placement="top" title="Número de Empleados">
                                     </div>
                                     <input type="text" class="form-control" id="inputNombreCompleto4"
-                                        placeholder="Número de Empleados:" >
+                                        placeholder="Número de Empleados:">
                                 </div>
 
-                               <div class="form-group d-flex col-md">
-                                   <div class="iconset-reduser-3">
-                                       <img src="images/plan.png" alt="" class="" data-toggle="tooltip"
-                                           data-placement="top" title="Plan">
-                                   </div>
-                                   <select id="inputProductoDeseado" class="form-control">
-                                       <option value="">Plan:</option>
-                                       <option value="1">Patronal</option>
-                                       <option value="2">Contributivo</option>
-                                       <option value="3">Solo Empleados</option>
-                                   </select>
-                               </div>
+                                <div class="form-group d-flex col-md">
+                                    <div class="iconset-reduser-3">
+                                        <img src="images/plan.png" alt="" class="" data-toggle="tooltip"
+                                            data-placement="top" title="Plan">
+                                    </div>
+                                    <select id="inputProductoDeseado" class="form-control">
+                                        <option value="">Plan:</option>
+                                        <option value="1">Patronal</option>
+                                        <option value="2">Contributivo</option>
+                                        <option value="3">Solo Empleados</option>
+                                    </select>
+                                </div>
 
                             </div>
 
@@ -247,7 +296,7 @@
                                         <img src="images/calendario-fondo.png" alt="" class="" data-toggle="tooltip"
                                             data-placement="top" title="Fecha de Inicio">
                                     </div>
-                                    <input id="Desde" width="450" placeholder="Desde:" required  />
+                                    <input id="Desde" width="450" placeholder="Desde:" required />
                                 </div>
 
                                 <div class="form-group d-flex col-md-4">
@@ -268,11 +317,11 @@
                                 <textarea type="textarea" rows="3" class="form-control" id="inputComentarios"
                                     placeholder="Comentarios:"></textarea>
                             </div>
-                            
+
                             <div class="form-group d-flex">
                                 <div class="iconset-reduser-3">
-                                    <img src="images/tu-nombre-agente.png" alt="" class="" data-toggle="tooltip" data-placement="top"
-                                        title="Nombre del agente">
+                                    <img src="images/tu-nombre-agente.png" alt="" class="" data-toggle="tooltip"
+                                        data-placement="top" title="Nombre del agente">
                                 </div>
                                 <input type="text" class="form-control" id="inputResidencia" placeholder="Tu nombre:"
                                     required>
@@ -281,7 +330,7 @@
                             <div class="form-group d-flex">
                                 <div class="iconset-reduser-3">
                                     <img src="images/ubicacion-agencia.png" alt="" class="" data-toggle="tooltip"
-                                        data-placement="top" title="Agencia de Banco Atlántida" >
+                                        data-placement="top" title="Agencia de Banco Atlántida">
                                 </div>
                                 <input type="text" class="form-control" id="inputResidencia"
                                     placeholder="¿En qué agencia de Banco Atlántida te encuentras?" required>
@@ -296,7 +345,7 @@
                                     placeholder="Nombre de tu Ejecutivo AFP Atlántida: " required>
                             </div>
 
-                            
+
 
 
                             <button type="submit" class="btn btn-cliente">Enviar Solicitud</button>
@@ -312,9 +361,10 @@
 
         <!--FOOTER-->
         <div class="row justify-content-center footer borde5">
-            <span class="footer-text">
-                <p>“Los malos clientes se pierden por precio, y los buenos por mal servicio”</p>
+            <span class="footer-text text-center">
+                <p>“Los malos Clientes se pierden por precio, y los buenos por mal servicio”</p>
             </span>
+
         </div>
 
     </div>
@@ -340,33 +390,32 @@
     <!--Datepicker Lenguaje-->
     <script src="https://unpkg.com/gijgo@1.9.13/js/messages/messages.es-es.js" type="text/javascript"></script>
 
-     <!--INICIO SCRIPT PARA LOADER AFP-->
+    <!--INICIO SCRIPT PARA LOADER AFP-->
 
-     <script>
-         $(document).ready(function (e) {
-             $('.spinner-container').hide();
-         });
-     </script>
+    <script>
+        $(document).ready(function (e) {
+            $('.spinner-container').hide();
+        });
+    </script>
 
-     <!--FIN SCRIPT PARA LOADER AFP-->
+    <!--FIN SCRIPT PARA LOADER AFP-->
 
 
-     <!--INICIO SCRIPT DATEPICKER DEL MODAL-->
+    <!--INICIO SCRIPT DATEPICKER DEL MODAL-->
 
-     <script>
-         $('#Desde').datepicker({
-             locale: 'es-es',
-             format: 'dd/mm/yyyy',
-             uiLibrary: 'bootstrap4',
-             modal: true,
-             width: 450,
-             size: 'small',
-             showRightIcon: false,
-         });
+    <script>
+        $('#Desde').datepicker({
+            locale: 'es-es',
+            format: 'dd/mm/yyyy',
+            uiLibrary: 'bootstrap4',
+            modal: true,
+            width: 450,
+            size: 'small',
+            showRightIcon: false,
+        });
+    </script>
 
-     </script>
-
-     <!--FIN SCRIPT DATEPICKER DEL MODAL-->
+    <!--FIN SCRIPT DATEPICKER DEL MODAL-->
 
     <!--INICIO SCRIPT PARA ACTIVE NAV-->
 
@@ -379,10 +428,10 @@
             $("#menu a").each(function () {
                 // checks if its the same on the address bar
                 if (url == (this.href)) {
-                 $(this).closest("li").addClass("active-nav-2");
-                  }
-              });
-          });
+                    $(this).closest("li").addClass("active-nav-2");
+                }
+            });
+        });
     </script>
 
     <!--FIN SCRIPT PARA ACTIVE NAV-->
@@ -400,13 +449,11 @@
     <!--INICIO SCRIPT PARA MOSTRAR/OCULTAR CAMPOS AL SELECCIONAR TIPO DE AFILIACION-->
 
     <script>
-    
-    $("#elementreg").on("change", function() {
-    var val = $(this).val();
-    $(".types").hide().find('input:text').val(''); // hide and empty
-    if (val) $("#" + val).show();
-    });
-        
+        $("#elementreg").on("change", function () {
+            var val = $(this).val();
+            $(".types").hide().find('input:text').val(''); // hide and empty
+            if (val) $("#" + val).show();
+        });
     </script>
 
     <!--FIN SCRIPT PARA MOSTRAR/OCULTAR CAMPOS AL SELECCIONAR TIPO DE AFILIACION-->

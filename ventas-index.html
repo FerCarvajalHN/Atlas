@@ -51,7 +51,7 @@
     </div>
     <!-- SPINNER LOADER END -->
 
-    
+
     <!-- ************** EMPIEZA EL CONTENIDO ************** -->
 
     <div class="container-fluid wrapper">
@@ -71,6 +71,52 @@
                         title="Solicitud de Mejoras"> </a>
                 <a href="#"><img src="/images/solicitud.png" alt="" data-toggle="tooltip" data-placement="top"
                         title="Solicitud de Documentos"> </a>
+                <a href="#"><img src="/images/changelogv2.png" alt="" data-toggle="modal" data-target="#Changelog"> </a>
+
+                <!--Inicio modal 9: Detalles de cuenta-->
+                <div class="modal fade" id="Changelog" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel"
+                    aria-hidden="true">
+                    <div class="modal-dialog" role="document">
+                        <div class="modal-content modal-content__custom2">
+
+                            <div class="modal-header modal-header__custom3">
+                                <h6 class="modal-title neo-700" id="exampleModalLabel">
+                                    Registro de cambios. ¿Que hay de nuevo en Atlas?
+                                </h6>
+                                <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                                    <span aria-hidden="true">&times;</span>
+                                </button>
+                            </div>
+
+                            <div class="modal-body modal-body__custom1">
+                                <div class="modal-body">
+                                    <div class="container-fluid">
+                                        <div class="row">
+                                            <p><b>Conoce las nuevas funciones o mejoras en Atlas: </b></p>
+                                            <p>-Lorem ipsum dolor sit amet consectetur, adipisicing elit.</p>
+                                            <p>-Lorem ipsum dolor sit amet consectetur, adipisicing elit.</p>
+                                            <p>-Lorem ipsum dolor sit amet consectetur, adipisicing elit.</p>
+                                            <p>-Lorem ipsum dolor sit amet consectetur, adipisicing elit.</p>
+                                            <p>-Lorem ipsum dolor sit amet consectetur, adipisicing elit.</p>
+                                            <p>-Lorem ipsum dolor sit amet consectetur, adipisicing elit.</p>
+                                            <p>-Lorem ipsum dolor sit amet consectetur, adipisicing elit.</p>
+
+                                        </div>
+                                    </div>
+                                </div>
+
+
+                            </div>
+
+                            <div class="modal-footer">
+                                <p>Versión actual: <b>0.3.2</b></p>
+                                <!--Esto ira de acorde a la version de github que tenemos actualmente, el primer digito es la version "definitiva", el segundo digito indica el # del "big release" en Atlas, hasta la fecha han habido 3 y el ultimo digito indica los pequeños cambios que pueden ir habiendo dentro de cada big release-->
+                            </div>
+
+                        </div>
+                    </div>
+                </div>
+                <!--Fin modal 9: Detalles de Cuenta-->
             </div>
 
         </div>
@@ -92,6 +138,7 @@
                         <li class="nav-item"><a class="nav-link" href="nuevocliente-index.html">Nuevo Cliente</a></li>
                     </ul>
                 </nav>
+                <p class="ver-sistema"><b>Fecha Actualización de Sistema</b></p>
 
             </div>
 
@@ -118,9 +165,8 @@
 
                                 <div class="item" style="width: 128px">
                                     <a href="#" download=""> <img src="images/docx.png"
-                                            onmouseover="src='images/docx-color.png'"
-                                            onmouseout="src='images/docx.png'" data-toggle="tooltip"
-                                            data-placement="top" title="Ejemplo de titulo para el documento de
+                                            onmouseover="src='images/docx-color.png'" onmouseout="src='images/docx.png'"
+                                            data-toggle="tooltip" data-placement="top" title="Ejemplo de titulo para el documento de
                                             Ventas">
                                     </a>
                                     <span>Lorem ipsum....</span>
@@ -128,9 +174,8 @@
 
                                 <div class="item" style="width: 128px">
                                     <a href="#" download=""> <img src="images/xlsx.png"
-                                            onmouseover="src='images/xlsx-color.png'"
-                                            onmouseout="src='images/xlsx.png'" data-toggle="tooltip"
-                                            data-placement="top" title="Ejemplo de titulo para el documento de
+                                            onmouseover="src='images/xlsx-color.png'" onmouseout="src='images/xlsx.png'"
+                                            data-toggle="tooltip" data-placement="top" title="Ejemplo de titulo para el documento de
                                             Ventas">
                                     </a>
                                     <span>Lorem ipsum....</span>
@@ -138,9 +183,8 @@
 
                                 <div class="item" style="width: 128px">
                                     <a href="#" download=""> <img src="images/ppt.png"
-                                            onmouseover="src='images/ppt-color.png'"
-                                            onmouseout="src='images/ppt.png'" data-toggle="tooltip"
-                                            data-placement="top" title="Ejemplo de titulo para el documento de
+                                            onmouseover="src='images/ppt-color.png'" onmouseout="src='images/ppt.png'"
+                                            data-toggle="tooltip" data-placement="top" title="Ejemplo de titulo para el documento de
                                             Ventas">
                                     </a>
                                     <span>Lorem ipsum....</span>
@@ -179,11 +223,11 @@
 
         <!--FOOTER-->
         <div class="row justify-content-center footer borde5">
-            <span class="footer-text">
-                <p>“Los malos clientes se pierden por precio, y los buenos por mal servicio”</p>
+            <span class="footer-text text-center">
+                <p>“Los malos Clientes se pierden por precio, y los buenos por mal servicio”</p>
             </span>
-        </div>
 
+        </div>
     </div>
 
     <!-- ************** TERMINA EL CONTENIDO ************** -->
@@ -201,63 +245,63 @@
 
     <script src="plugins/owlcarousel/owl.carousel.min.js"></script>
 
-     <!--INICIO SCRIPT PARA LOADER AFP-->
-     <script>
-         $(document).ready(function (e) {
-             $('.spinner-container').hide();
-         });
-     </script>
+    <!--INICIO SCRIPT PARA LOADER AFP-->
+    <script>
+        $(document).ready(function (e) {
+            $('.spinner-container').hide();
+        });
+    </script>
 
-     <!--FIN SCRIPT PARA LOADER AFP-->
+    <!--FIN SCRIPT PARA LOADER AFP-->
 
-     <!-- INICIO SCRIPT PARA CAROUSEL DE ELEMENTOS -->
-     <script>
-         $('.owl-carousel').owlCarousel({
-             loop: false,
-             center: false,
-             margin: 90,
-             nav: false,
-             responsive: {
-                 0: {
-                     items: 2
-                 },
-                 600: {
-                     items: 2
-                 },
-                 1000: {
-                     items: 4
-                 }
-             }
-         })
-     </script>
-     <!-- FIN SCRIPT PARA CAROUSEL DE ELEMENTOS -->
+    <!-- INICIO SCRIPT PARA CAROUSEL DE ELEMENTOS -->
+    <script>
+        $('.owl-carousel').owlCarousel({
+            loop: false,
+            center: false,
+            margin: 90,
+            nav: false,
+            responsive: {
+                0: {
+                    items: 2
+                },
+                600: {
+                    items: 2
+                },
+                1000: {
+                    items: 4
+                }
+            }
+        })
+    </script>
+    <!-- FIN SCRIPT PARA CAROUSEL DE ELEMENTOS -->
 
-     <!--INICIO SCRIPT PARA ACTIVE NAV-->
-     <script>
-         $(function () {
-             // this will get the full URL at the address bar
-             var url = window.location.href;
+    <!--INICIO SCRIPT PARA ACTIVE NAV-->
+    <script>
+        $(function () {
+            // this will get the full URL at the address bar
+            var url = window.location.href;
 
-             // passes on every "a" tag
-             $("#menu a").each(function () {
-                 // checks if its the same on the address bar
-                 if (url == (this.href)) {
-                     $(this).closest("li").addClass("active-nav-2");
-                 }
-             });
-         });
-     </script>
+            // passes on every "a" tag
+            $("#menu a").each(function () {
+                // checks if its the same on the address bar
+                if (url == (this.href)) {
+                    $(this).closest("li").addClass("active-nav-2");
+                }
+            });
+        });
+    </script>
 
-     <!--FIN SCRIPT PARA ACTIVE NAV-->
+    <!--FIN SCRIPT PARA ACTIVE NAV-->
 
-     <!--INICIO SCRIPT PARA ACTIVAR TOOLTIPS-->
-     <script>
-         $(function () {
-             $('[data-toggle="tooltip"]').tooltip()
-         })
-     </script>
+    <!--INICIO SCRIPT PARA ACTIVAR TOOLTIPS-->
+    <script>
+        $(function () {
+            $('[data-toggle="tooltip"]').tooltip()
+        })
+    </script>
 
-     <!--FIN SCRIPT PARA ACTIVAR TOOLTIPS-->
+    <!--FIN SCRIPT PARA ACTIVAR TOOLTIPS-->
 
 </body>
 

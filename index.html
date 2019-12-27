@@ -1,27 +1,28 @@
 <!doctype html>
 <html lang="es">
-  <head>
-    <!-- Required meta tags -->
-    <meta charset="utf-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
-    <meta http-equiv="x-ua-compatible" content="ie-edge">
 
-    <!-- Bootstrap CSS -->
-    <link rel="stylesheet" href="css/bootstrap.css">
-    <link rel="stylesheet" href="css/main.css">
+<head>
+  <!-- Required meta tags -->
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+  <meta http-equiv="x-ua-compatible" content="ie-edge">
 
-    <!-- FontAwesome -->
-    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.8.2/css/all.css"
-      integrity="sha384-oS3vJWv+0UjzBfQzYUhtDYW+Pj2yciDJxpsK1OYPAYjqT085Qq/1cq5FLXAZQ7Ay" crossorigin="anonymous">
+  <!-- Bootstrap CSS -->
+  <link rel="stylesheet" href="css/bootstrap.css">
+  <link rel="stylesheet" href="css/main.css">
 
-    <!--Spinner loader-->
-    <link rel="stylesheet" href="css/spinner-loader/style/spinner-style.css">
+  <!-- FontAwesome -->
+  <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.8.2/css/all.css"
+    integrity="sha384-oS3vJWv+0UjzBfQzYUhtDYW+Pj2yciDJxpsK1OYPAYjqT085Qq/1cq5FLXAZQ7Ay" crossorigin="anonymous">
+
+  <!--Spinner loader-->
+  <link rel="stylesheet" href="css/spinner-loader/style/spinner-style.css">
 
 
-    <title>AFP Atlántida - Atlas</title>
-  </head>
- 
-  <body>
+  <title>AFP Atlántida - Atlas</title>
+</head>
+
+<body>
 
   <!-- SPINNER LOADER START -->
   <div class="spinner-container">
@@ -29,29 +30,30 @@
     <div class="spinner-second">
       <div class="spinner-content">
         <svg class="spinner-logo" version="1.1" id="Layer_1" xmlns="http://www.w3.org/2000/svg"
-             xmlns:xlink="http://www.w3.org/1999/xlink"
-             x="0px" y="0px" viewBox="0 0 312.9 312.9" style="enable-background:new 0 0 312.9 312.9;"
-             xml:space="preserve">
+          xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px" viewBox="0 0 312.9 312.9"
+          style="enable-background:new 0 0 312.9 312.9;" xml:space="preserve">
 
-                    <g class="hola">
-                        <path class="st0-1" d="M9.1,18.6c-5,0-9.1,4-9.1,9.1v148.2c0,71.7,46.2,118.5,117.9,118.5h61.1c5,0,9.1-4.1,9.1-9.1v-73
-                                        c0-5-4.1-9.1-9.1-9.1H140c-5,0-28.3-0.8-28.3-28.3V27.6c0-5-4.1-9.1-9.1-9.1l0,0L9.1,18.6z"/>
-                      <path class="st0-2" d="M134.2,58.4c-5,0-9.1,4.1-9.1,9.1v83.6c0,5,4.1,9.1,9.1,9.1h44.5c5,0,22.5,0.8,22.5,28.3v96.8
-                                        c0,5,4.1,9.1,9.1,9.1h93.5c5,0,9.1-4.1,9.1-9.1V176.9c0-71.8-46.2-118.5-117.9-118.5L134.2,58.4z"/>
-                    </g>
-                </svg>
+          <g class="hola">
+            <path class="st0-1"
+              d="M9.1,18.6c-5,0-9.1,4-9.1,9.1v148.2c0,71.7,46.2,118.5,117.9,118.5h61.1c5,0,9.1-4.1,9.1-9.1v-73
+                                        c0-5-4.1-9.1-9.1-9.1H140c-5,0-28.3-0.8-28.3-28.3V27.6c0-5-4.1-9.1-9.1-9.1l0,0L9.1,18.6z" />
+            <path class="st0-2"
+              d="M134.2,58.4c-5,0-9.1,4.1-9.1,9.1v83.6c0,5,4.1,9.1,9.1,9.1h44.5c5,0,22.5,0.8,22.5,28.3v96.8
+                                        c0,5,4.1,9.1,9.1,9.1h93.5c5,0,9.1-4.1,9.1-9.1V176.9c0-71.8-46.2-118.5-117.9-118.5L134.2,58.4z" />
+          </g>
+        </svg>
       </div>
     </div>
     <span class="spinner-text" data-name="Loading">Cargando...</span>
   </div>
   <!-- SPINNER LOADER END -->
 
-<!-- ************** EMPIEZA EL CONTENIDO ************** -->
-    
-<div class="container-fluid wrapper">
+  <!-- ************** EMPIEZA EL CONTENIDO ************** -->
+
+  <div class="container-fluid wrapper">
     <!--HEADER-->
-    <div class="row justify-content-center header-index"> 
-      
+    <div class="row justify-content-center header-index">
+
       <div class="col-2 main-logo">
         <img src="images/logo.png" alt="logo-afp">
       </div>
@@ -63,6 +65,52 @@
             title="Solicitud de Mejoras"> </a>
         <a href="#"><img src="/images/solicitud.png" alt="" data-toggle="tooltip" data-placement="top"
             title="Solicitud de Documentos"> </a>
+        <a href="#"><img src="/images/changelogv2.png" alt="" data-toggle="modal" data-target="#Changelog"> </a>
+
+        <!--Inicio modal 9: Detalles de cuenta-->
+        <div class="modal fade" id="Changelog" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel"
+          aria-hidden="true">
+          <div class="modal-dialog" role="document">
+            <div class="modal-content modal-content__custom2">
+
+              <div class="modal-header modal-header__custom3">
+                <h6 class="modal-title neo-700" id="exampleModalLabel">
+                  Registro de cambios. ¿Que hay de nuevo en Atlas?
+                </h6>
+                <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                  <span aria-hidden="true">&times;</span>
+                </button>
+              </div>
+
+              <div class="modal-body modal-body__custom1">
+                <div class="modal-body">
+                  <div class="container-fluid">
+                    <div class="row">
+                      <p><b>Conoce las nuevas funciones o mejoras en Atlas: </b></p>
+                      <p>-Lorem ipsum dolor sit amet consectetur, adipisicing elit.</p>
+                      <p>-Lorem ipsum dolor sit amet consectetur, adipisicing elit.</p>
+                      <p>-Lorem ipsum dolor sit amet consectetur, adipisicing elit.</p>
+                      <p>-Lorem ipsum dolor sit amet consectetur, adipisicing elit.</p>
+                      <p>-Lorem ipsum dolor sit amet consectetur, adipisicing elit.</p>
+                      <p>-Lorem ipsum dolor sit amet consectetur, adipisicing elit.</p>
+                      <p>-Lorem ipsum dolor sit amet consectetur, adipisicing elit.</p>
+
+                    </div>
+                  </div>
+                </div>
+
+
+              </div>
+
+              <div class="modal-footer">
+                <p>Versión actual: <b>0.3.2</b></p>
+                <!--Esto ira de acorde a la version de github que tenemos actualmente, el primer digito es la version "definitiva", el segundo digito indica el # del "big release" en Atlas, hasta la fecha han habido 3 y el ultimo digito indica los pequeños cambios que pueden ir habiendo dentro de cada big release-->
+              </div>
+
+            </div>
+          </div>
+        </div>
+        <!--Fin modal 9: Detalles de Cuenta-->
       </div>
 
     </div>
@@ -72,19 +120,21 @@
 
       <!--Sidenav-->
       <div class="col-lg-3 col-xl-3 col-xxl-2 col-xxxl-2 side-nav">
-        
+
         <div class="side-nav--logo">
-            <img src="images/atlaslogo-full.png" alt="logo-atlas">
+          <img src="images/atlaslogo-full.png" alt="logo-atlas">
         </div>
-          <nav class="navbar side-nav--list neo-400">
-            <ul id="menu">
-              <li class="nav-item"><a class="nav-link" href="index.html">Login</a></li>
-              <li class="nav-item"><a class="nav-link" href="forms-index-a.html">Formularios</a></li>
-              <li class="nav-item"><a class="nav-link" href="ventas-index.html">Para Ventas</a></li>
-              <li class="nav-item"><a class="nav-link" href="nuevocliente-index.html">Nuevo Cliente</a></li>
-            </ul>
+        <nav class="navbar side-nav--list neo-400">
+          <ul id="menu">
+            <li class="nav-item"><a class="nav-link" href="index.html">Login</a></li>
+            <li class="nav-item"><a class="nav-link" href="forms-index-a.html">Formularios</a></li>
+            <li class="nav-item"><a class="nav-link" href="ventas-index.html">Para Ventas</a></li>
+            <li class="nav-item"><a class="nav-link" href="nuevocliente-index.html">Nuevo Cliente</a></li>
+          </ul>
         </nav>
-        
+
+        <p class="ver-sistema"><b>Fecha Actualización de Sistema</b></p>
+
       </div>
 
       <!--Panel #1: Medio-->
@@ -130,7 +180,8 @@
       <div id="LoginPanel" class="col-lg-4 col-xl-4 col-xxl-3 col-xxxl-3 info-2">
         <div class="row logintitle">
           <p class="h2 p-box1 neo-700">Login</p>
-          <p class="text-justified p-box2 neo-400"> Lorem ipsum dolor sit amet consectetur adipisicing elit. Dolore quaerat
+          <p class="text-justified p-box2 neo-400"> Lorem ipsum dolor sit amet consectetur adipisicing elit. Dolore
+            quaerat
             optio
             maiores fugit, magni illum velit doloremque facilis nesciunt ducimus culpa impedit, debitis non
             aliquid eaque ipsam assumenda! Natus, similique!</p>
@@ -165,32 +216,37 @@
         </div>
 
       </div>
-      
+
     </div>
 
     <!--FOOTER-->
     <div class="row justify-content-center footer borde5">
-      <span class="footer-text"><p>“Los malos Clientes se pierden por precio, y los buenos por mal servicio”</p></span>
-    </div>    
-</div>
+      <span class="footer-text text-center">
+        <p>“Los malos Clientes se pierden por precio, y los buenos por mal servicio”</p>
+      </span>
 
-<!-- ************** TERMINA EL CONTENIDO ************** -->
+    </div>
+  </div>
+
+  <!-- ************** TERMINA EL CONTENIDO ************** -->
 
 
-    <!-- Optional JavaScript -->
-    <!-- jQuery first, then Popper.js, then Bootstrap JS -->
-    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js" integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1" crossorigin="anonymous"></script>
-    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js" integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM" crossorigin="anonymous"></script>
+  <!-- Optional JavaScript -->
+  <!-- jQuery first, then Popper.js, then Bootstrap JS -->
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js"
+    integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1" crossorigin="anonymous">
+  </script>
+  <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js"
+    integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM" crossorigin="anonymous">
+  </script>
 
-  
+
   <!--INICIO SCRIPT PARA LOADER AFP-->
   <script>
-
     $(document).ready(function (e) {
       $('.spinner-container').hide();
     });
-
   </script>
 
   <!--FIN SCRIPT PARA LOADER AFP-->
@@ -198,18 +254,18 @@
 
   <!--INICIO SCRIPT PARA ACTIVE NAV-->
   <script>
-      $(function () {
-        // this will get the full URL at the address bar
-        var url = window.location.href;
+    $(function () {
+      // this will get the full URL at the address bar
+      var url = window.location.href;
 
-        // passes on every "a" tag
-        $("#menu a").each(function () {
-          // checks if its the same on the address bar
-          if (url == (this.href)) {
-            $(this).closest("li").addClass("active-nav-2");
-          }
-        });
+      // passes on every "a" tag
+      $("#menu a").each(function () {
+        // checks if its the same on the address bar
+        if (url == (this.href)) {
+          $(this).closest("li").addClass("active-nav-2");
+        }
       });
+    });
   </script>
 
   <!--FIN SCRIPT PARA ACTIVE NAV-->
@@ -224,5 +280,6 @@
   <!--FIN SCRIPT PARA ACTIVAR TOOLTIPS-->
 
 
-  </body>
+</body>
+
 </html>

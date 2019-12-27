@@ -14,8 +14,8 @@
     <link rel="stylesheet" href="css/main.css">
 
     <!-- FontAwesome -->
-    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.8.2/css/all.css" 
-    integrity="sha384-oS3vJWv+0UjzBfQzYUhtDYW+Pj2yciDJxpsK1OYPAYjqT085Qq/1cq5FLXAZQ7Ay" crossorigin="anonymous">
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.8.2/css/all.css"
+        integrity="sha384-oS3vJWv+0UjzBfQzYUhtDYW+Pj2yciDJxpsK1OYPAYjqT085Qq/1cq5FLXAZQ7Ay" crossorigin="anonymous">
 
     <!--Spinner loader-->
     <link rel="stylesheet" href="css/spinner-loader/style/spinner-style.css">
@@ -84,13 +84,14 @@
                 </div>
                 <nav class="navbar side-navb--list neo-400">
                     <ul id="menu">
-                        <li class="nav-item"><a class="nav-link" href="info-cliente.html">Información del Cliente</a></li>
+                        <li class="nav-item"><a class="nav-link" href="info-cliente.html">Información del Cliente</a>
+                        </li>
                         <li class="nav-item"><a class="nav-link" href="resumen.html">Resumen</a></li>
                         <li class="nav-item"><a class="nav-link" href="gestiones.html">Gestiones</a></li>
                         <li class="nav-item"><a class="nav-link" href="forms-logged-e.html">Formularios</a></li>
                         <li class="nav-item"><a class="nav-link" href="ventas-logged.html">Para Ventas</a></li>
                         <li class="nav-item"><a class="nav-link" href="home.html">Buscar Nuevo Cliente</a></li>
-                        <hr class="sidenav-c"/>
+                        <hr class="sidenav-c" />
                     </ul>
                 </nav>
 
@@ -115,6 +116,7 @@
                     </div>
                 </div>
                 <!--FIN MONEY EXCHANGE-->
+                <p class="ver-sistema--logged"><b>Fecha Actualización de Sistema</b></p>
 
             </div>
             <!--Fin de Sidenav-->
@@ -131,24 +133,25 @@
                         <p class="text-center p-box6 neo-700">Gestiones</p>
                         <!--FIN TITULO-->
 
-                         <!--INICIO  NOMBRE DE CLIENTE-->
-                         <div class="d-flex client-boxb">
-                             <div class="iconset-reduser">
-                                 <img src="images/icons-cliente/cliente.png" alt="" class="">
-                             </div>
+                        <!--INICIO  NOMBRE DE CLIENTE-->
+                        <div class="d-flex client-boxb">
+                            <div class="iconset-reduser">
+                                <img src="images/icons-cliente/cliente.png" alt="" class="">
+                            </div>
 
-                             <div class="input-group">
-                                 <input class="form-control-6b neo-700" type="text" placeholder="Nombre de cliente">
-                             </div>
-                         </div>
+                            <div class="input-group">
+                                <input class="form-control-6b neo-700" type="text" placeholder="Nombre de cliente">
+                            </div>
+                        </div>
 
-                         <!--FIN NOMBRE DE CLIENTE-->
+                        <!--FIN NOMBRE DE CLIENTE-->
 
                         <!--INICIO DE ACCIONES GESTIONES CLIENTE-->
                         <div class="row gestiones-row">
                             <!--INICIO COLUMNA NUEVA GESTION-->
                             <div class="col-6 d-flex gestion-button">
-                                <input class="form-control-10 py-2" type="text" placeholder="Nueva Gestión">
+                                <a href="#" data-toggle="modal" data-target="#modalTEL" class="form-control-10 py-2">
+                                    Ingresar Nueva Gestión</a>
                                 <span class="input-group-append">
                                     <div class="input-group-text input-userinfo-icon3">
                                         <img src="images/new .png" alt="icono-usuario">
@@ -175,10 +178,10 @@
 
                     <!--Inicio de Tabla de Gestiones-->
                     <div class="col-12">
-                         <div class="row tab-gestiones">
-                            
-                             <div class="table-container-gestiones scrolld-1">
-                                 <table class="table table-wrapper table-borderless table-gestiones">
+                        <div class="row tab-gestiones">
+
+                            <div class="table-container-gestiones scrolld-1">
+                                <table class="table table-wrapper table-borderless table-gestiones">
 
                                     <tbody id="myTable" class="table__tbody">
 
@@ -207,37 +210,83 @@
 
                                         </tr>
                                         <!--FIN DE CARD DE GESTION INDIVIDUAL-->
-                                       
-                                       <!--INICIO DE CARD DE GESTION INDIVIDUAL-->
-                                       <tr class="table-row neo-700 ">
-                                          
-                                           <td class="table-row__td col-11 ">
-                                               <div class="table-row__name">
-                                                   <input class="form-control-11 neo-700" type="text"
-                                                       placeholder="Tipo de Gestión">
-                                                   •<input class="form-control-12" type="text" placeholder="Fecha">
-                                                   •<input class="form-control-12" type="text" placeholder="Canal">
-                                               </div>
-                                           </td>
 
-                                           <!--INICIO BOTON DE EXPANDIR GESTIONES-->
-                                           <td class="btn-gestiones col-1">
-                                               <!-- Example single danger button -->
-                                               <div class="btn-group">
-                                                   <a class="" href="detalle-gestiones.html">
-                                                       <i class="fa fa-caret-right fa-custom-2"></i>
-                                                   </a>
-                                               </div>
-                                           </td>
-                                           <!--FIN BOTON DE EXPANDIR GESTIONES-->
+                                        <!--INICIO DE CARD DE GESTION INDIVIDUAL-->
+                                        <tr class="table-row neo-700 ">
 
-                                       </tr>
-                                       <!--FIN DE CARD DE GESTION INDIVIDUAL-->
-                                 </table>
-                             </div>
-                         </div>
+                                            <td class="table-row__td col-11 ">
+                                                <div class="table-row__name">
+                                                    <input class="form-control-11 neo-700" type="text"
+                                                        placeholder="Tipo de Gestión">
+                                                    •<input class="form-control-12" type="text" placeholder="Fecha">
+                                                    •<input class="form-control-12" type="text" placeholder="Canal">
+                                                </div>
+                                            </td>
+
+                                            <!--INICIO BOTON DE EXPANDIR GESTIONES-->
+                                            <td class="btn-gestiones col-1">
+                                                <!-- Example single danger button -->
+                                                <div class="btn-group">
+                                                    <a class="" href="detalle-gestiones.html">
+                                                        <i class="fa fa-caret-right fa-custom-2"></i>
+                                                    </a>
+                                                </div>
+                                            </td>
+                                            <!--FIN BOTON DE EXPANDIR GESTIONES-->
+
+                                        </tr>
+                                        <!--FIN DE CARD DE GESTION INDIVIDUAL-->
+                                </table>
+                            </div>
+                        </div>
                     </div>
-                     <!--Fin de Tabla de Gestiones-->                
+                    <!--Fin de Tabla de Gestiones-->
+
+                    <!--Inicio modal 9: Nueva Gestion -->
+                    <div aria-hidden="true" aria-labelledby="myModalLabel" class="modal fade vertically-modal"
+                        id="modalTEL" role="dialog" tabindex="-1">
+                        <div class="modal-dialog" role="document">
+                            <div class="modal-content modal-content__custom1">
+
+                                <div class="modal-header modal-header__custom2">
+                                    <h5 class="modal-title neo-700" id="exampleModalLabel">Ingresa una nueva gestión:
+                                    </h5>
+                                    <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                                        <span aria-hidden="true">&times;</span>
+                                    </button>
+                                </div>
+
+                                <div class="modal-body modal-body__custom1 justify-content-center align-items-center">
+
+                                    <div class="form-group">
+                                        <input type="text" class="form-control-16" placeholder="Campo de Texto Corto">
+                                    </div>
+
+                                    <div class="form-group">
+                                        <input type="text" class="form-control-16" placeholder="Campo de Texto Corto">
+                                    </div>
+
+                                    <div class="form-group">
+                                        <input type="text" class="form-control-16" placeholder="Campo de Texto Corto">
+                                    </div>
+
+                                    <textarea name="DetallesGestiones" id="" cols="10" rows="2"
+                                        placeholder="Campo de area de Texto"
+                                        class="llamadaDetallesGestiones"></textarea>
+                                </div>
+
+                                <div
+                                    class="modal-footer modal-footer-borderless justify-content-center align-items-center">
+                                    <button type="button" class="btn btn-outline-light btn-modal-group">Enviar
+                                        Gestión</button>
+                                </div>
+
+                            </div>
+                        </div>
+                    </div>
+                    <!--Fin modal 9: Nueva Gestion -->
+
+
                 </div>
             </div>
             <!--Fin Panel #1: Medio-->
@@ -264,39 +313,40 @@
         integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM" crossorigin="anonymous">
     </script>
 
-     <!--INICIO SCRIPT PARA LOADER AFP-->
-     <script>
-         $(document).ready(function (e) {
-             $('.spinner-container').hide();
-         });
-     </script>
+    <!--INICIO SCRIPT PARA LOADER AFP-->
+    <script>
+        $(document).ready(function (e) {
+            $('.spinner-container').hide();
+        });
+    </script>
 
-     <!--FIN SCRIPT PARA LOADER AFP-->
+    <!--FIN SCRIPT PARA LOADER AFP-->
 
-     <!--INICIO SCRIPT PARA ACTIVE NAV-->
-     <script>
-         $(function () {
-             // this will get the full URL at the address bar
-             var url = window.location.href;
+    <!--INICIO SCRIPT PARA ACTIVE NAV-->
+    <script>
+        $(function () {
+            // this will get the full URL at the address bar
+            var url = window.location.href;
 
-             // passes on every "a" tag
-             $("#menu a").each(function () {
-                 // checks if its the same on the address bar
-                 if (url == (this.href)) {
-                     $(this).closest("li").addClass("active-nav-3");
-                 }
-             });
-         });
-     </script>
+            // passes on every "a" tag
+            $("#menu a").each(function () {
+                // checks if its the same on the address bar
+                if (url == (this.href)) {
+                    $(this).closest("li").addClass("active-nav-3");
+                }
+            });
+        });
+    </script>
 
-     <!--INICIO SCRIPT PARA ACTIVAR TOOLTIPS-->
-     <script>
-         $(function () {
-             $('[data-toggle="tooltip"]').tooltip()
-         })
-     </script>
+    <!--INICIO SCRIPT PARA ACTIVAR TOOLTIPS-->
+    <script>
+        $(function () {
+            $('[data-toggle="tooltip"]').tooltip()
+        })
+    </script>
 
-     <!--FIN SCRIPT PARA ACTIVAR TOOLTIPS-->
+    <!--FIN SCRIPT PARA ACTIVAR TOOLTIPS-->
 
 </body>
+
 </html>

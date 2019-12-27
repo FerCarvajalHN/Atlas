@@ -6,21 +6,21 @@
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
     <meta http-equiv="x-ua-compatible" content="ie-edge">
-    
+
     <!-- Bootstrap CSS -->
     <link rel="stylesheet" href="css/bootstrap.css">
-          
+
     <link href="https://unpkg.com/gijgo@1.9.13/css/gijgo.min.css" rel="stylesheet" type="text/css">
 
     <!--Bootstrap Multiselect Plugin-->
-    <link rel="stylesheet" href="css/bootstrap-multiselect.css" type="text/css"/>
+    <link rel="stylesheet" href="css/bootstrap-multiselect.css" type="text/css" />
 
     <link rel="stylesheet" href="css/main.css">
 
 
     <!-- FontAwesome -->
     <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.8.2/css/all.css"
-          integrity="sha384-oS3vJWv+0UjzBfQzYUhtDYW+Pj2yciDJxpsK1OYPAYjqT085Qq/1cq5FLXAZQ7Ay" crossorigin="anonymous">
+        integrity="sha384-oS3vJWv+0UjzBfQzYUhtDYW+Pj2yciDJxpsK1OYPAYjqT085Qq/1cq5FLXAZQ7Ay" crossorigin="anonymous">
 
     <!--Spinner loader-->
     <link rel="stylesheet" href="css/spinner-loader/style/spinner-style.css">
@@ -31,130 +31,134 @@
 
 <body>
 
-<!-- SPINNER LOADER START -->
-<div class="spinner-container">
-    <div class="spinner-main"></div>
-    <div class="spinner-second">
-        <div class="spinner-content">
-            <svg class="spinner-logo" version="1.1" id="Layer_1" xmlns="http://www.w3.org/2000/svg"
-                xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px" viewBox="0 0 312.9 312.9"
-                style="enable-background:new 0 0 312.9 312.9;" xml:space="preserve">
+    <!-- SPINNER LOADER START -->
+    <div class="spinner-container">
+        <div class="spinner-main"></div>
+        <div class="spinner-second">
+            <div class="spinner-content">
+                <svg class="spinner-logo" version="1.1" id="Layer_1" xmlns="http://www.w3.org/2000/svg"
+                    xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px" viewBox="0 0 312.9 312.9"
+                    style="enable-background:new 0 0 312.9 312.9;" xml:space="preserve">
 
-                <g class="hola">
-                    <path class="st0-1"
-                        d="M9.1,18.6c-5,0-9.1,4-9.1,9.1v148.2c0,71.7,46.2,118.5,117.9,118.5h61.1c5,0,9.1-4.1,9.1-9.1v-73
+                    <g class="hola">
+                        <path class="st0-1"
+                            d="M9.1,18.6c-5,0-9.1,4-9.1,9.1v148.2c0,71.7,46.2,118.5,117.9,118.5h61.1c5,0,9.1-4.1,9.1-9.1v-73
                                         c0-5-4.1-9.1-9.1-9.1H140c-5,0-28.3-0.8-28.3-28.3V27.6c0-5-4.1-9.1-9.1-9.1l0,0L9.1,18.6z" />
-                    <path class="st0-2"
-                        d="M134.2,58.4c-5,0-9.1,4.1-9.1,9.1v83.6c0,5,4.1,9.1,9.1,9.1h44.5c5,0,22.5,0.8,22.5,28.3v96.8
+                        <path class="st0-2"
+                            d="M134.2,58.4c-5,0-9.1,4.1-9.1,9.1v83.6c0,5,4.1,9.1,9.1,9.1h44.5c5,0,22.5,0.8,22.5,28.3v96.8
                                         c0,5,4.1,9.1,9.1,9.1h93.5c5,0,9.1-4.1,9.1-9.1V176.9c0-71.8-46.2-118.5-117.9-118.5L134.2,58.4z" />
-                </g>
-            </svg>
-        </div>
-    </div>
-    <span class="spinner-text" data-name="Loading">Cargando...</span>
-</div>
-<!-- SPINNER LOADER END -->
-
-
-<!-- ************** EMPIEZA EL CONTENIDO ************** -->
-
-<div class="container-fluid wrapper">
-
-
-    <!--HEADER-->
-    <div class="row justify-content-center headerb">
-
-        <div class="col-5">
-
-        </div>
-
-        <div class="col-2 main-logo">
-            <img src="images/logo.png" alt="logo-afp">
-        </div>
-
-        <div class="col-5 header-navmenu-logged">
-            <a href="#"><img src="/images/salir.png" alt="" data-toggle="tooltip" data-placement="top"
-                    title="Salir de Plataforma"> </a>
-            <a href="#"><img src="/images/mejoras.png" alt="" data-toggle="tooltip" data-placement="top"
-                    title="Solicitud de Mejoras"> </a>
-            <a href="#"><img src="/images/solicitud.png" alt="" data-toggle="tooltip" data-placement="top"
-                    title="Solicitud de Documentos"> </a>
-        </div>
-
-    </div>
-
-    <!--CONTENIDO-->
-    <div class="row align-items-center main-content">
-
-        <!--Sidenav-->
-        <div class="col-lg-3 col-xxl-3 col-xxxl-3 side-navb">
-
-            <div class="">
-                <img src="images/atlaslogo-white.png" alt="logo-atlas" class="side-navb--logo">
+                    </g>
+                </svg>
             </div>
-            <nav class="navbar side-navb--list neo-400">
-                <ul id="menu">
-                    <li class="nav-item"><a class="nav-link" href="info-cliente.html">Información del Cliente</a></li>
-                    <li class="nav-item"><a class="nav-link" href="resumen.html">Resumen</a></li>
-                    <li class="nav-item"><a class="nav-link" href="gestiones.html">Gestiones</a></li>
-                    <li class="nav-item"><a class="nav-link" href="forms-logged-e.html">Formularios</a></li>
-                    <li class="nav-item"><a class="nav-link" href="ventas-logged.html">Para Ventas</a></li>
-                    <li class="nav-item"><a class="nav-link" href="home.html">Buscar Nuevo Cliente</a></li>
-                    <hr class="sidenav-c" />
-                </ul>
-            </nav>
+        </div>
+        <span class="spinner-text" data-name="Loading">Cargando...</span>
+    </div>
+    <!-- SPINNER LOADER END -->
 
-            <!--INICIO MONEY EXCHANGE-->
-            <div class="d-flex exchangeb-main-container">
-                <div class="exchangeb exchangeb-image">
-                    <img src="images/icons-cliente/exchangeb.png" alt="">
+
+    <!-- ************** EMPIEZA EL CONTENIDO ************** -->
+
+    <div class="container-fluid wrapper">
+
+
+        <!--HEADER-->
+        <div class="row justify-content-center headerb">
+
+            <div class="col-5">
+
+            </div>
+
+            <div class="col-2 main-logo">
+                <img src="images/logo.png" alt="logo-afp">
+            </div>
+
+            <div class="col-5 header-navmenu-logged">
+                <a href="#"><img src="/images/salir.png" alt="" data-toggle="tooltip" data-placement="top"
+                        title="Salir de Plataforma"> </a>
+                <a href="#"><img src="/images/mejoras.png" alt="" data-toggle="tooltip" data-placement="top"
+                        title="Solicitud de Mejoras"> </a>
+                <a href="#"><img src="/images/solicitud.png" alt="" data-toggle="tooltip" data-placement="top"
+                        title="Solicitud de Documentos"> </a>
+            </div>
+
+        </div>
+
+        <!--CONTENIDO-->
+        <div class="row align-items-center main-content">
+
+            <!--Sidenav-->
+            <div class="col-lg-3 col-xxl-3 col-xxxl-3 side-navb">
+
+                <div class="">
+                    <img src="images/atlaslogo-white.png" alt="logo-atlas" class="side-navb--logo">
                 </div>
+                <nav class="navbar side-navb--list neo-400">
+                    <ul id="menu">
+                        <li class="nav-item"><a class="nav-link" href="info-cliente.html">Información del Cliente</a>
+                        </li>
+                        <li class="nav-item"><a class="nav-link" href="resumen.html">Resumen</a></li>
+                        <li class="nav-item"><a class="nav-link" href="gestiones.html">Gestiones</a></li>
+                        <li class="nav-item"><a class="nav-link" href="forms-logged-e.html">Formularios</a></li>
+                        <li class="nav-item"><a class="nav-link" href="ventas-logged.html">Para Ventas</a></li>
+                        <li class="nav-item"><a class="nav-link" href="home.html">Buscar Nuevo Cliente</a></li>
+                        <hr class="sidenav-c" />
+                    </ul>
+                </nav>
 
-                <div class="exchange-container exchange-container-b">
-                    <div class="exchangeb-text neo-700">
-                        <p class="">Venta:<input class="form-control-5 d-inline" type="text" placeholder="test 24.60$">
-                        </p>
-
+                <!--INICIO MONEY EXCHANGE-->
+                <div class="d-flex exchangeb-main-container">
+                    <div class="exchangeb exchangeb-image">
+                        <img src="images/icons-cliente/exchangeb.png" alt="">
                     </div>
 
-                    <div class="exchangeb-text neo-700">
-                        <p>Compra:<input class="form-control-5 d-inline" type="text" placeholder="test 24.50$">
-                        </p>
-                    </div>
-                </div>
-            </div>
-            <!--FIN MONEY EXCHANGE-->
+                    <div class="exchange-container exchange-container-b">
+                        <div class="exchangeb-text neo-700">
+                            <p class="">Venta:<input class="form-control-5 d-inline" type="text"
+                                    placeholder="test 24.60$">
+                            </p>
 
-        </div>
-
-        <!--Panel #1: Medio-->
-        <div id="Middle-ClientInfo" class="col-lg-9 col-xxl-9 col-xxxl-8 info-4">
-
-            <div class="row" style="border-radius: 19px;">
-
-                <!--INICIO CONTENEDOR SERVICIOS Y PRODUCTOS DEL CLIENTE-->
-                <div class="col-12 infoclient-container">
-
-                    <!--INICIO TITULO-->
-                    <p class="text-center p-box6b neo-700">Resumen de Productos y Servicios</p>
-                    <!--FIN TITULO-->
-
-                    <!--INICIO  NOMBRE DE CLIENTE-->
-                    <div class="d-flex client-boxc">
-                        <div class="iconset-reduser">
-                            <img src="images/icons-cliente/cliente.png" alt="" class="">
                         </div>
 
-                        <div class="input-group">
-                            <input class="form-control-66 neo-700" type="text" placeholder="Nombre de cliente">
+                        <div class="exchangeb-text neo-700">
+                            <p>Compra:<input class="form-control-5 d-inline" type="text" placeholder="test 24.50$">
+                            </p>
                         </div>
                     </div>
+                </div>
+                <!--FIN MONEY EXCHANGE-->
 
-                    <!--FIN NOMBRE DE CLIENTE-->
+                <p class="ver-sistema--logged"><b>Fecha Actualización de Sistema</b></p>
 
-                    <!--INICIO TABLA DE PRODUCTOS Y SERVICIOS-->
+            </div>
 
-                     <div class="col-12">
+            <!--Panel #1: Medio-->
+            <div id="Middle-ClientInfo" class="col-lg-9 col-xxl-9 col-xxxl-8 info-4">
+
+                <div class="row" style="border-radius: 19px;">
+
+                    <!--INICIO CONTENEDOR SERVICIOS Y PRODUCTOS DEL CLIENTE-->
+                    <div class="col-12 infoclient-container">
+
+                        <!--INICIO TITULO-->
+                        <p class="text-center p-box6b neo-700">Resumen de Productos y Servicios</p>
+                        <!--FIN TITULO-->
+
+                        <!--INICIO  NOMBRE DE CLIENTE-->
+                        <div class="d-flex client-boxc">
+                            <div class="iconset-reduser">
+                                <img src="images/icons-cliente/cliente.png" alt="" class="">
+                            </div>
+
+                            <div class="input-group">
+                                <input class="form-control-66 neo-700" type="text" placeholder="Nombre de cliente">
+                            </div>
+                        </div>
+
+                        <!--FIN NOMBRE DE CLIENTE-->
+
+                        <!--INICIO TABLA DE PRODUCTOS Y SERVICIOS-->
+
+                        <div class="col-12">
                             <div class="table-container scrolld-2">
                                 <table class="table table-wrapper table-borderless">
                                     <thead class="table__thead">
@@ -261,7 +265,7 @@
 
                                                         <div class="modal-header modal-header__custom3">
                                                             <h5 class="modal-title neo-700" id="exampleModalLabel">
-                                                                Detalles del Producto: 
+                                                                Detalles del Producto:
                                                             </h5>
                                                             <input class="form-control-15c neo-500" type="text"
                                                                 placeholder="Número de Cuenta">
@@ -277,42 +281,51 @@
                                                                     <div class="row">
 
                                                                         <div class="col-xxxl-12 d-flex">
-                                                                            <span class="neo-700" style="margin: 10px 0px;">Moneda:</span>
-                                                                            <input class="form-control-15b neo-500" type="text" placeholder="Moneda">
+                                                                            <span class="neo-700"
+                                                                                style="margin: 10px 0px;">Moneda:</span>
+                                                                            <input class="form-control-15b neo-500"
+                                                                                type="text" placeholder="Moneda">
                                                                         </div>
                                                                         <br />
 
                                                                         <div class="col-xxxl-12 d-flex">
-                                                                              <span class="neo-700"
-                                                                                  style="margin: 10px 0px;">Tipo:</span>
-                                                                            <input class="form-control-15b neo-500" type="text" placeholder="Moneda">
+                                                                            <span class="neo-700"
+                                                                                style="margin: 10px 0px;">Tipo:</span>
+                                                                            <input class="form-control-15b neo-500"
+                                                                                type="text" placeholder="Moneda">
                                                                         </div>
 
                                                                         <div class="col-xxxl-12 d-flex">
-                                                                              <span class="neo-700"
-                                                                                  style="margin: 10px 0px;">Saldo:</span>
-                                                                            <input class="form-control-15b neo-500" type="text" placeholder="Moneda">
+                                                                            <span class="neo-700"
+                                                                                style="margin: 10px 0px;">Saldo:</span>
+                                                                            <input class="form-control-15b neo-500"
+                                                                                type="text" placeholder="Moneda">
                                                                         </div>
 
                                                                         <div class="col-xxxl-12 d-flex">
-                                                                              <span class="neo-700"
-                                                                                  style="margin: 10px 0px;">Aporte/Cuota:</span>
-                                                                            <input class="form-control-15b neo-500" type="text" placeholder="Moneda">
+                                                                            <span class="neo-700"
+                                                                                style="margin: 10px 0px;">Aporte/Cuota:</span>
+                                                                            <input class="form-control-15b neo-500"
+                                                                                type="text" placeholder="Moneda">
                                                                         </div>
 
                                                                         <div class="col-xxxl-12 d-flex">
-                                                                              <span class="neo-700"
-                                                                                  style="margin: 10px 0px;">Forma de Pago:</span>
-                                                                            <input class="form-control-15b neo-500" type="text" placeholder="Moneda">
+                                                                            <span class="neo-700"
+                                                                                style="margin: 10px 0px;">Forma de
+                                                                                Pago:</span>
+                                                                            <input class="form-control-15b neo-500"
+                                                                                type="text" placeholder="Moneda">
                                                                         </div>
 
                                                                         <div class="col-xxxl-12 d-flex">
-                                                                             <span class="neo-700"
-                                                                                 style="margin: 10px 0px;">Fecha de Apertura:</span>
-                                                                            <input class="form-control-15b neo-500" type="text" placeholder="Moneda">
+                                                                            <span class="neo-700"
+                                                                                style="margin: 10px 0px;">Fecha de
+                                                                                Apertura:</span>
+                                                                            <input class="form-control-15b neo-500"
+                                                                                type="text" placeholder="Moneda">
                                                                         </div>
 
-                                                                        
+
 
                                                                     </div>
                                                                 </div>
@@ -320,20 +333,23 @@
                                                             <div class="col-xxxl-12 text-center">
                                                                 <img src="images/carnet.png"
                                                                     onmouseover="src='images/carnet-rojo.png'"
-                                                                    onmouseout="src='images/carnet.png'"
-                                                                alt="" class="" data-toggle="tooltip" data-placement="top" title="Generar Carnet">
+                                                                    onmouseout="src='images/carnet.png'" alt="" class=""
+                                                                    data-toggle="tooltip" data-placement="top"
+                                                                    title="Generar Carnet">
                                                             </div>
 
-                                                            <a href="beneficiarios.html" class="btn btn-customcolor-3 btn-modal-group" role="button" aria-pressed="true">Ver Beneficiarios</a>
+                                                            <a href="beneficiarios.html"
+                                                                class="btn btn-customcolor-3 btn-modal-group"
+                                                                role="button" aria-pressed="true">Ver Beneficiarios</a>
 
                                                         </div>
 
-                                                        
+
 
                                                     </div>
                                                 </div>
                                             </div>
-                                            <!--Fin modal 6: Encuesta-->
+                                            <!--Fin modal 9: Detalles de Cuenta-->
 
                                         </tr>
 
@@ -425,90 +441,93 @@
                                             </td>
 
                                         </tr>
-                                         
+
                                     </tbody>
 
                                 </table>
                             </div>
+                        </div>
+
+
+
+                        <!--FIN TABLA DE PRODUCTOS Y SERVICIOS-->
+
                     </div>
+                    <!--FIN CONTENEDOR SERVICIOS Y PRODUCTOS DEL CLIENTE-->
 
-                    
+                    <!--MODAL DE SERVICIOS-->
 
-                    <!--FIN TABLA DE PRODUCTOS Y SERVICIOS-->
-
-                </div>
-                <!--FIN CONTENEDOR SERVICIOS Y PRODUCTOS DEL CLIENTE-->
-
-                <!--MODAL DE SERVICIOS-->
-
-                <!--Inicio modal 1: Estado de Cuenta-->
-                <div class="modal fade" id="EstadoCuenta" tabindex="-1" role="dialog"
-                    aria-labelledby="exampleModalLabel" aria-hidden="true">
-                    <div class="modal-dialog" role="document">
-                        <div class="modal-content modal-content__custom1">
-                            <div class="modal-header modal-header__custom1">
-                                <h5 class="modal-title neo-700" id="exampleModalLabel">Generar Estado de Cuenta:</h5>
-                                 <input class="form-control-15 neo-500" type="text" placeholder="Número de Cuenta">
-                                 <button type="button" class="close" data-dismiss="modal" aria-label="Close">
-                                     <span aria-hidden="true">&times;</span>
-                                 </button>
-                            </div>
-                            <div class="modal-body">
-                                <p class="modal-text1 neo-500">Selecciona el rango de fecha para generar el Estado de Cuenta. </p>
-                                
-                                <div class="d-flex client-box">
-                                    <input id="Desde" width="450" placeholder="Desde:"/>
+                    <!--Inicio modal 1: Estado de Cuenta-->
+                    <div class="modal fade" id="EstadoCuenta" tabindex="-1" role="dialog"
+                        aria-labelledby="exampleModalLabel" aria-hidden="true">
+                        <div class="modal-dialog" role="document">
+                            <div class="modal-content modal-content__custom1">
+                                <div class="modal-header modal-header__custom1">
+                                    <h5 class="modal-title neo-700" id="exampleModalLabel">Generar Estado de Cuenta:
+                                    </h5>
+                                    <input class="form-control-15 neo-500" type="text" placeholder="Número de Cuenta">
+                                    <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                                        <span aria-hidden="true">&times;</span>
+                                    </button>
                                 </div>
-                                <div class="d-flex client-box">
-                                    <input id="Hasta" width="450" placeholder="Hasta:"/>
+                                <div class="modal-body">
+                                    <p class="modal-text1 neo-500">Selecciona el rango de fecha para generar el Estado
+                                        de Cuenta. </p>
+
+                                    <div class="d-flex client-box">
+                                        <input id="Desde" width="450" placeholder="Desde:" />
+                                    </div>
+                                    <div class="d-flex client-box">
+                                        <input id="Hasta" width="450" placeholder="Hasta:" />
+                                    </div>
+
                                 </div>
 
-                            </div>
+                                <div class="modal-footer modal-footer__custom1">
+                                    <button type="button" class="btn btn-outline-light">Solicitar</button>
+                                </div>
 
-                            <div class="modal-footer modal-footer__custom1">
-                                <button type="button" class="btn btn-outline-light">Solicitar</button>
                             </div>
-
                         </div>
                     </div>
-                </div>
-                <!--Fin modal 1: Estado de Cuenta-->
+                    <!--Fin modal 1: Estado de Cuenta-->
 
-                <!--Inicio modal 2: Constancia-->
-                <div class="modal fade" id="Constancia" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel"
-                    aria-hidden="true">
-                    <div class="modal-dialog" role="document">
-                        <div class="modal-content modal-content__custom1">
-                            
-                            <div class="modal-header modal-header__custom2">
-                                <h5 class="modal-title neo-700" id="exampleModalLabel">Generar o Enviar Constancia</h5>
-                                <button type="button" class="close" data-dismiss="modal" aria-label="Close">
-                                    <span aria-hidden="true">&times;</span>
-                                </button>
-                            </div>
+                    <!--Inicio modal 2: Constancia-->
+                    <div class="modal fade" id="Constancia" tabindex="-1" role="dialog"
+                        aria-labelledby="exampleModalLabel" aria-hidden="true">
+                        <div class="modal-dialog" role="document">
+                            <div class="modal-content modal-content__custom1">
 
-                            <div class="modal-body modal-body__custom1">
-                                <p class="modal-text1 neo-500">Selecciona una de las siguientes opciones:</p>
-
-                                <!--INICIO DE SELECCION DE CUENTAS-->
-                                <div class="custom-formconstancia">
-                                    <form class="form-horizontal" method="POST" action="post.php">
-                                        <div class="form-group">
-                                            <div class="">
-                                                <select id="example" name="multiselect[]" multiple="multiple">
-                                                    <option value="1">Option 1</option>
-                                                    <option value="2">Option 2</option>
-                                                    <option value="4">Option 4</option>
-                                                    <option value="3">Option 3</option>
-                                                    <option value="6">Option 6</option>
-                                                    <option value="5">Option 5</option>
-                                                </select>
-                                            </div>
-                                        </div>
-                                    </form>
+                                <div class="modal-header modal-header__custom2">
+                                    <h5 class="modal-title neo-700" id="exampleModalLabel">Generar o Enviar Constancia
+                                    </h5>
+                                    <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                                        <span aria-hidden="true">&times;</span>
+                                    </button>
                                 </div>
 
-                            <!--  Este es un button de submit por si es necesario
+                                <div class="modal-body modal-body__custom1">
+                                    <p class="modal-text1 neo-500">Selecciona una de las siguientes opciones:</p>
+
+                                    <!--INICIO DE SELECCION DE CUENTAS-->
+                                    <div class="custom-formconstancia">
+                                        <form class="form-horizontal" method="POST" action="post.php">
+                                            <div class="form-group">
+                                                <div class="">
+                                                    <select id="example" name="multiselect[]" multiple="multiple">
+                                                        <option value="1">Option 1</option>
+                                                        <option value="2">Option 2</option>
+                                                        <option value="4">Option 4</option>
+                                                        <option value="3">Option 3</option>
+                                                        <option value="6">Option 6</option>
+                                                        <option value="5">Option 5</option>
+                                                    </select>
+                                                </div>
+                                            </div>
+                                        </form>
+                                    </div>
+
+                                    <!--  Este es un button de submit por si es necesario
                                 <div class="form-group ">
                                     <div class="btn-submit-constancia">
                                         <button type="submit" class="btn btn-light btn-modal-group">Submit</button>
@@ -516,245 +535,258 @@
                                 </div>
                             -->
 
-                                <!--FIN DE SELECCION DE CUENTAS-->
-   
-                                <button type="button" class="btn btn-outline-light btn-modal-group">Ver Archivo</button>
-                                <button type="button" class="btn btn-outline-light btn-modal-group">Enviar por E-mail BASA</button>
-                                <button type="button" class="btn btn-outline-light btn-modal-group">Enviar por E-mail</button>
+                                    <!--FIN DE SELECCION DE CUENTAS-->
+
+                                    <button type="button" class="btn btn-outline-light btn-modal-group">Ver
+                                        Archivo</button>
+                                    <button type="button" class="btn btn-outline-light btn-modal-group">Enviar por
+                                        E-mail BASA</button>
+                                    <button type="button" class="btn btn-outline-light btn-modal-group">Enviar por
+                                        E-mail</button>
+                                </div>
                             </div>
                         </div>
                     </div>
+                    <!--Fin modal 2: Constancia-->
+
+                    <!--Inicio modal 3: Expendiente-->
+                    <div class="modal fade" id="Expediente" tabindex="-1" role="dialog"
+                        aria-labelledby="exampleModalLabel" aria-hidden="true">
+                        <div class="modal-dialog" role="document">
+                            <div class="modal-content modal-content__custom1">
+
+                                <div class="modal-header modal-header__custom2">
+                                    <h5 class="modal-title neo-700" id="exampleModalLabel">Generar o Enviar Expediente
+                                    </h5>
+                                    <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                                        <span aria-hidden="true">&times;</span>
+                                    </button>
+                                </div>
+
+                                <div class="modal-body modal-body__custom1">
+                                    <p class="modal-text1 neo-500">Selecciona una de las siguientes opciones:</p>
+                                    <button type="button" class="btn btn-outline-light btn-modal-group">Ver
+                                        Archivo</button>
+                                    <button type="button" class="btn btn-outline-light btn-modal-group">Enviar por
+                                        E-mail BASA</button>
+                                    <button type="button" class="btn btn-outline-light btn-modal-group">Enviar por
+                                        E-mail</button>
+                                </div>
+
+                            </div>
+                        </div>
+                    </div>
+
+                    <!--Inicio modal 4: Activacion SMS-->
+                    <div class="modal fade" id="SMS" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel"
+                        aria-hidden="true">
+                        <div class="modal-dialog" role="document">
+                            <div class="modal-content modal-content__custom1">
+
+                                <div class="modal-header modal-header__custom2">
+                                    <h5 class="modal-title neo-700" id="exampleModalLabel">Ingrese el número de celular
+                                    </h5>
+                                    <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                                        <span aria-hidden="true">&times;</span>
+                                    </button>
+                                </div>
+
+                                <div class="modal-body modal-body__custom1">
+                                    <p class="modal-text1 neo-500">Selecciona una de las siguientes opciones:</p>
+                                    <input class="form-control-cel" type="text" placeholder="Número de celular...">
+                                </div>
+
+                                <div class="modal-footer modal-footer__custom1">
+                                    <button type="button" class="btn btn-outline-light btn-modal-group">Activar
+                                        Número</button>
+                                </div>
+
+                            </div>
+                        </div>
+                    </div>
+                    <!--Fin modal 4: Activacion SMS-->
+
+                    <!--FIN DE MODAL DE SERVICIOS-->
+
+
+
+                    <!--INICIO ACTIVACION DE CANALES -->
+
+                    <div class="d-flex canales-act col-12">
+
+                        <p class="p-box7 neo-700">Activación de Canales: </p>
+
+                        <!--INICIO OVP -->
+                        <div class="iconset-reduser2">
+                            <img src="images/ovp.png" alt="" class="">
+                        </div>
+
+                        <div class="canales__ovp col-4">
+                            <div class="input-group2 input-group">
+                                <span class="input-group-append">
+                                    <div class="input-group-text input-userinfo-icon2"><img src="images/user.png"
+                                            alt="icono-usuario"></div>
+                                </span>
+
+                                <input class="form-control-8 py-2 input-userinfo3" type="text"
+                                    placeholder="Nombre del Cliente">
+                            </div>
+
+                            <div class="input-group2 input-group">
+                                <span class="input-group-append">
+                                    <div class="input-group-text input-userinfo-icon2"><img src="images/mail_1.png"
+                                            alt="icono-usuario"></div>
+                                </span>
+
+                                <input class="form-control-8 py-2 input-userinfo" type="text"
+                                    placeholder="E-mail del Cliente">
+                            </div>
+                        </div>
+                        <!--FIN OVP -->
+
+                        <!--INICIO SMS -->
+                        <div class="iconset-reduser2">
+                            <img src="images/sms.png" alt="" class="">
+                        </div>
+
+                        <div class="canales__sms col-4">
+                            <div class="input-group">
+                                <a href="#" data-toggle="modal" data-target="#SMS"><input
+                                        class="form-control-8b neo-500" type="text"
+                                        placeholder="Número del Cliente"></a>
+                            </div>
+                        </div>
+                        <!--FIN SMS -->
+
+                    </div>
+
+                    <!--FIN ACTIVACION DE CANALES -->
                 </div>
-                <!--Fin modal 2: Constancia-->
-
-                <!--Inicio modal 3: Expendiente-->
-                <div class="modal fade" id="Expediente" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel"
-                    aria-hidden="true">
-                    <div class="modal-dialog" role="document">
-                        <div class="modal-content modal-content__custom1">
-                
-                            <div class="modal-header modal-header__custom2">
-                                <h5 class="modal-title neo-700" id="exampleModalLabel">Generar o Enviar Expediente</h5>
-                                <button type="button" class="close" data-dismiss="modal" aria-label="Close">
-                                    <span aria-hidden="true">&times;</span>
-                                </button>
-                            </div>
-                
-                            <div class="modal-body modal-body__custom1">
-                                <p class="modal-text1 neo-500">Selecciona una de las siguientes opciones:</p>
-                                <button type="button" class="btn btn-outline-light btn-modal-group">Ver Archivo</button>
-                                <button type="button" class="btn btn-outline-light btn-modal-group">Enviar por E-mail BASA</button>
-                                <button type="button" class="btn btn-outline-light btn-modal-group">Enviar por E-mail</button>
-                            </div>
-                
-                        </div>
-                    </div>
-                </div>
-                
-                <!--Inicio modal 4: Activacion SMS-->
-                <div class="modal fade" id="SMS" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel"
-                    aria-hidden="true">
-                    <div class="modal-dialog" role="document">
-                        <div class="modal-content modal-content__custom1">
-                
-                            <div class="modal-header modal-header__custom2">
-                                <h5 class="modal-title neo-700" id="exampleModalLabel">Ingrese el número de celular</h5>
-                                <button type="button" class="close" data-dismiss="modal" aria-label="Close">
-                                    <span aria-hidden="true">&times;</span>
-                                </button>
-                            </div>
-                
-                            <div class="modal-body modal-body__custom1">
-                                <p class="modal-text1 neo-500">Selecciona una de las siguientes opciones:</p>
-                                <input class="form-control-cel" type="text" placeholder="Número de celular...">
-                            </div>
-
-                            <div class="modal-footer modal-footer__custom1">
-                                <button type="button" class="btn btn-outline-light btn-modal-group">Activar Número</button>
-                            </div>
-                
-                        </div>
-                    </div>
-                </div>
-                <!--Fin modal 4: Activacion SMS-->
-
-                <!--FIN DE MODAL DE SERVICIOS-->
-
-
-
-                <!--INICIO ACTIVACION DE CANALES -->
-
-                <div class="d-flex canales-act col-12">
-
-                    <p class="p-box7 neo-700">Activación de Canales: </p>
-
-                     <!--INICIO OVP -->
-                    <div class="iconset-reduser2">
-                        <img src="images/ovp.png" alt="" class="">
-                    </div>
- 
-                    <div class="canales__ovp col-4">
-                        <div class="input-group2 input-group">
-                            <span class="input-group-append">
-                                <div class="input-group-text input-userinfo-icon2"><img src="images/user.png"alt="icono-usuario"></div>
-                            </span>
-
-                            <input class="form-control-8 py-2 input-userinfo3" type="text" placeholder="Nombre del Cliente">
-                        </div>
-
-                        <div class="input-group2 input-group">
-                            <span class="input-group-append">
-                                <div class="input-group-text input-userinfo-icon2"><img src="images/mail_1.png" alt="icono-usuario"></div>
-                            </span>
-
-                            <input class="form-control-8 py-2 input-userinfo" type="text" placeholder="E-mail del Cliente">
-                        </div>
-                    </div>
-                    <!--FIN OVP -->
-
-                    <!--INICIO SMS -->
-                    <div class="iconset-reduser2">
-                        <img src="images/sms.png" alt="" class="">
-                    </div>
-
-                    <div class="canales__sms col-4">
-                        <div class="input-group">
-                            <a href="#" data-toggle="modal" data-target="#SMS"><input class="form-control-8b neo-500" type="text" placeholder="Número del Cliente"></a>
-                        </div>
-                    </div>
-                    <!--FIN SMS -->
-
-                </div>
-
-                <!--FIN ACTIVACION DE CANALES -->
             </div>
         </div>
-    </div>
 
-    <!--FOOTER-->
-    <div class="row justify-content-center footerb">
+        <!--FOOTER-->
+        <div class="row justify-content-center footerb">
             <span class="footer-textb">
                 <p>“Primero el Cliente y Siempre el Cliente”</p>
             </span>
+        </div>
+
     </div>
 
-</div>
+    <!-- ************** TERMINA EL CONTENIDO ************** -->
 
-<!-- ************** TERMINA EL CONTENIDO ************** -->
-
-<!-- jQuery first, then Popper.js, then Bootstrap JS -->
-<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
-<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js"
+    <!-- jQuery first, then Popper.js, then Bootstrap JS -->
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js"
         integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1" crossorigin="anonymous">
-</script>
-<script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js"
-        integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM" crossorigin="anonymous">
-</script>
-
-<!--Bootstrap Multiselect-->
-<script type="text/javascript" src="js/bootstrap-multiselect.js"></script>
-
-<!--Datepicker-->
-<script src="https://unpkg.com/gijgo@1.9.13/js/gijgo.min.js" type="text/javascript"></script>
-
-<!--Datepicker Lenguaje-->
-<script src="https://unpkg.com/gijgo@1.9.13/js/messages/messages.es-es.js" type="text/javascript"></script>
-
-
- <!--INICIO SCRIPT PARA LOADER AFP-->
- <script>
-     $(document).ready(function (e) {
-         $('.spinner-container').hide();
-     });
- </script>
-
- <!--FIN SCRIPT PARA LOADER AFP-->
-
-
-<!--INICIO SCRIPT DATEPICKER DEL MODAL-->
-<script>
-    $('#Desde').datepicker({
-        locale: 'es-es',
-        format: 'dd/mm/yyyy',
-        uiLibrary: 'bootstrap4',
-        modal: true,
-        width: 450,
-        size: 'small',
-    });
-
-    $('#Hasta').datepicker({
-        locale: 'es-es',
-        format: 'dd/mm/yyyy',
-        uiLibrary: 'bootstrap4',
-        modal: true,
-        width: 450,
-        size: 'small',
-    });
-</script>
-
-<!--FIN SCRIPT DATEPICKER DEL MODAL-->
-
-<!--INICIO SCRIPT SELECT DEL NAV MENU-->
-<script>
-    $(function () {
-        // this will get the full URL at the address bar
-        var url = window.location.href;
-
-        // passes on every "a" tag
-        $("#menu a").each(function () {
-            // checks if its the same on the address bar
-            if (url == (this.href)) {
-                $(this).closest("li").addClass("active-nav-3");
-            }
-        });
-      });
-</script>
-<!--FIN SCRIPT SELECT DEL NAV MENU-->
- 
-
-<!--INICIO SCRIPT DEL SELECCIONADOR DE CONSTANCIAS-->
-<script type="text/javascript">
-    $(document).ready(function () {
-        $('#example').multiselect({
-            buttonContainer: ' <div class="btn-group btn-light btn-constancia" />',
-            buttonWidth: '460px',
-            includeSelectAllOption: true,
-            enableFiltering: true,
-            filterPlaceholder: 'Buscar Cuentas...',          
-            numberDisplayed: 10,
-            enableCaseInsensitiveFiltering: true,
-            selectAllText: 'Seleccionar todo',
-            buttonText: function(options, select) {
-                    if (options.length === 0) {
-                    return 'Elije las cuentas que deseas agregar ...';
-                }
-                    else {
-                    var labels = [];
-                    options.each(function() {
-                    if ($(this).attr('label') !== undefined) {
-                    labels.push($(this).attr('label'));
-                }
-                    else {
-                    labels.push($(this).html());
-                }
-                    });
-                    return labels.join(', ') + '';
-                }
-            }
-                
-        });
-    });
     </script>
-<!--FIN SCRIPT DEL SELECCIONADOR DE CONSTANCIAS-->
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js"
+        integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM" crossorigin="anonymous">
+    </script>
 
-<!--INICIO SCRIPT PARA ACTIVAR TOOLTIPS-->
-<script>
-    $(function () {
-        $('[data-toggle="tooltip"]').tooltip()
-    })
-</script>
+    <!--Bootstrap Multiselect-->
+    <script type="text/javascript" src="js/bootstrap-multiselect.js"></script>
 
-<!--FIN SCRIPT PARA ACTIVAR TOOLTIPS-->
+    <!--Datepicker-->
+    <script src="https://unpkg.com/gijgo@1.9.13/js/gijgo.min.js" type="text/javascript"></script>
+
+    <!--Datepicker Lenguaje-->
+    <script src="https://unpkg.com/gijgo@1.9.13/js/messages/messages.es-es.js" type="text/javascript"></script>
+
+
+    <!--INICIO SCRIPT PARA LOADER AFP-->
+    <script>
+        $(document).ready(function (e) {
+            $('.spinner-container').hide();
+        });
+    </script>
+
+    <!--FIN SCRIPT PARA LOADER AFP-->
+
+
+    <!--INICIO SCRIPT DATEPICKER DEL MODAL-->
+    <script>
+        $('#Desde').datepicker({
+            locale: 'es-es',
+            format: 'dd/mm/yyyy',
+            uiLibrary: 'bootstrap4',
+            modal: true,
+            width: 450,
+            size: 'small',
+        });
+
+        $('#Hasta').datepicker({
+            locale: 'es-es',
+            format: 'dd/mm/yyyy',
+            uiLibrary: 'bootstrap4',
+            modal: true,
+            width: 450,
+            size: 'small',
+        });
+    </script>
+
+    <!--FIN SCRIPT DATEPICKER DEL MODAL-->
+
+    <!--INICIO SCRIPT SELECT DEL NAV MENU-->
+    <script>
+        $(function () {
+            // this will get the full URL at the address bar
+            var url = window.location.href;
+
+            // passes on every "a" tag
+            $("#menu a").each(function () {
+                // checks if its the same on the address bar
+                if (url == (this.href)) {
+                    $(this).closest("li").addClass("active-nav-3");
+                }
+            });
+        });
+    </script>
+    <!--FIN SCRIPT SELECT DEL NAV MENU-->
+
+
+    <!--INICIO SCRIPT DEL SELECCIONADOR DE CONSTANCIAS-->
+    <script type="text/javascript">
+        $(document).ready(function () {
+            $('#example').multiselect({
+                buttonContainer: ' <div class="btn-group btn-light btn-constancia" />',
+                buttonWidth: '460px',
+                includeSelectAllOption: true,
+                enableFiltering: true,
+                filterPlaceholder: 'Buscar Cuentas...',
+                numberDisplayed: 10,
+                enableCaseInsensitiveFiltering: true,
+                selectAllText: 'Seleccionar todo',
+                buttonText: function (options, select) {
+                    if (options.length === 0) {
+                        return 'Elije las cuentas que deseas agregar ...';
+                    } else {
+                        var labels = [];
+                        options.each(function () {
+                            if ($(this).attr('label') !== undefined) {
+                                labels.push($(this).attr('label'));
+                            } else {
+                                labels.push($(this).html());
+                            }
+                        });
+                        return labels.join(', ') + '';
+                    }
+                }
+
+            });
+        });
+    </script>
+    <!--FIN SCRIPT DEL SELECCIONADOR DE CONSTANCIAS-->
+
+    <!--INICIO SCRIPT PARA ACTIVAR TOOLTIPS-->
+    <script>
+        $(function () {
+            $('[data-toggle="tooltip"]').tooltip()
+        })
+    </script>
+
+    <!--FIN SCRIPT PARA ACTIVAR TOOLTIPS-->
 
 </body>
 

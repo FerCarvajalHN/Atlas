@@ -29,7 +29,7 @@
     7b. 1336x768
     7c. 1280x1024
     7d. 1024x768
-*/      
+*/
 
 /* COMIENZO DE CODIGO FINAL */
 
@@ -43,17 +43,16 @@
     --rojo-afp: #D7282F;
     --blanco-afp: #ffffff;
     --gris-afp: #606060;
-    --rojob-afp : #B2292E;
+    --rojob-afp: #B2292E;
     --grisb-afp: #76777A;
-  }
-
+}
 
 @font-face {
-      font-family: 'neo-sans';
-      src: url('/fonts/NeoSans.woff2') format('woff2'),
-          url('/fonts/NeoSans.woff') format('woff');
-      font-weight: normal;
-      font-style: normal;
+    font-family: 'neo-sans';
+    src: url('/fonts/NeoSans.woff2') format('woff2'),
+        url('/fonts/NeoSans.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
 }
 
 @font-face {
@@ -64,7 +63,6 @@
     font-weight: bold;
     font-style: normal;
 }
-
 
 @font-face {
     font-family: 'neo-sans-medium';
@@ -83,42 +81,28 @@
 }
 
 .neo-400 {
-    font-family: 'neo-sans' sans-serif;
+    font-family: 'neo-sans'sans-serif;
     font-weight: normal;
     font-style: normal;
 }
 
-
 .neo-500 {
-    font-family: 'neo-sans-medium' sans-serif;
+    font-family: 'neo-sans-medium'sans-serif;
     font-weight: 500;
     font-style: normal;
 }
 
 .neo-700 {
-    font-family: 'neo_sansbold' sans-serif;
+    font-family: 'neo_sansbold'sans-serif;
     font-weight: 700;
     font-style: normal;
 }
 
 .neo-900 {
-    font-family: 'neo-sans-black' sans-serif;
+    font-family: 'neo-sans-black'sans-serif;
     font-weight: 900;
     font-style: normal;
 }
-
-
-/* 
-.header {
-    border:1px solid black;
-}
-
-
-.footer {
-    border:1px solid black;
-}
-
-*/
 
 /* =========================================================================================== */
 /*                                                                                             */
@@ -139,7 +123,7 @@
     z-index: -2;
     opacity: 1;
 }
-    
+
 .wrapper::after {
     background-color: var(--gris-afp);
     content: "";
@@ -187,15 +171,14 @@
 }
 
 .info-3 {
-     background-color: var(--blanco-afp);
-     border-radius: 19px;
+    background-color: var(--blanco-afp);
+    border-radius: 19px;
 }
 
 .info-4 {
     background-color: var(--blanco-afp);
     border-radius: 19px;
 }
-
 
 /* =========================================================================================== */
 /*                                                                                             */
@@ -289,7 +272,7 @@ input.form-control {
 .form-control-3,
 .form-control-4,
 .form-control-5 {
-    font-family: 'Neo-Sans' sans-serif;
+    font-family: 'Neo-Sans'sans-serif;
     font-weight: normal;
 }
 
@@ -305,8 +288,8 @@ input.form-control {
 /*                                                                                             */
 /* =========================================================================================== */
 
-.side-nav--logo img{
-    margin:10px 0px 0px 30px;
+.side-nav--logo img {
+    margin: 10px 0px 0px 30px;
     padding: 0;
 }
 
@@ -315,32 +298,35 @@ input.form-control {
     padding: 0;
 }
 
-.side-nav--list li{
+.side-nav--list li {
     font-size: 22px;
-    list-style:none;
+    list-style: none;
     padding: 5px 0px;
 }
 
 .side-nav--list a {
-    text-decoration: none; 
+    text-decoration: none;
     color: var(--gris-afp);
 }
-
-/*.side-nav--list a:hover {
-    font-weight: bold;
-}*/
 
 .active-nav {
     box-shadow: 0px 24px 10px -24px rgba(0, 0, 0, 0.50);
     font-weight: bold;
 }
 
+.ver-sistema {
+    font-size: 12px;
+    font-style: italic;
+    text-align: center;
+    margin-top: 90px;
+    color: var(--gris-afp)
+}
 
-  /* =========================================================================================== */
-  /*                                                                                             */
-  /*                                4b.-Content / Sidenav - Home                                 */
-  /*                                                                                             */
-  /* =========================================================================================== */
+/* =========================================================================================== */
+/*                                                                                             */
+/*                                4b.-Content / Sidenav - Home                                 */
+/*                                                                                             */
+/* =========================================================================================== */
 
 .side-nav--logo {
     margin: 50px 0px 10px 35px;
@@ -388,7 +374,7 @@ input.form-control {
 }
 
 .exchangeb img {
-   margin-right: 5px;
+    margin-right: 5px;
 }
 
 .form-control-3 {
@@ -398,7 +384,7 @@ input.form-control {
     font-weight: bold;
     color: var(--blanco-afp);
     margin-left: 5px;
-    background-color:var(--gris-afp);
+    background-color: var(--gris-afp);
     border-color: white;
     width: 50px;
 }
@@ -409,7 +395,6 @@ input.form-control {
     color: red !important;
 }
 
-
 hr.sidenav-d {
     display: block;
     height: 1px;
@@ -417,6 +402,14 @@ hr.sidenav-d {
     border-top: 1px solid var(--grisb-afp);
     margin: 5px 0px;
     padding: 0;
+}
+
+.ver-sistema--home {
+    font-size: 10px;
+    font-style: italic;
+    text-align: center;
+    margin-top: 0px;
+    color: var(--gris-afp)
 }
 
 /* =========================================================================================== */
@@ -474,7 +467,7 @@ hr.sidenav-d {
     font-size: 14px;
     font-weight: bold;
     color: var(--blanco-afp);
-    background-color:var(--rojob-afp);
+    background-color: var(--rojob-afp);
     border-color: white;
     width: 75px;
 }
@@ -499,6 +492,14 @@ hr.sidenav-c {
     margin: 10px 0px;
 }
 
+.ver-sistema--logged {
+    font-size: 12px;
+    font-style: italic;
+    text-align: center;
+    margin-top: 10px;
+    color: var(--blanco-afp)
+}
+
 /* =========================================================================================== */
 /*                                                                                             */
 /*                            4d.-Content / Middle-StartCarousel                               */
@@ -519,7 +520,7 @@ hr.sidenav-c {
     width: 10px;
     height: 10px;
     border-radius: 100%;
-  }
+}
 
 .carousel-indicators {
     bottom: -50px;
@@ -613,7 +614,7 @@ div.input-userinfo-icon3 {
 }
 
 .usergroup {
-    margin: 0px 5px; 
+    margin: 0px 5px;
 }
 
 /* =========================================================================================== */
@@ -621,6 +622,7 @@ div.input-userinfo-icon3 {
 /*                            4f.-Content / RightLoginPanel                                    */
 /*                                                                                             */
 /* =========================================================================================== */
+
 .form-control-customwidth {
     width: 385px;
 }
@@ -653,21 +655,21 @@ div.input-userinfo-icon3 {
     padding-left: 10px;
     font-size: 14px;
     margin: 10px 20px;
-    color:var(--gris-afp)
+    color: var(--gris-afp)
 }
 
 .p-box1 {
-    color:var(--rojo-afp);
+    color: var(--rojo-afp);
 }
 
-.p-box2{
+.p-box2 {
     margin: 20px auto;
     color: var(--gris-afp);
 }
 
 .btn-consulta {
     margin: 0px 140px;
-    background-color:var(--rojo-afp);
+    background-color: var(--rojo-afp);
     border: var(--rojo-afp);
 }
 
@@ -683,18 +685,18 @@ div.input-userinfo-icon3 {
     border-top-right-radius: 0px;
     border-bottom-right-radius: 0px;
     border-color: var(--rojo-afp)
- }
+}
 
 i.fa {
     color: #fff;
 }
 
 .consulta {
-    margin-top: -50px; 
+    margin-top: -50px;
 }
 
 .logintitle {
-    margin-top:60px;
+    margin-top: 60px;
 }
 
 /* =========================================================================================== */
@@ -713,17 +715,18 @@ i.fa {
 
 .idsearch {
     margin-top: 3px;
-    margin-right: 10px; 
+    margin-right: 10px;
 }
 
 
 .p-box4 {
     color: var(--rojo-afp);
-    margin:110px 0px 30px 0px;;
+    margin: 110px 0px 30px 0px;
+    ;
 }
 
 .btn-submit-constancia {
-   margin: 0px 200px
+    margin: 0px 200px
 }
 
 /* =========================================================================================== */
@@ -733,14 +736,13 @@ i.fa {
 /* =========================================================================================== */
 
 .collap-title {
-   height: 200px;
-   border-radius: 19px;
-   border-bottom-left-radius: 0px;
-   border-bottom-right-radius: 0px;
-   padding:75px 75px;
-  /* background-color: yellow; */
+    height: 200px;
+    border-radius: 19px;
+    border-bottom-left-radius: 0px;
+    border-bottom-right-radius: 0px;
+    padding: 75px 75px;
+    /* background-color: yellow; */
 }
-
 
 .collap-title-header-b {
     font-size: 36px;
@@ -762,19 +764,19 @@ i.fa {
 
 .forms-container {
     /* border:1px solid green; */
-    border-radius:19px;
+    border-radius: 19px;
     border-top-left-radius: 0px;
     border-top-right-radius: 0px;
     padding: 100px 50px;
 }
 
 .sidenav-forms {
-   padding: 0px;
+    padding: 0px;
 }
 
 .forms-menu {
     background-color: var(--rojo-afp);
-    height:250px;
+    height: 250px;
     border-radius: 19px;
     border-top-right-radius: 0px;
     border-bottom-right-radius: 0px;
@@ -805,7 +807,6 @@ i.fa {
     -ms-transform: scale(1.1);
     transform: scale(1.1);
 }
-
 
 /* =========================================================================================== */
 /*                                                                                             */
@@ -906,18 +907,16 @@ i.fa {
 }
 
 .ventas-container-logged {
-     height: 750px;
-     border-radius: 19px;
-     padding: 40px;
+    height: 750px;
+    border-radius: 19px;
+    padding: 40px;
 }
-
 
 /* =========================================================================================== */
 /*                                                                                             */
 /*                          4l.-Nuevo Cliente / Index y Home                                   */
 /*                                                                                             */
 /* =========================================================================================== */
-
 
 .collap-title-header-i {
     font-size: 36px;
@@ -928,7 +927,7 @@ i.fa {
 
 .nuevocliente-container {
     padding: 0px 40px;
-  /*  background-color: yellow; */
+    /*  background-color: yellow; */
     margin-bottom: 120px;
 }
 
@@ -936,7 +935,7 @@ i.fa {
     height: 150px;
     padding: 75px 75px;
     margin-bottom: 70px;
- /*   background-color: yellow; */
+    /*   background-color: yellow; */
 }
 
 .iconset-reduser-3 {
@@ -950,34 +949,32 @@ i.fa {
     margin: 0px 330px;
 }
 
- .new-clientext-a{
-    margin:-40px 0px;
- }
+.new-clientext-a {
+    margin: -40px 0px;
+}
 
- .new-clientext-b {
-     margin: -40px 0px;
- }
+.new-clientext-b {
+    margin: -40px 0px;
+}
 
+.types {
+    display: none
+}
 
- .types {
-     display: none
- }
+.scrolld-3 {
+    height: 325px;
+    overflow-y: scroll;
+}
 
- .scrolld-3 {
-     height: 325px;
-     overflow-y: scroll;
- }
+.scrolld-3::-webkit-scrollbar {
+    width: 0.7em;
+    background-color: rgb(231, 225, 225);
+}
 
- .scrolld-3::-webkit-scrollbar {
-     width: 0.7em;
-     background-color: rgb(231, 225, 225);
- }
-
- .scrolld-3::-webkit-scrollbar-thumb {
-     background-image: linear-gradient(to top, var(--rojob-afp) 0%, var(--rojo-afp) 100%);
-     border-radius: 1em;
- }
-
+.scrolld-3::-webkit-scrollbar-thumb {
+    background-image: linear-gradient(to top, var(--rojob-afp) 0%, var(--rojo-afp) 100%);
+    border-radius: 1em;
+}
 
 /* =========================================================================================== */
 /*                                                                                             */
@@ -991,9 +988,9 @@ i.fa {
     /* border: 1px solid black; */
 }
 
-.infoclient-input{
-   padding: 20px 50px 20px 0px;
-   margin: 0px 0px;
+.infoclient-input {
+    padding: 20px 50px 20px 0px;
+    margin: 0px 0px;
 }
 
 .client-box {
@@ -1033,15 +1030,14 @@ i.fa {
     margin: 220px 0px 0px 0px
 }
 
-
 .clients-menu p {
     color: var(--blanco-afp);
     font-size: 12px;
-    margin: 10px 0px;;
+    margin: 10px 0px;
+    ;
     margin-top: -25px;
     text-align: center;
 }
-
 
 .clients-menu img {
     width: 50%;
@@ -1049,7 +1045,7 @@ i.fa {
 }
 
 .clients-menu a {
-    text-decoration: none;  
+    text-decoration: none;
 }
 
 .clients-menu img:hover {
@@ -1070,14 +1066,13 @@ i.fa {
 }
 
 .form-control-6 {
-   width: 650px ;
-   padding: 0.375rem 1.75rem;
-   font-size: 1.2rem;
-   border-radius: 9px;
-   color: var(--rojo-afp);
-   border: 2px solid var(--rojo-afp);
+    width: 650px;
+    padding: 0.375rem 1.75rem;
+    font-size: 1.2rem;
+    border-radius: 9px;
+    color: var(--rojo-afp);
+    border: 2px solid var(--rojo-afp);
 }
-
 
 .form-control-6c {
     margin: 0px 10px;
@@ -1111,7 +1106,7 @@ i.fa {
 }
 
 .form-control-7c {
-    margin: 40px 15px 0px 15px; 
+    margin: 40px 15px 0px 15px;
     width: 10%;
     height: calc(1em + 1rem + 2px);
     padding: 0.375rem 1.75rem;
@@ -1123,7 +1118,7 @@ i.fa {
 }
 
 .editable-buttons {
-    background-color:var(--gris-afp);
+    background-color: var(--gris-afp);
 }
 
 .editable-submit {
@@ -1166,7 +1161,7 @@ a.editable-click.editable-disabled:hover {
 .scrolld-4 {
     height: 500px;
     overflow-y: scroll;
-} 
+}
 
 
 .scrolld-4::-webkit-scrollbar {
@@ -1199,6 +1194,33 @@ a.editable-click.editable-disabled:hover {
     text-decoration: none;
 }
 
+.modal.vertically-modal .modal-dialog {
+    transform: translateY(-25%);
+    top: 30%;
+    margin: 0 auto;
+}
+
+.modal.vertically-modal.show .modal-dialog {
+    transform: translateY(-50%);
+}
+
+.modal-content {
+    max-height: 100vh;
+    overflow-y: auto;
+    padding: 0px;
+}
+
+.title-formcontrol-6c {
+    font-size: 12px;
+    font-weight: bold;
+    margin-left: 25px;
+    margin-bottom: 0px;
+}
+
+.llamadaDetallesGestiones {
+    width: 100%;
+    padding: 20px;
+}
 
 /* =========================================================================================== */
 /*                                                                                             */
@@ -1217,7 +1239,7 @@ a.editable-click.editable-disabled:hover {
 
 .table-container {
     padding: 20px 80px 20px 40px;
-    
+
 }
 
 .table-row {
@@ -1251,8 +1273,8 @@ a.editable-click.editable-disabled:hover {
     top: 158px;
 }
 
-.table-row__Numero{
-    margin:5px 0px 10px 20px;
+.table-row__Numero {
+    margin: 5px 0px 10px 20px;
     color: var(--rojo-afp);
     font-size: 22px;
 }
@@ -1297,7 +1319,6 @@ a.editable-click.editable-disabled:hover {
     overflow-y: scroll;
 }
 
-
 .dropdown-toggle::after {
     display: none;
 }
@@ -1311,7 +1332,7 @@ table {
     box-shadow: 1px 1px 4px 0px rgba(0, 0, 0, 0.25);
 }
 
-li.page-item a{
+li.page-item a {
     border: 1px solid var(--rojo-afp);
     color: var(--gris-afp);
 }
@@ -1322,11 +1343,11 @@ li.page-item a:hover {
 }
 
 .active-1 {
-    background-color:white;
+    background-color: white;
     color: red;
 }
 
-.canales-act {  
+.canales-act {
     padding: 0px;
     margin: 0px 75px;
 }
@@ -1362,7 +1383,7 @@ li.page-item a:hover {
     border-radius: 6px;
 }
 
-.p-box7{
+.p-box7 {
     color: var(--rojo-afp);
     font-size: 16px;
     margin-top: 50px;
@@ -1371,7 +1392,7 @@ li.page-item a:hover {
 
 .iconset-reduser2 {
     margin-top: 26px;
-    margin-left:10px; 
+    margin-left: 10px;
     margin-right: 10px;
 }
 
@@ -1396,7 +1417,7 @@ li.page-item a:hover {
 /* MODALS */
 
 div.modal {
-    margin:250px 0px; 
+    margin: 250px 0px;
 }
 
 .p-box8 {
@@ -1451,7 +1472,7 @@ div.modal {
 }
 
 .btn-modal-custom1 {
-    border:none;
+    border: none;
     color: var(--rojo-afp);
     font-weight: 700;
 }
@@ -1468,14 +1489,13 @@ div.modal {
     color: var(--gris-afp-afp);
 }
 
-
 .modal-body__custom1 {
     display: flex;
     flex-direction: column;
 }
 
 .btn-modal-group {
-    margin:10px 0px;
+    margin: 10px 0px;
 }
 
 .close {
@@ -1530,7 +1550,7 @@ div.modal {
     height: 35px;
 }
 
-span.input-group-append > button{
+span.input-group-append>button {
     background-color: var(--blanco-afp);
 }
 
@@ -1543,6 +1563,7 @@ a {
     color: #0c0c0c;
     text-decoration: none;
 }
+
 .multiselect-selected-text {
     color: #0c0c0c;
 }
@@ -1552,9 +1573,8 @@ a.multiselect-all:hover {
 }
 
 label.checkbox:hover {
-    color:var(--rojo-afp);
+    color: var(--rojo-afp);
 }
-
 
 .gj-picker-bootstrap table tr td.selected.gj-cursor-pointer div {
     color: #fff;
@@ -1577,7 +1597,6 @@ label.checkbox:hover {
     background-image: linear-gradient(to top, var(--rojob-afp) 0%, var(--rojo-afp) 100%);
     border-radius: 1em;
 }
-
 
 /*============================================================================================ */
 /*                                                                                             */
@@ -1624,7 +1643,7 @@ label.checkbox:hover {
 .client-boxb {
     padding: 0px 10px;
     margin-left: 90px;
-} 
+}
 
 .form-control-6b {
     width: 91%;
@@ -1698,6 +1717,11 @@ i.fa-custom-2:hover {
     border-radius: 1em;
 }
 
+.form-control-16 {
+    padding: 10px;
+    width: 465px;
+
+}
 
 /* =========================================================================================== */
 /*                                                                                             */
@@ -1709,7 +1733,7 @@ i.fa-custom-2:hover {
     margin: 100px 200px 25px 200px;
 }
 
-.card-header{
+.card-header {
     background-color: #fff;
     border: none;
 }
@@ -1728,7 +1752,7 @@ input.form-control-13 {
 
 .form-control-13 {
     font-size: 36px;
-    text-align: center;    
+    text-align: center;
     color: var(--gris-afp);
     width: 100%;
     border: none;
@@ -1752,7 +1776,7 @@ hr.horizontal-border1 {
 
 .detalles-card {
     color: var(--gris-afp);
-    margin:0px 50px;
+    margin: 0px 50px;
 }
 
 .btn-customcolor-1 {
@@ -1776,7 +1800,7 @@ i.fa-custom-1 {
 }
 
 i.fa-custom-1:hover {
-     color: var(--rojo-afp);
+    color: var(--rojo-afp);
 }
 
 /* =========================================================================================== */
@@ -1784,7 +1808,6 @@ i.fa-custom-1:hover {
 /*                                5e. Beneficiarios                                            */
 /*                                                                                             */
 /* =========================================================================================== */
-
 
 .scrolld-5 {
     height: 550px;
@@ -1807,13 +1830,13 @@ i.fa-custom-1:hover {
 
 .header-beneficiarios-titulares {
     padding: 5px;
-    background-color: var(--rojo-afp);
+    background-color: var(--gris-afp);
     font-size: 24px;
     color: var(--blanco-afp);
     text-align: center;
     height: 50px;
+    border-radius: 9px;
 }
-
 
 .table__thead-2 th {
     font-family: 'NeoSans-Bold'sans-serif;
@@ -1842,8 +1865,9 @@ i.fa-custom-1:hover {
 .btn-customcolor-3b {
     background-color: var(--rojo-afp);
     color: var(--blanco-afp);
-    width: 60%;
-    margin: 0px 200px;
+    width: 25%;
+    border-radius: 9px;
+    margin: 0px 400px;
 }
 
 .btn-customcolor-3b:hover {
@@ -1987,6 +2011,11 @@ i.fa-custom-1:hover {
         padding: 0px 20px;
     }
 
+    .ver-sistema {
+        font-size: 12px;
+        margin-top: 60px;
+    }
+
     /* =========================================================================================== */
     /*                                                                                             */
     /*                                4b.-Content / Sidenav - Home                                 */
@@ -2025,6 +2054,11 @@ i.fa-custom-1:hover {
     .form-control-3 {
         font-size: 12px;
         width: 65px;
+    }
+
+    .ver-sistema--home {
+        font-size: 10px;
+        margin-top: 20px;
     }
 
     /* =========================================================================================== */
@@ -2078,11 +2112,17 @@ i.fa-custom-1:hover {
         margin-left: -5px;
     }
 
+    .ver-sistema--logged {
+        font-size: 12px;
+        margin-top: 10px;
+    }
+
     /* =========================================================================================== */
     /*                                                                                             */
     /*                            4e.-Content / MiddleUserInfo                                     */
     /*                                                                                             */
     /* =========================================================================================== */
+
     .p-box3 {
         margin: 50px 0px 40px 5px;
     }
@@ -2103,12 +2143,12 @@ i.fa-custom-1:hover {
         margin: 180px 10px;
     }
 
-
     /* =========================================================================================== */
     /*                                                                                             */
     /*                            4f.-Content / RightLoginPanel                                    */
     /*                                                                                             */
     /* =========================================================================================== */
+
     .p-box2 {
         margin: 18px 10px;
         color: var(--gris-afp);
@@ -2120,7 +2160,7 @@ i.fa-custom-1:hover {
     }
 
     .btn-circle.btn-xl {
-        margin-left:  260px;
+        margin-left: 260px;
     }
 
     /* =========================================================================================== */
@@ -2128,6 +2168,7 @@ i.fa-custom-1:hover {
     /*                                4h.-Formularios / Index y Home                               */
     /*                                                                                             */
     /* =========================================================================================== */
+
     .collap-title-header-b {
         font-size: 32px;
         color: var(--rojo-afp);
@@ -2208,7 +2249,6 @@ i.fa-custom-1:hover {
         padding: 80px 60px;
     }
 
-
     /* =========================================================================================== */
     /*                                                                                             */
     /*                            4j.-Para Ventas / Index y Home                                   */
@@ -2244,7 +2284,6 @@ i.fa-custom-1:hover {
     /*                          4l.-Nuevo Cliente / Index y Home                                   */
     /*                                                                                             */
     /* =========================================================================================== */
-
 
     .collap-title-header-i {
         font-size: 32px;
@@ -2346,6 +2385,11 @@ i.fa-custom-1:hover {
     .scrolld-4 {
         height: 450px;
         overflow-y: scroll;
+    }
+
+    .title-formcontrol-6c {
+        font-size: 12px;
+        margin-left: 10px;
     }
 
     /*============================================================================================ */
@@ -2548,8 +2592,8 @@ i.fa-custom-1:hover {
     }
 
     .btn-customcolor-3b {
-        width: 60%;
-        margin: 0px 200px;
+        width: 20%;
+        margin: 0px 400px;
     }
 
     .beneficiarios-container {
@@ -2569,10 +2613,9 @@ i.fa-custom-1:hover {
 
     .footer-textb {
         font-size: 24px;
-        margin: 0px 0px 0px 70px;  
+        margin: 0px 0px 0px 70px;
     }
 }
-
 
 /* =========================================================================================== */
 /*                                                                                             */
@@ -2652,7 +2695,6 @@ i.fa-custom-1:hover {
     .info-4 {
         margin-top: 20px;
         height: 600px;
-
     }
 
     .side-navb {
@@ -2680,6 +2722,11 @@ i.fa-custom-1:hover {
         padding: 0;
     }
 
+    .ver-sistema {
+        font-size: 12px;
+        margin-top: 5px;
+    }
+
     /* =========================================================================================== */
     /*                                                                                             */
     /*                                4b.-Content / Sidenav - Home                                 */
@@ -2689,7 +2736,7 @@ i.fa-custom-1:hover {
     .side-nav--logo2 {
         margin: 25px 0px 10px 80px;
         padding: 0;
-        width: 45%;
+        width: 40%;
     }
 
     .side-nav--list2 li {
@@ -2720,6 +2767,11 @@ i.fa-custom-1:hover {
     .form-control-3 {
         font-size: 12px;
         width: 65px;
+    }
+
+    .ver-sistema--home {
+        font-size: 10px;
+        margin-top: 0px;
     }
 
     /* =========================================================================================== */
@@ -2772,11 +2824,17 @@ i.fa-custom-1:hover {
         margin-left: -15px;
     }
 
+    .ver-sistema--logged {
+        font-size: 12px;
+        margin-top: 10px;
+    }
+
     /* =========================================================================================== */
     /*                                                                                             */
     /*                            4e.-Content / MiddleUserInfo                                     */
     /*                                                                                             */
     /* =========================================================================================== */
+
     .p-box3 {
         margin: 5px 10px 30px 10px;
     }
@@ -2806,6 +2864,7 @@ i.fa-custom-1:hover {
     /*                            4f.-Content / RightLoginPanel                                    */
     /*                                                                                             */
     /* =========================================================================================== */
+
     .p-box2 {
         margin: 18px 10px;
         color: var(--gris-afp);
@@ -2843,12 +2902,12 @@ i.fa-custom-1:hover {
         margin-top: 60px;
     }
 
-
     /* =========================================================================================== */
     /*                                                                                             */
     /*                                4h.-Formularios / Index y Home                               */
     /*                                                                                             */
     /* =========================================================================================== */
+
     .collap-title-header-b {
         font-size: 32px;
         color: var(--rojo-afp);
@@ -2974,8 +3033,6 @@ i.fa-custom-1:hover {
         margin: 30px 325px;
     }
 
-
-
     /* =========================================================================================== */
     /*                                                                                             */
     /*                                   5a.-Info-Cliente                                          */
@@ -3067,6 +3124,12 @@ i.fa-custom-1:hover {
         height: 400px;
         overflow-y: scroll;
     }
+
+    .title-formcontrol-6c {
+        margin-left: 10px;
+        margin-bottom: 0px;
+    }
+
     /* =========================================================================================== */
     /*                                                                                             */
     /*                                   5b.-Resumen-Cliente                                       */
@@ -3267,8 +3330,8 @@ i.fa-custom-1:hover {
     }
 
     .btn-customcolor-3b {
-        width: 40%;
-        margin: 0px 280px;
+        width: 20%;
+        margin: 0px 380px;
     }
 
     .beneficiarios-container {
@@ -3407,10 +3470,6 @@ i.fa-custom-1:hover {
         color: var(--gris-afp);
     }
 
-    /*.side-nav--list a:hover {
-    font-weight: bold;
-    }*/
-
     .active-nav {
         box-shadow: 0px 24px 10px -24px rgba(0, 0, 0, 0.50);
         font-weight: bold;
@@ -3418,6 +3477,11 @@ i.fa-custom-1:hover {
 
     ul#menu {
         padding: 0px 20px;
+    }
+
+    .ver-sistema {
+        font-size: 12px;
+        margin-top: 75px;
     }
 
     /* =========================================================================================== */
@@ -3458,6 +3522,11 @@ i.fa-custom-1:hover {
     .form-control-3 {
         font-size: 12px;
         width: 55px;
+    }
+
+    .ver-sistema--home {
+        font-size: 10px;
+        margin-top: 40px;
     }
 
     /* =========================================================================================== */
@@ -3523,6 +3592,11 @@ i.fa-custom-1:hover {
         margin-left: -15px;
     }
 
+    .ver-sistema--logged {
+        font-size: 12px;
+        margin-top: 90px;
+    }
+
     /* =========================================================================================== */
     /*                                                                                             */
     /*                            4d.-Content / Middle-StartCarousel                               */
@@ -3540,6 +3614,7 @@ i.fa-custom-1:hover {
     /*                            4e.-Content / MiddleUserInfo                                     */
     /*                                                                                             */
     /* =========================================================================================== */
+
     .p-box3 {
         margin: 50px 10px 40px 10px;
     }
@@ -3565,6 +3640,7 @@ i.fa-custom-1:hover {
     /*                            4f.-Content / RightLoginPanel                                    */
     /*                                                                                             */
     /* =========================================================================================== */
+
     .p-box2 {
         margin: 18px 10px;
         color: var(--gris-afp);
@@ -3601,14 +3677,11 @@ i.fa-custom-1:hover {
         margin-top: 110px;
     }
 
-
-
     /* =========================================================================================== */
     /*                                                                                             */
     /*                            4g.-Content / RightSearchClient                                  */
     /*                                                                                             */
     /* =========================================================================================== */
-
 
     .p-box4 {
         color: var(--rojo-afp);
@@ -3620,6 +3693,7 @@ i.fa-custom-1:hover {
     /*                                4h.-Formularios / Index y Home                               */
     /*                                                                                             */
     /* =========================================================================================== */
+
     .collap-title-header-b {
         font-size: 32px;
         color: var(--rojo-afp);
@@ -3708,8 +3782,6 @@ i.fa-custom-1:hover {
     .forms-container-logged {
         padding: 110px 60px;
     }
-
-
 
     /* =========================================================================================== */
     /*                                                                                             */
@@ -3833,7 +3905,6 @@ i.fa-custom-1:hover {
         margin-top: -25px;
     }
 
-
     .clients-menu img {
         width: 50%;
         margin: 20px 0px 30px 20px;
@@ -3871,6 +3942,11 @@ i.fa-custom-1:hover {
         overflow-y: scroll;
         margin-right: 20px;
         margin-left: 0px;
+    }
+
+    .title-formcontrol-6c {
+        margin-left: 10px;
+        margin-bottom: 0px;
     }
 
     /* =========================================================================================== */
@@ -4062,7 +4138,6 @@ i.fa-custom-1:hover {
     /*                                                                                             */
     /* =========================================================================================== */
 
-
     .scrolld-5 {
         height: 550px;
         overflow-y: scroll;
@@ -4074,14 +4149,12 @@ i.fa-custom-1:hover {
 
     .header-beneficiarios-titulares {
         padding: 5px;
-        background-color: var(--rojo-afp);
         font-size: 24px;
         color: var(--blanco-afp);
         text-align: center;
         height: 50px;
         width: 820px;
     }
-
 
     .table__thead-2 th {
         font-family: 'NeoSans-Bold'sans-serif;
@@ -4098,8 +4171,8 @@ i.fa-custom-1:hover {
     }
 
     .btn-customcolor-3b {
-        width: 40%;
-        margin: 50px 250px;
+        width: 20%;
+        margin: 50px 375px;
     }
 
     .beneficiarios-container {
@@ -4125,7 +4198,6 @@ i.fa-custom-1:hover {
 
 }
 
-
 /* =========================================================================================== */
 /*                                                                                             */
 /*                                    7d. 1024x768                                             */
@@ -4140,31 +4212,31 @@ i.fa-custom-1:hover {
     /*                                                                                             */
     /* =========================================================================================== */
 
-  .header-index,
-  .header {
-      height: 80px;
-  }
+    .header-index,
+    .header {
+        height: 80px;
+    }
 
 
-  .main-logo img {
-      width: 150%;
-      margin: 15px 25px;
-  }
+    .main-logo img {
+        width: 150%;
+        margin: 15px 25px;
+    }
 
-  .header-navmenu img {
-      float: right;
-      margin: 20px 10px;
-  }
+    .header-navmenu img {
+        float: right;
+        margin: 20px 10px;
+    }
 
-  .header-navmenu-logged img {
-      float: right;
-      margin: 20px 10px;
-  }
+    .header-navmenu-logged img {
+        float: right;
+        margin: 20px 10px;
+    }
 
-  .header-navmenu img:hover {
-      width: 4.5%;
-  }
-  
+    .header-navmenu img:hover {
+        width: 4.5%;
+    }
+
     /* =========================================================================================== */
     /*                                                                                             */
     /*                                     3.-LAYOUT                                               */
@@ -4204,7 +4276,7 @@ i.fa-custom-1:hover {
 
     .info-4 {
         height: 600px;
-        
+
     }
 
     .side-navb {
@@ -4221,7 +4293,6 @@ i.fa-custom-1:hover {
     /*                               4a.-Content / Sidenav - Index                                 */
     /*                                                                                             */
     /* =========================================================================================== */
-
 
     .side-nav--logo {
         margin: 50px 0px 10px 20px;
@@ -4244,10 +4315,6 @@ i.fa-custom-1:hover {
         color: var(--gris-afp);
     }
 
-    /*.side-nav--list a:hover {
-    font-weight: bold;
-    }*/
-
     .active-nav {
         box-shadow: 0px 24px 10px -24px rgba(0, 0, 0, 0.50);
         font-weight: bold;
@@ -4255,6 +4322,11 @@ i.fa-custom-1:hover {
 
     ul#menu {
         padding: 0px 20px;
+    }
+
+    .ver-sistema {
+        font-size: 12px;
+        margin-top: 0px;
     }
 
     /* =========================================================================================== */
@@ -4278,7 +4350,7 @@ i.fa-custom-1:hover {
         font-size: 16px;
         list-style: none;
         padding: 5px 0px;
-        margin:0 20px;
+        margin: 0 20px;
     }
 
     .exchange-text p {
@@ -4302,6 +4374,11 @@ i.fa-custom-1:hover {
         width: 35px;
     }
 
+    .ver-sistema--home {
+        font-size: 10px;
+        margin-top: 10px;
+    }
+
     /* =========================================================================================== */
     /*                                                                                             */
     /*           4c.-Content / Sidenav - InfoClients + Resumen+ Gestiones + Para Ventas            */
@@ -4323,7 +4400,7 @@ i.fa-custom-1:hover {
         list-style: none;
         padding: 10px 0px;
         text-align: center;
-        margin:0px 0px 0px -40px;
+        margin: 0px 0px 0px -40px;
     }
 
     hr.sidenav-c {
@@ -4352,19 +4429,23 @@ i.fa-custom-1:hover {
         margin-bottom: 0px;
     }
 
-     .exchange-container-b {
-        margin-left:-10px;
-     }
+    .exchange-container-b {
+        margin-left: -10px;
+    }
 
-     .exchangeb-image {
+    .exchangeb-image {
         margin-top: 15px;
         margin-right: 10px;
-     }
+    }
 
-     .exchangeb-main-container {
+    .exchangeb-main-container {
         margin-left: -35px;
-     }
+    }
 
+    .ver-sistema--logged {
+        font-size: 10px;
+        margin-top: 10px;
+    }
 
     /* =========================================================================================== */
     /*                                                                                             */
@@ -4378,36 +4459,38 @@ i.fa-custom-1:hover {
         margin: 40px 0px;
     }
 
-     /* =========================================================================================== */
-     /*                                                                                             */
-     /*                            4e.-Content / MiddleUserInfo                                     */
-     /*                                                                                             */
-     /* =========================================================================================== */
-     .p-box3 {
-         margin: -70px 10px 30px 10px;
-     }
+    /* =========================================================================================== */
+    /*                                                                                             */
+    /*                            4e.-Content / MiddleUserInfo                                     */
+    /*                                                                                             */
+    /* =========================================================================================== */
 
-     .form-control-4 {
-         width: 230px;
-         border-radius: 9px;
-         border-top-right-radius: 0;
-         border-bottom-right-radius: 0;
-         padding: 0.375rem 0.75rem;
-     }
+    .p-box3 {
+        margin: -70px 10px 30px 10px;
+    }
 
-     .info-1--lowres {
-         padding: 0px 30px;
-     }
+    .form-control-4 {
+        width: 230px;
+        border-radius: 9px;
+        border-top-right-radius: 0;
+        border-bottom-right-radius: 0;
+        padding: 0.375rem 0.75rem;
+    }
 
-     .usergroup {
-         margin: 180px 5px 0px 5px;
-     }
+    .info-1--lowres {
+        padding: 0px 30px;
+    }
+
+    .usergroup {
+        margin: 180px 5px 0px 5px;
+    }
 
     /* =========================================================================================== */
     /*                                                                                             */
     /*                            4f.-Content / RightLoginPanel                                    */
     /*                                                                                             */
     /* =========================================================================================== */
+
     .p-box2 {
         margin: 18px 10px;
         color: var(--gris-afp);
@@ -4416,6 +4499,7 @@ i.fa-custom-1:hover {
     .form-control-customwidth {
         width: 290px;
     }
+
     .btn-circle.btn-xl {
         width: 50px;
         height: 50px;
@@ -4443,21 +4527,16 @@ i.fa-custom-1:hover {
         margin-top: 30px;
     }
 
-   
-
     /* =========================================================================================== */
     /*                                                                                             */
     /*                            4g.-Content / RightSearchClient                                  */
     /*                                                                                             */
     /* =========================================================================================== */
 
-
     .p-box4 {
         color: var(--rojo-afp);
         margin: 70px 0px 30px 0px;
     }
-
-
 
     /* =========================================================================================== */
     /*                                                                                             */
@@ -4469,7 +4548,6 @@ i.fa-custom-1:hover {
         padding: 50px 50px;
         /* background-color: yellow; */
     }
-
 
     .collap-title-header-b {
         font-size: 32px;
@@ -4564,12 +4642,9 @@ i.fa-custom-1:hover {
         padding-left: 5px;
     }
 
-
     .forms-container-logged {
         padding: 80px 40px;
     }
-    
-
 
     /* =========================================================================================== */
     /*                                                                                             */
@@ -4629,9 +4704,9 @@ i.fa-custom-1:hover {
         margin: 30px 225px;
     }
 
-     .new-clientext-a {
-         margin: -40px 0px;
-     }
+    .new-clientext-a {
+        margin: -40px 0px;
+    }
 
     /* =========================================================================================== */
     /*                                                                                             */
@@ -4688,7 +4763,7 @@ i.fa-custom-1:hover {
 
     .clients-menu {
         height: 450px;
-        width: 65px;            
+        width: 65px;
         margin: 55px 0px 0px -15px;
     }
 
@@ -4697,7 +4772,6 @@ i.fa-custom-1:hover {
         margin: 12px 0px;
         margin-top: -25px;
     }
-
 
     .clients-menu img {
         width: 45%;
@@ -4737,6 +4811,27 @@ i.fa-custom-1:hover {
         margin-right: 15px;
     }
 
+    .modal.vertically-modal .modal-dialog {
+        transform: translateY(-25%);
+        top: 20%;
+        margin: 0 auto;
+    }
+
+    .modal.vertically-modal.show .modal-dialog {
+        transform: translateY(-50%);
+    }
+
+    .modal-content {
+        max-height: 80vh;
+        overflow-y: auto;
+        padding: 0px;
+    }
+
+    .title-formcontrol-6c {
+        margin-left: 5px;
+        margin-bottom: 0px;
+    }
+
     /* =========================================================================================== */
     /*                                                                                             */
     /*                                   5b.-Resumen-Cliente                                       */
@@ -4754,7 +4849,7 @@ i.fa-custom-1:hover {
         padding-right: 5px;
         font-size: 22px;
     }
-    
+
     .table-container {
         padding: 10px 5px 10px 5px;
         height: 300px;
@@ -4791,7 +4886,7 @@ i.fa-custom-1:hover {
     .canales-act {
         padding: 0px 15px;
         margin: 0px 0px;
-        height: 132px;  
+        height: 132px;
         padding: 0px 60px;
     }
 
@@ -4843,8 +4938,6 @@ i.fa-custom-1:hover {
         margin-left: 0px;
         margin-right: 5px;
     }
-
-
 
     /*============================================================================================ */
     /*                                                                                             */
@@ -4913,7 +5006,7 @@ i.fa-custom-1:hover {
     .detalles-card {
         color: var(--gris-afp);
         margin: 0px 00px;
-        
+
     }
 
     .form-control-12b {
@@ -4942,7 +5035,6 @@ i.fa-custom-1:hover {
 
     .header-beneficiarios-titulares {
         padding: 5px;
-        background-color: var(--rojo-afp);
         font-size: 24px;
         color: var(--blanco-afp);
         text-align: center;
@@ -4966,7 +5058,8 @@ i.fa-custom-1:hover {
     }
 
     .btn-customcolor-3b {
-       margin: 20px 210px;
+        margin: 10px 270px;
+        width: 25%;
     }
 
     /* =========================================================================================== */
@@ -4982,6 +5075,6 @@ i.fa-custom-1:hover {
 
     .footer-textb {
         font-size: 18px;
-        margin: 25px 0px 0px 60px;
-    }   
+        margin: 25px 0px 0px 100px;
+    }
 }
